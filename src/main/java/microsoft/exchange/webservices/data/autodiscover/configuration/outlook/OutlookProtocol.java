@@ -698,7 +698,7 @@ final class OutlookProtocol {
    * @param reader        The reader.
    * @param webClientUrls The web client urls.
    * @param elementName   Name of the element.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private static void loadWebClientUrlsFromXml(EwsXmlReader reader,
       WebClientUrlCollection webClientUrls, String elementName) throws Exception {

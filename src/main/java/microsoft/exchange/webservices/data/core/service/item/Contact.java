@@ -895,6 +895,8 @@ public class Contact extends Item {
 
   /**
    * Gets the funn phonetic name from the directory
+   * @return the phonetic full name
+   * @throws Exception if something fails
    */
   public String getPhoneticFullName() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(ContactSchema.PhoneticFullName);
@@ -902,6 +904,8 @@ public class Contact extends Item {
 
   /**
    * Gets the funn phonetic name from the directory
+   * @return the phonetic first name
+   * @throws Exception if something fails
    */
   public String getPhoneticFirstName() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(ContactSchema.PhoneticFirstName);
@@ -910,7 +914,8 @@ public class Contact extends Item {
   /**
    * Gets the phonetic last name from the directory
    *
-   * @throws ServiceLocalException
+   * @return the phonetic last name
+   * @throws ServiceLocalException the exception
    */
   public String getPhoneticLastName() throws ServiceLocalException {
     return getPropertyBag().getObjectFromPropertyDefinition(ContactSchema.PhoneticLastName);
@@ -919,7 +924,8 @@ public class Contact extends Item {
   /**
    * Gets the Alias from the directory
    *
-   * @throws ServiceLocalException
+   * @return the alias
+   * @throws ServiceLocalException the exception
    */
   public String getAlias() throws ServiceLocalException {
     return getPropertyBag().getObjectFromPropertyDefinition(ContactSchema.Alias);
@@ -928,7 +934,8 @@ public class Contact extends Item {
   /**
    * Get the Notes from the directory
    *
-   * @throws ServiceLocalException
+   * @return the notes
+   * @throws ServiceLocalException the exception
    */
   public String getNotes() throws ServiceLocalException {
     return getPropertyBag().getObjectFromPropertyDefinition(ContactSchema.Notes);
@@ -937,6 +944,7 @@ public class Contact extends Item {
   /**
    * Gets the Photo from the directory
    *
+   * @return the photo as byte array
    * @throws ServiceLocalException
    */
   public byte[] getDirectoryPhoto() throws ServiceLocalException {
@@ -946,7 +954,8 @@ public class Contact extends Item {
   /**
    * Gets the User SMIME certificate from the directory
    *
-   * @throws ServiceLocalException
+   * @return the certificate as byte array
+   * @throws ServiceLocalException the exception
    */
   public byte[][] getUserSMIMECertificate() throws ServiceLocalException {
     ByteArrayArray array = this.getPropertyBag()
@@ -957,7 +966,8 @@ public class Contact extends Item {
   /**
    * Gets the MSExchange certificate from the directory
    *
-   * @throws ServiceLocalException
+   * @return the certificate as byte array
+   * @throws ServiceLocalException the exception
    */
   public byte[][] getMSExchangeCertificate() throws ServiceLocalException {
       ByteArrayArray array = getPropertyBag()
@@ -968,7 +978,8 @@ public class Contact extends Item {
   /**
    * Gets the DirectoryID as Guid or DN string
    *
-   * @throws ServiceLocalException
+   * @return the directory id
+   * @throws ServiceLocalException the exception
    */
   public String getDirectoryId() throws ServiceLocalException {
     return getPropertyBag().getObjectFromPropertyDefinition(ContactSchema.DirectoryId);
@@ -977,7 +988,8 @@ public class Contact extends Item {
   /**
    * Gets the manager mailbox information
    *
-   * @throws ServiceLocalException
+   * @return the mail address
+   * @throws ServiceLocalException the exception
    */
   public EmailAddress getManagerMailbox() throws ServiceLocalException {
     return getPropertyBag().getObjectFromPropertyDefinition(ContactSchema.ManagerMailbox);
@@ -986,7 +998,8 @@ public class Contact extends Item {
   /**
    * Get the direct reports mailbox information
    *
-   * @throws ServiceLocalException
+   * @return the mail addresses
+   * @throws ServiceLocalException the exception
    */
   public EmailAddressCollection getDirectReports() throws ServiceLocalException {
     return getPropertyBag()

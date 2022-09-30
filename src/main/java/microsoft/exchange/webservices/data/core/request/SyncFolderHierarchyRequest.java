@@ -60,7 +60,7 @@ public class SyncFolderHierarchyRequest extends
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public SyncFolderHierarchyRequest(ExchangeService service)
       throws Exception {
@@ -170,7 +170,7 @@ public class SyncFolderHierarchyRequest extends
   }
 
   /**
-   * Gets or sets the property set. <value>The property set.</value>
+   * Gets or sets the property set. The property set.
    *
    * @return the property set
    */
@@ -188,7 +188,7 @@ public class SyncFolderHierarchyRequest extends
   }
 
   /**
-   * Gets or sets the property set. <value>The property set.</value>
+   * Gets or sets the property set. The property set.
    *
    * @return the sync folder id
    */
@@ -206,8 +206,8 @@ public class SyncFolderHierarchyRequest extends
   }
 
   /**
-   * Gets or sets the state of the sync. <value>The state of the
-   * sync.</value>
+   * Gets or sets the state of the sync. The state of the
+   * sync.
    *
    * @return the sync state
    */

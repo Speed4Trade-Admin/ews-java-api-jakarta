@@ -42,7 +42,7 @@ public final class GetPasswordExpirationDateRequest extends SimpleServiceRequest
   /**
    * Initializes a new instance of the GetPasswordExpirationDateRequest class
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetPasswordExpirationDateRequest(ExchangeService service) throws Exception {
     super(service);

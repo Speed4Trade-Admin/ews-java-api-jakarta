@@ -59,7 +59,7 @@ abstract class CreateRequest<TServiceObject extends ServiceObject,
    *
    * @param service           The service.
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected CreateRequest(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)
@@ -145,7 +145,7 @@ abstract class CreateRequest<TServiceObject extends ServiceObject,
   /**
    * Sets the service objects.
    *
-   * @param value Iterator<TServiceObject>
+   * @param value Iterator
    */
   protected void setObjects(Collection<TServiceObject> value) {
     this.objects = value;

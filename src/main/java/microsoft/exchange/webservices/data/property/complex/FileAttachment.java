@@ -89,9 +89,11 @@ public final class FileAttachment extends Attachment {
     return XmlElementNames.FileAttachment;
   }
 
+
   /**
-   * {@inheritDoc}
-   */
+ *
+ * @see microsoft.exchange.webservices.data.property.complex.Attachment#validate(int)
+ */
   @Override
   protected void validate(int attachmentIndex) throws ServiceValidationException {
     if ((this.fileName == null || this.fileName.isEmpty())

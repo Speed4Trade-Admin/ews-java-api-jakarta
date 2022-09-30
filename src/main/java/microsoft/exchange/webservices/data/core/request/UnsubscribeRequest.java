@@ -50,7 +50,7 @@ public class UnsubscribeRequest extends MultiResponseServiceRequest<ServiceRespo
    * Instantiates a new unsubscribe request.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public UnsubscribeRequest(ExchangeService service)
       throws Exception {

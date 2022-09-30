@@ -56,7 +56,7 @@ public class GetDelegateRequest extends
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetDelegateRequest(ExchangeService service)
       throws Exception {
@@ -140,7 +140,7 @@ public class GetDelegateRequest extends
   }
 
   /**
-   * Gets the user ids. <value>The user ids.</value>
+   * Gets the user ids. The user ids.
    *
    * @return the user ids
    */

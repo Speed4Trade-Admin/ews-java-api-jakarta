@@ -83,7 +83,7 @@ public class Item extends ServiceObject {
   private ItemAttachment parentAttachment;
 
   /**
-   * Initializes an unsaved local instance of <see cref="Item"/>. To bind to
+   * Initializes an unsaved local instance of @see Item. To bind to
    * an existing item, use Item.Bind() instead.
    *
    * @param service the service
@@ -304,7 +304,8 @@ public class Item extends ServiceObject {
    * Gets a value indicating whether this instance has unprocessed attachment
    * collection changes.
    *
-   * @throws ServiceLocalException
+   * @return true if changes are available
+   * @throws ServiceLocalException the exception
    */
   public boolean hasUnprocessedAttachmentChanges()
       throws ServiceLocalException {

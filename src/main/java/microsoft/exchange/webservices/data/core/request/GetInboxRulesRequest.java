@@ -49,7 +49,7 @@ public final class GetInboxRulesRequest extends SimpleServiceRequestBase<GetInbo
    * Initializes a new instance of the GetInboxRulesRequest class.
    *
    * @param service The service.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetInboxRulesRequest(ExchangeService service) throws Exception {
     super(service);
@@ -135,7 +135,7 @@ public final class GetInboxRulesRequest extends SimpleServiceRequestBase<GetInbo
    * Executes this request.
    *
    * @return Service response.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws ServiceLocalException
    */
   public GetInboxRulesResponse execute()

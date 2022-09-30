@@ -56,7 +56,7 @@ public class AddDelegateRequest extends
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public AddDelegateRequest(ExchangeService service)
       throws Exception {
@@ -150,8 +150,8 @@ public class AddDelegateRequest extends
   }
 
   /**
-   * Gets the meeting request delivery scope. <value>The meeting
-   * request delivery scope.</value>
+   * Gets the meeting request delivery scope. The meeting
+   * request delivery scope.
    *
    * @return the meeting request delivery scope
    */
@@ -170,7 +170,7 @@ public class AddDelegateRequest extends
   }
 
   /**
-   * Gets the delegate users. <value>The delegate users.</value>
+   * Gets the delegate users. The delegate users.
    *
    * @return the delegate users
    */

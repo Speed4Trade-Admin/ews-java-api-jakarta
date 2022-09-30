@@ -46,7 +46,7 @@ public final class DisconnectPhoneCallRequest extends SimpleServiceRequestBase<S
    * Initializes a new instance of the DisconnectPhoneCallRequest class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public DisconnectPhoneCallRequest(ExchangeService service)
       throws Exception {

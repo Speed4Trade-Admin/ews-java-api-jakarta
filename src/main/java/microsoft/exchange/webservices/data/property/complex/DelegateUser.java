@@ -56,7 +56,7 @@ public final class DelegateUser extends ComplexProperty {
   private boolean viewPrivateItems;
 
   /**
-   * Initializes a new instance of the <see cref="DelegateUser"/> class.
+   * Initializes a new instance of the @see DelegateUser class.
    */
   public DelegateUser() {
     super();
@@ -65,7 +65,7 @@ public final class DelegateUser extends ComplexProperty {
   }
 
   /**
-   * Initializes a new instance of the <see cref="DelegateUser"/> class.
+   * Initializes a new instance of the @see DelegateUser class.
    *
    * @param primarySmtpAddress the primary smtp address
    */
@@ -75,7 +75,7 @@ public final class DelegateUser extends ComplexProperty {
   }
 
   /**
-   * Initializes a new instance of the <see cref="DelegateUser"/> class.
+   * Initializes a new instance of the @see DelegateUser class.
    *
    * @param standardUser the standard user
    */
@@ -218,7 +218,7 @@ public final class DelegateUser extends ComplexProperty {
   /**
    * Validates this instance for AddDelegate.
    *
-   * @throws Exception
+   * @throws Exception the exception
    * @throws ServiceValidationException
    */
   protected void validateAddDelegate() throws ServiceValidationException,

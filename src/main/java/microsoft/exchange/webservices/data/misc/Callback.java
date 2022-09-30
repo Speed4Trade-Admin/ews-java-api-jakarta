@@ -25,6 +25,15 @@ package microsoft.exchange.webservices.data.misc;
 
 import java.util.concurrent.Future;
 
+/**
+ * <b>Title:</b> Callback <br>
+ * <b>Description:</b> <br>
+ * <b>Copyright:</b> Copyright (c) 2022 <br>
+ * <b>Company:</b> <br>
+ *
+ * @author TH
+ * @version 1.0.0
+ */
 public interface Callback<T> {
   T processMe(Future<?> task);
 

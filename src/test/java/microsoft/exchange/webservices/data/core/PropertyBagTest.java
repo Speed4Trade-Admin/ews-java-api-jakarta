@@ -25,35 +25,39 @@ package microsoft.exchange.webservices.data.core;
 
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.item.Item;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceObjectPropertyException;
 import microsoft.exchange.webservices.data.misc.OutParam;
 import microsoft.exchange.webservices.data.property.definition.IntPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.RecurrencePropertyDefinition;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
-@RunWith(JUnit4.class)
 public class PropertyBagTest {
 
   /**
    * Calling tryGetPropertyType with invalid data.
    * Expecting exception
    * 
-   * @throws Exception
+   * @throws Exception the exception
    */
-  @Test(expected=ArgumentException.class)
+  @Test
   public void tryGetPropertyType() throws Exception{
-    PropertyBag pb = createPropertyBag();
-    pb.tryGetPropertyType(String.class, new RecurrencePropertyDefinition("test", "none", null, ExchangeVersion.Exchange2010_SP2), new OutParam<String>());
+      Assertions.assertThrows(ArgumentException.class, () -> {     
+        PropertyBag pb = createPropertyBag();
+        pb.tryGetPropertyType(String.class, new RecurrencePropertyDefinition("test", "none", null, ExchangeVersion.Exchange2010_SP2), new OutParam<String>());
+      });
   }
 
-  @Test(expected = ServiceObjectPropertyException.class)
+  @Test
   public void testGetObjectFromPropertyDefinition() throws Exception {
-    PropertyBag pb = createPropertyBag();
-    pb.getObjectFromPropertyDefinition(new IntPropertyDefinition("", "none", ExchangeVersion.Exchange2007_SP1));
+      Assertions.assertThrows(ServiceObjectPropertyException.class, () -> {     
+          PropertyBag pb = createPropertyBag();
+          pb.getObjectFromPropertyDefinition(new IntPropertyDefinition("", "none", ExchangeVersion.Exchange2007_SP1));
+      });
   }
 
 

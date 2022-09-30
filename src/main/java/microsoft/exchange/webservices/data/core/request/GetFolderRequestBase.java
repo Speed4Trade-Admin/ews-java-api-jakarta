@@ -52,7 +52,7 @@ abstract class GetFolderRequestBase<TResponse extends ServiceResponse> extends G
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected GetFolderRequestBase(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)

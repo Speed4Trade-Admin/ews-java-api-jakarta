@@ -53,7 +53,7 @@ public final class UpdateInboxRulesResponse extends ServiceResponse {
    * @param xmlElementName The current element name of the extra error details.
    * @return True if the expected extra details is loaded,
    * False if the element name does not match the expected element.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected boolean loadExtraErrorDetailsFromXml(EwsServiceXmlReader reader,

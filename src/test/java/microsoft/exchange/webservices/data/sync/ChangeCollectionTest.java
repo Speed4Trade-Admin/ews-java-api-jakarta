@@ -23,22 +23,24 @@
 
 package microsoft.exchange.webservices.data.sync;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.verify;
 
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 
-@RunWith(MockitoJUnitRunner.class) public class ChangeCollectionTest {
+@ExtendWith(MockitoExtension.class) public class ChangeCollectionTest {
 
   private static final String STATE = "SOME_STATE";
   @Mock Change change0;
@@ -51,7 +53,7 @@ import java.util.List;
   @Mock(name = "changes") List<Change> innerList;
 
 
-  @Before public void setUp() throws Exception {
+  @BeforeEach public void setUp() throws Exception {
 
     impl = new ChangeCollection();
   }
@@ -78,14 +80,16 @@ import java.util.List;
 
   }
 
-  @Test(expected = IndexOutOfBoundsException.class)
+  @Test
   public void testGetChangeAtIndexThrowsIndexOutOfBoundException() throws Exception {
-    assertEquals(impl.getCount(), 0);
-    impl.add(change0);
-    impl.add(change1);
-    impl.add(change2);
-
-    impl.getChangeAtIndex(99);
+      Assertions.assertThrows(IndexOutOfBoundsException.class, () -> {
+        assertEquals(impl.getCount(), 0);
+        impl.add(change0);
+        impl.add(change1);
+        impl.add(change2);
+    
+        impl.getChangeAtIndex(99);
+      });
   }
 
   @Test public void testGetSyncState() throws Exception {

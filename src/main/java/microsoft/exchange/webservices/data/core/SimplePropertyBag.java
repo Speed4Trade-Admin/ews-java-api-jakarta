@@ -98,7 +98,7 @@ public class SimplePropertyBag<TKey> implements Iterable<HashMap<TKey, Object>> 
 
 
   /**
-   * Gets the added item. <value>The added item.</value>
+   * Gets the added item. The added item.
    *
    * @return the added item
    */
@@ -107,7 +107,7 @@ public class SimplePropertyBag<TKey> implements Iterable<HashMap<TKey, Object>> 
   }
 
   /**
-   * Gets the removed item. <value>The removed item.</value>
+   * Gets the removed item. The removed item.
    *
    * @return the removed item
    */
@@ -116,7 +116,7 @@ public class SimplePropertyBag<TKey> implements Iterable<HashMap<TKey, Object>> 
   }
 
   /**
-   * Gets the modified item. <value>The modified item.</value>
+   * Gets the modified item. The modified item.
    *
    * @return the modified item
    */

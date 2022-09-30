@@ -60,7 +60,7 @@ public final class FindConversationResponse extends ServiceResponse {
    * Read Conversations from XML.
    *
    * @param reader The reader.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void readElementsFromXml(EwsServiceXmlReader reader)

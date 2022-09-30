@@ -191,8 +191,8 @@ public abstract class ServiceObject {
    *
    * @param isUpdateOperation the is update operation
    * @return boolean
-   * @throws ServiceLocalException
-   * @throws Exception
+   * @throws ServiceLocalException if something fails
+   * @throws Exception if something fails
    */
   protected boolean getIsTimeZoneHeaderRequired(boolean isUpdateOperation)
       throws ServiceLocalException, Exception {
@@ -408,12 +408,14 @@ public abstract class ServiceObject {
   /**
    * Try to get the value of a specified extended property in this instance.
    *
+   * @param <T> generic
+   * @param cls class
    * @param propertyDefinition the property definition
    * @param propertyValue      the property value
    * @return true, if successful
    * @throws Exception the exception
    */
-  protected <T> boolean tryGetExtendedProperty(Class<T> cls,
+protected <T> boolean tryGetExtendedProperty(Class<T> cls,
       ExtendedPropertyDefinition propertyDefinition,
       OutParam<T> propertyValue) throws Exception {
     ExtendedPropertyCollection propertyCollection = this
@@ -434,7 +436,7 @@ public abstract class ServiceObject {
    * @param propertyDefinition The property definition.
    * @param propertyValue      The property value
    * @return True if property retrieved, false otherwise.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public boolean tryGetProperty(PropertyDefinitionBase propertyDefinition, OutParam<Object> propertyValue)
       throws Exception {
@@ -444,6 +446,8 @@ public abstract class ServiceObject {
   /**
    * Try to get the value of a specified property in this instance.
    *
+   * @param <T> generic
+   * @param cls class
    * @param propertyDefinition the property definition
    * @param propertyValue      the property value
    * @return true, if successful

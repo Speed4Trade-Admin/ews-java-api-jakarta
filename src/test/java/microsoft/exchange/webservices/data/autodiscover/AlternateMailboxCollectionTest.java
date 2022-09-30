@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.io.ByteArrayInputStream;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import microsoft.exchange.webservices.data.core.EwsXmlReader;
 

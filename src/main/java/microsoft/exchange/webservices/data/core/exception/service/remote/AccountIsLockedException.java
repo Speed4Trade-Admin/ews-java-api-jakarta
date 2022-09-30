@@ -46,8 +46,9 @@ public class AccountIsLockedException extends ServiceRemoteException {
    *
    * @param message          Error message text.
    * @param accountUnlockUrl URL for client to visit to unlock account.
+   * @param innerException the exception
    */
-  public AccountIsLockedException(String message, URI accountUnlockUrl,
+public AccountIsLockedException(String message, URI accountUnlockUrl,
       Exception innerException) {
 
     super(message, innerException);
@@ -57,6 +58,7 @@ public class AccountIsLockedException extends ServiceRemoteException {
   /**
    * Gets the URL of a web page where the user
    * can navigate to unlock his or her account.
+   * @return the url
    */
   public URI getAccountUnlockUrl() {
     return accountUnlockUrl;

@@ -23,13 +23,10 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.junit.jupiter.api.Test;
 
-@RunWith(JUnit4.class)
 public class AutodiscoverDnsClientTest {
 
   final String validResponse = "autodiscover.contoso.com";

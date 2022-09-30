@@ -25,22 +25,19 @@ package microsoft.exchange.webservices.data.core.service.items;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 
+import org.junit.jupiter.api.Test;
+import static org.hamcrest.MatcherAssert.assertThat;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.service.item.Appointment;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 
 /**
  * Testclass for methods of Appointment
  */
-@RunWith(JUnit4.class)
 public class AppointmentTest {
 
   private final ExchangeService exchangeService = mock(ExchangeService.class);

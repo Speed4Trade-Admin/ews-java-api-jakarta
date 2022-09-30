@@ -56,7 +56,7 @@ public final class UpdateInboxRulesRequest extends SimpleServiceRequestBase<Upda
 
   /**
    * Initializes a new instance of the
-   * <see cref="UpdateInboxRulesRequest"/> class.
+   * @see UpdateInboxRulesRequest class.
    *
    * @param service The service.
    */

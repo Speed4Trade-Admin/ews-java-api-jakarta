@@ -39,7 +39,7 @@ public class CopyFolderRequest extends MoveCopyFolderRequest<MoveCopyFolderRespo
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public CopyFolderRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

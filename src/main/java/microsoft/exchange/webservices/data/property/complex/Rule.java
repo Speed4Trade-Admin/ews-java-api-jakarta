@@ -219,7 +219,7 @@ public final class Rule extends ComplexProperty {
    *
    * @param reader The reader.
    * @return True if element was read.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   public boolean tryReadElementFromXml(EwsServiceXmlReader
@@ -261,7 +261,7 @@ public final class Rule extends ComplexProperty {
    * Writes elements to XML.
    *
    * @param writer The writer.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   public void writeElementsToXml(EwsServiceXmlWriter writer)

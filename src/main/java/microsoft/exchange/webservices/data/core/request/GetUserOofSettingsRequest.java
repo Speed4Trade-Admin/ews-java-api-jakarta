@@ -136,7 +136,7 @@ public final class GetUserOofSettingsRequest extends SimpleServiceRequestBase<Ge
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetUserOofSettingsRequest(ExchangeService service)
       throws Exception {

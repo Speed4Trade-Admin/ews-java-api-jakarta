@@ -48,7 +48,7 @@ public final class EmailAddressEntry extends DictionaryEntryProperty<EmailAddres
   private EmailAddress emailAddress;
 
   /**
-   * Initializes a new instance of the <see cref="EmailAddressEntry"/> class.
+   * Initializes a new instance of the @see EmailAddressEntry class.
    */
   protected EmailAddressEntry() {
     super(EmailAddressKey.class);

@@ -124,7 +124,7 @@ public final class EmptyFolderRequest extends DeleteRequest<ServiceResponse> {
    * Writes XML elements.
    *
    * @param writer The writer.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void writeElementsToXml(EwsServiceXmlWriter writer)
@@ -171,7 +171,7 @@ public final class EmptyFolderRequest extends DeleteRequest<ServiceResponse> {
   /**
    * Gets a value indicating whether empty folder should also delete sub folder.
    *
-   * @value true if empty folder should also delete sub folder, otherwise false.
+   * @return true if empty folder should also delete sub folder, otherwise false.
    */
   protected boolean getDeleteSubFolders() {
     return deleteSubFolders;
@@ -180,9 +180,9 @@ public final class EmptyFolderRequest extends DeleteRequest<ServiceResponse> {
   /**
    * Sets a value indicating whether empty folder should also delete sub folder.
    *
-   * @value true if empty folder should also delete sub folder, otherwise false.
+   * @param value true if empty folder should also delete sub folder, otherwise false.
    */
-  public void setDeleteSubFolders(boolean value) {
+public void setDeleteSubFolders(boolean value) {
     this.deleteSubFolders = value;
   }
 

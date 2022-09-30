@@ -137,7 +137,7 @@ public class ItemAttachment extends Attachment implements IServiceObjectChangedD
    * For ItemAttachment, AttachmentId and Item should be patched.
    *
    * @param reader The reader.
-   *               <p/>
+   *               <p>
    *               True if element was read.
    */
   public boolean tryReadElementFromXmlToPatch(EwsServiceXmlReader reader) throws Exception {
@@ -181,10 +181,11 @@ public class ItemAttachment extends Attachment implements IServiceObjectChangedD
     }
   }
 
+
   /**
-   * {@inheritDoc}
-   */
-  @Override
+ * @see microsoft.exchange.webservices.data.property.complex.Attachment#validate(int)
+ */
+@Override
   protected void validate(int attachmentIndex) throws Exception {
     if (this.getName() == null || this.getName().isEmpty()) {
       throw new ServiceValidationException(String.format(

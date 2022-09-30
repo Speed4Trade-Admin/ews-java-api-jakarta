@@ -44,7 +44,7 @@ public final class WebClientUrl {
   private String url;
 
   /**
-   * Initializes a new instance of the <see cref="WebClientUrl"/> class.
+   * Initializes a new instance of the @see WebClientUrl> class.
    */
   private WebClientUrl() {
   }

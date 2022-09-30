@@ -39,7 +39,7 @@ public final class GetFolderRequest extends GetFolderRequestBase<GetFolderRespon
    *
    * @param service           the service
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetFolderRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

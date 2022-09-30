@@ -33,23 +33,50 @@ import org.apache.commons.logging.LogFactory;
 import java.io.IOException;
 import java.util.concurrent.Callable;
 
+/**
+ * <b>Title:</b> CallableMethod <br>
+ * <b>Description:</b> <br>
+ * <b>Copyright:</b> Copyright (c) 2022 <br>
+ * <b>Company:</b> <br>
+ *
+ * @author TH
+ * @version 1.0.0
+ */
 public class CallableMethod implements Callable<Object> {
 
   private static final Log LOG = LogFactory.getLog(CallableMethod.class);
 
   HttpWebRequest request;
 
-  public CallableMethod(HttpWebRequest request) {
+  /**
+ * CallableMethod
+ *
+ * @param request the web request
+ */
+public CallableMethod(HttpWebRequest request) {
     this.request = request;
   }
 
-  protected HttpClientWebRequest executeMethod() throws EWSHttpException, HttpErrorException, IOException {
+  /**
+ * executeMethod
+ *
+ * @return the web request
+ * @throws EWSHttpException the exception
+ * @throws HttpErrorException the exception
+ * @throws IOException the exception
+ */
+protected HttpClientWebRequest executeMethod() throws EWSHttpException, HttpErrorException, IOException {
 
     request.executeRequest();
     return (HttpClientWebRequest) request;
   }
 
-  public HttpWebRequest call() {
+  /**
+ * {@inheritDoc}
+ *
+ * @see java.util.concurrent.Callable#call()
+ */
+public HttpWebRequest call() {
 
     try {
       return executeMethod();

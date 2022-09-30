@@ -26,49 +26,46 @@ package microsoft.exchange.webservices.data.misc;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.StringUtils;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.Date;
 import java.util.UUID;
 
-@RunWith(JUnit4.class)
 public class IFunctionsTest {
 
   @Test
   public void testToString() {
     final IFunctions.ToString f = IFunctions.ToString.INSTANCE;
-    Assert.assertEquals("null", f.func(null));
-    Assert.assertEquals("", f.func(""));
-    Assert.assertEquals("1", f.func(1));
+    Assertions.assertEquals("null", f.func(null));
+    Assertions.assertEquals("", f.func(""));
+    Assertions.assertEquals("1", f.func(1));
   }
 
   @Test
   public void testToBoolean() {
     final IFunctions.ToBoolean f = IFunctions.ToBoolean.INSTANCE;
-    Assert.assertFalse(f.func(null));
-    Assert.assertFalse(f.func(""));
-    Assert.assertFalse(f.func("false"));
-    Assert.assertTrue(f.func("true"));
+    Assertions.assertFalse(f.func(null));
+    Assertions.assertFalse(f.func(""));
+    Assertions.assertFalse(f.func("false"));
+    Assertions.assertTrue(f.func("true"));
   }
 
   @Test
   public void testStringToObject() {
     final IFunctions.StringToObject f = IFunctions.StringToObject.INSTANCE;
-    Assert.assertNull(f.func(null));
-    Assert.assertEquals("", f.func(""));
+    Assertions.assertNull(f.func(null));
+    Assertions.assertEquals("", f.func(""));
   }
 
   @Test
   public void testToUUID() {
     final IFunctions.ToUUID f = IFunctions.ToUUID.INSTANCE;
     try {
-      Assert.assertNull(f.func(null));
+      Assertions.assertNull(f.func(null));
     } catch (final Throwable ex) {
       final UUID uuid = UUID.randomUUID();
-      Assert.assertEquals(uuid, f.func(uuid.toString()));
+      Assertions.assertEquals(uuid, f.func(uuid.toString()));
     }
   }
 
@@ -76,29 +73,29 @@ public class IFunctionsTest {
   public void testBase64Decoder() {
     final String value = "123";
     final IFunctions.Base64Decoder f = IFunctions.Base64Decoder.INSTANCE;
-    Assert.assertArrayEquals(Base64.decodeBase64(value), (byte[]) f.func(value));
+    Assertions.assertArrayEquals(Base64.decodeBase64(value), (byte[]) f.func(value));
   }
 
   @Test
   public void testBase64Encoder() {
     final byte[] value = StringUtils.getBytesUtf8("123");
     final IFunctions.Base64Encoder f = IFunctions.Base64Encoder.INSTANCE;
-    Assert.assertEquals(Base64.encodeBase64String(value), f.func(value));
+    Assertions.assertEquals(Base64.encodeBase64String(value), f.func(value));
   }
 
   @Test
   public void testToLowerCase() {
     final IFunctions.ToLowerCase f = IFunctions.ToLowerCase.INSTANCE;
-    Assert.assertNull(f.func(null));
-    Assert.assertEquals("", f.func(""));
-    Assert.assertEquals("abc", f.func("AbC"));
+    Assertions.assertNull(f.func(null));
+    Assertions.assertEquals("", f.func(""));
+    Assertions.assertEquals("abc", f.func("AbC"));
   }
 
   @Test
   public void testDateTimeToXSDateTime() {
     final IFunctions.DateTimeToXSDateTime f = IFunctions.DateTimeToXSDateTime.INSTANCE;
     final Date value = new Date();
-    Assert.assertEquals(EwsUtilities.dateTimeToXSDateTime(value), f.func(value));
+    Assertions.assertEquals(EwsUtilities.dateTimeToXSDateTime(value), f.func(value));
   }
 
 }

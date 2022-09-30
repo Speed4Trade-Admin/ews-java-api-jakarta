@@ -70,7 +70,7 @@ public final class GetUserAvailabilityRequest extends SimpleServiceRequestBase<G
    * Initializes a new instance of the "GetUserAvailabilityRequest" class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetUserAvailabilityRequest(ExchangeService service)
       throws Exception {

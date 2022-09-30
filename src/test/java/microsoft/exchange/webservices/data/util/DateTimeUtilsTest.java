@@ -23,20 +23,19 @@
 
 package microsoft.exchange.webservices.data.util;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
 import microsoft.exchange.webservices.base.util.TestUtils;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
-@RunWith(JUnit4.class)
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class DateTimeUtilsTest {
 
   // Tests for DateTimeUtils.convertDateTimeStringToDate()
@@ -246,14 +245,18 @@ public class DateTimeUtilsTest {
     assertEquals(0, calendar.get(Calendar.SECOND));
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testConvertDateStringToDateBadFormat() {
-    DateTimeUtils.convertDateStringToDate("Monday, May, 1988");
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          DateTimeUtils.convertDateStringToDate("Monday, May, 1988");
+      });
   }
 
-  @Test(expected = UnsupportedOperationException.class)
+  @Test
   public void testDateTimeUtilsConstructor() throws Throwable {
-    TestUtils.checkUtilClassConstructor(DateTimeUtils.class);
+      Assertions.assertThrows(UnsupportedOperationException.class, () -> {
+          TestUtils.checkUtilClassConstructor(DateTimeUtils.class);
+      });
   }
 
 }

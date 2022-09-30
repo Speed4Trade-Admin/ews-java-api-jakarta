@@ -40,7 +40,7 @@ public final class CreateRuleOperation extends RuleOperation {
 
   /**
    * Initializes a new instance of the
-   * <see cref="CreateRuleOperation"/> class.
+   * @see CreateRuleOperation class.
    */
   public CreateRuleOperation() {
     super();
@@ -48,7 +48,7 @@ public final class CreateRuleOperation extends RuleOperation {
 
   /**
    * Initializes a new instance of the
-   * <see cref="CreateRuleOperation"/> class.
+   * @see CreateRuleOperation class.
    *
    * @param rule The inbox rule to create.
    */
@@ -78,7 +78,7 @@ public final class CreateRuleOperation extends RuleOperation {
    * Writes elements to XML.
    *
    * @param writer The writer.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   public void writeElementsToXml(EwsServiceXmlWriter writer)
@@ -89,7 +89,7 @@ public final class CreateRuleOperation extends RuleOperation {
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void internalValidate() throws Exception {

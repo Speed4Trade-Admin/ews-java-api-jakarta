@@ -74,7 +74,7 @@ public final class CalendarActionResults {
 
   /**
    * Gets the meeting that was accepted, tentatively accepted or declined.
-   * <p/>
+   * <p>
    * When a meeting is accepted or tentatively accepted via an Appointment
    * object, EWS recreates the meeting, and Appointment represents that new
    * version. When a meeting is accepted or tentatively accepted via a

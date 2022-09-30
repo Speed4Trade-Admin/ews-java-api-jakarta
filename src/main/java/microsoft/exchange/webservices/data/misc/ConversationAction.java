@@ -71,6 +71,7 @@ public class ConversationAction {
 
   /**
    * Sets conversation action
+   * @param value the action type
    */
   public void setAction(ConversationActionType value) {
     this.action = value;
@@ -87,6 +88,7 @@ public class ConversationAction {
 
   /**
    * Sets conversation id
+   * @param value the conversation id
    */
   public void setConversationId(ConversationId value) {
     this.conversationId = value;
@@ -103,6 +105,7 @@ public class ConversationAction {
 
   /**
    * Sets ProcessRightAway
+   * @param value the boolean flag
    */
   public void setProcessRightAway(boolean value) {
     this.processRightAway = value;
@@ -120,6 +123,7 @@ public class ConversationAction {
 
   /**
    * Sets conversation categories for Always Categorize actions
+   * @param value the categories
    */
   public void setCategories(StringList value) {
     this.categories = value;
@@ -136,6 +140,7 @@ public class ConversationAction {
 
   /**
    * Sets Enable Always Delete value for Always Delete action
+   * @param value the boolean flag
    */
   public void setEnableAlwaysDelete(boolean value) {
     this.enableAlwaysDelete = value;
@@ -152,6 +157,7 @@ public class ConversationAction {
 
   /**
    * IsRead
+   * @param value the boolean flag
    */
   public void setIsRead(Boolean value) {
     this.isRead = value;
@@ -168,6 +174,7 @@ public class ConversationAction {
 
   /**
    * DeleteType
+   * @param value the delete mode
    */
   public void setDeleteType(DeleteMode value) {
     this.deleteType = value;
@@ -188,6 +195,7 @@ public class ConversationAction {
    * ConversationLastSyncTime is used in
    * one time action to determine the item
    * on which to take the action.
+   * @param value the date
    */
   public void setConversationLastSyncTime(Date value) {
     this.conversationLastSyncTime = value;
@@ -237,7 +245,7 @@ public class ConversationAction {
   /**
    * Validate request.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void validate() throws Exception {
     EwsUtilities.validateParam(this.conversationId, "conversationId");
@@ -247,7 +255,7 @@ public class ConversationAction {
    * Writes XML elements.
    *
    * @param writer The writer.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void writeElementsToXml(EwsServiceXmlWriter writer)
       throws Exception {

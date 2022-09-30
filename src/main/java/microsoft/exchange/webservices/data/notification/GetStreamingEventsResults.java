@@ -60,8 +60,7 @@ public final class GetStreamingEventsResults {
       new ArrayList<NotificationGroup>();
 
   /**
-   * Initializes a new instance of the <see cref=
-   * "GetStreamingEventsResults"/> class.
+   * Initializes a new instance of the @see GetStreamingEventsResults class.
    */
   public GetStreamingEventsResults() {
   }
@@ -70,7 +69,7 @@ public final class GetStreamingEventsResults {
    * Loads from XML.
    *
    * @param reader The reader.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void loadFromXml(EwsServiceXmlReader reader) throws Exception {
     reader.readStartElement(XmlNamespace.Messages,
@@ -128,7 +127,7 @@ public final class GetStreamingEventsResults {
    * @param eventElementName Name of the event XML element.
    * @param eventType        Type of the event.
    * @param notifications    Collection of notification
-   * @throws Exception
+   * @throws Exception the exception
    */
   private void loadNotificationEventFromXml(
       EwsServiceXmlReader reader,
@@ -155,9 +154,9 @@ public final class GetStreamingEventsResults {
   /**
    * Gets the notification collection.
    *
-   * @value The notification collection.
+   * @return The notification collection.
    */
-  protected Collection<NotificationGroup> getNotifications() {
+protected Collection<NotificationGroup> getNotifications() {
     return this.events;
   }
 }

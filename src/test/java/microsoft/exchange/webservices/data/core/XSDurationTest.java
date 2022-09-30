@@ -19,15 +19,11 @@
 
 package microsoft.exchange.webservices.data.core;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import microsoft.exchange.webservices.data.misc.TimeSpan;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
-@RunWith(JUnit4.class)
 public class XSDurationTest {
 
   // Tests for EwsUtilities.getXSDurationToTimeSpan()
@@ -35,37 +31,39 @@ public class XSDurationTest {
   @Test
   public void testPeriodHours() {
     TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("-PT13H");
-    Assert.assertEquals("-P0DT13H0M0.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
+    Assertions.assertEquals("-P0DT13H0M0.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
   }
 
   @Test
   public void testPeriodHoursMinutes() {
     TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("-PT5H30M");
-    Assert.assertEquals("-P0DT5H30M0.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
+    Assertions.assertEquals("-P0DT5H30M0.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
   }
 
   @Test
   public void testPeriodFull() {
     TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("PT2H30M59.0S");
-    Assert.assertEquals("P0DT2H30M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
+    Assertions.assertEquals("P0DT2H30M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
   }
 
   @Test
   public void testPeriodFullNegative() {
     TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("-PT2H30M59.0S");
-    Assert.assertEquals("-P0DT2H30M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
+    Assertions.assertEquals("-P0DT2H30M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
   }
 
   @Test
   public void testPeriodFail2() {
     TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("PT2H100M59.0S");
-    Assert.assertEquals("P0DT3H40M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
+    Assertions.assertEquals("P0DT3H40M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testPeriodFail() {
-    TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("P2H30M59.0S");
-    Assert.assertEquals("-P0DT2H30M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("P2H30M59.0S");
+          Assertions.assertEquals("-P0DT2H30M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
+      });
   }
 
 }

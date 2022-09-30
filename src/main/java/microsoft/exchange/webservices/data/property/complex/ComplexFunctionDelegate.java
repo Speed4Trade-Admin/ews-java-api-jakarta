@@ -25,7 +25,23 @@ package microsoft.exchange.webservices.data.property.complex;
 
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 
+/**
+ * <b>Title:</b> ComplexFunctionDelegate <br>
+ * <b>Description:</b> <br>
+ * <b>Copyright:</b> Copyright (c) 2022 <br>
+ * <b>Company:</b> <br>
+ *
+ * @author TH
+ * @version 1.0.0
+ */
 public interface ComplexFunctionDelegate<T1 extends EwsServiceXmlReader> {
 
-  Boolean func(T1 arg1) throws Exception;
+  /**
+ * func
+ *
+ * @param arg1 the type
+ * @return the boolean value
+ * @throws Exception if some error occur
+ */
+Boolean func(T1 arg1) throws Exception;
 }

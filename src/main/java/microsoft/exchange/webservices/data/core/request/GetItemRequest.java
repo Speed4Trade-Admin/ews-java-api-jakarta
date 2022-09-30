@@ -37,7 +37,7 @@ public final class GetItemRequest extends GetItemRequestBase<GetItemResponse> {
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetItemRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

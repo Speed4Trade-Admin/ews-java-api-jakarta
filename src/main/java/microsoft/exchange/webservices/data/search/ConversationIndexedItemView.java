@@ -120,7 +120,7 @@ public final class ConversationIndexedItemView extends PagedView {
   }
 
   /**
-   * Initializes a new instance of the <see cref="ItemView"/> class.
+   * Initializes a new instance of the @see ItemView class.
    *
    * @param pageSize The maximum number of elements the search operation should return.
    */

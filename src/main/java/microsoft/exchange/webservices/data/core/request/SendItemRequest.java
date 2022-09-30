@@ -176,7 +176,7 @@ public final class SendItemRequest extends
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public SendItemRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {
@@ -184,7 +184,7 @@ public final class SendItemRequest extends
   }
 
   /**
-   * Gets the item. <value>The item.</value>
+   * Gets the item. The item.
    *
    * @return the item
    */

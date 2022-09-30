@@ -26,9 +26,10 @@ package microsoft.exchange.webservices.data.core;
 import static org.mockito.Mockito.doReturn;
 
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -40,6 +41,7 @@ import javax.xml.stream.events.XMLEvent;
 
 import java.io.ByteArrayInputStream;
 
+
 public class EwsXmlReaderTest {
 
   @Mock(name="presentEvent") XMLEvent presentEvent;
@@ -47,11 +49,11 @@ public class EwsXmlReaderTest {
   @InjectMocks EwsXmlReader impl;
   @Mock Characters character;
 
-  @Before
+  @BeforeEach
   public void setUp() throws Exception {
     impl = new EwsXmlReader(new ByteArrayInputStream(("<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
         + "<test></test>").getBytes("UTF-8")));
-    MockitoAnnotations.initMocks(this);
+    MockitoAnnotations.openMocks(this);
 
   }
 
@@ -74,7 +76,7 @@ public class EwsXmlReaderTest {
 
     impl.readValue(true);  //must not throw npe even if character.getData() is null
 
-    Assert.assertNull(character.getData());
+    Assertions.assertNull(character.getData());
   }
 
   @Test
@@ -96,7 +98,7 @@ public class EwsXmlReaderTest {
 
     impl.readValue(true);  //must not throw npe even if character.getData() is null
 
-    Assert.assertNull(character.getData());
+    Assertions.assertNull(character.getData());
   }
 
 }

@@ -23,20 +23,17 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import org.apache.commons.codec.binary.Base64;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.EnumSet;
 
-@RunWith(JUnit4.class)
 public class ByteArrayPropertyDefinitionTest {
 
   private ByteArrayPropertyDefinition testObject;
@@ -47,7 +44,7 @@ public class ByteArrayPropertyDefinitionTest {
   /**
    * setup
    */
-  @Before
+  @BeforeEach
   public void init(){
     this.testObject =
         new ByteArrayPropertyDefinition("myTestObject", "myTestUri",

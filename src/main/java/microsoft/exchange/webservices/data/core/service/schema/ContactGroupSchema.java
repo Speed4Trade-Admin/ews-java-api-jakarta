@@ -86,7 +86,7 @@ public class ContactGroupSchema extends ItemSchema {
 
 
   //  Initializes a new instance of the
-  // <see cref="ContactGroupSchema"/> class.
+  // @see ContactGroupSchema class.
 
   /**
    * Instantiates a new contact group schema.

@@ -212,7 +212,7 @@ public final class StreamingSubscriptionConnection implements Closeable,
    *                 to the server.
    * @param lifetime The maximum time, in minutes, the connection will remain open.
    *                 Lifetime must be between 1 and 30.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StreamingSubscriptionConnection(ExchangeService service, int lifetime)
       throws Exception {
@@ -238,7 +238,7 @@ public final class StreamingSubscriptionConnection implements Closeable,
    * @param subscriptions Iterable subcriptions
    * @param lifetime      The maximum time, in minutes, the connection will remain open.
    *                      Lifetime must be between 1 and 30.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StreamingSubscriptionConnection(ExchangeService service,
       Iterable<StreamingSubscription> subscriptions, int lifetime)
@@ -293,7 +293,7 @@ public final class StreamingSubscriptionConnection implements Closeable,
    * Opens this connection so it starts receiving events from the server.This
    * results in a long-standing call to EWS.
    *
-   * @throws Exception
+   * @throws Exception the exception
    * @throws ServiceLocalException Thrown when Open is called while connected.
    */
   public void open() throws ServiceLocalException, Exception {
@@ -369,7 +369,7 @@ public final class StreamingSubscriptionConnection implements Closeable,
   /**
    * Gets a value indicating whether this connection is opened
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   public boolean getIsOpen() throws Exception {
 
@@ -387,7 +387,7 @@ public final class StreamingSubscriptionConnection implements Closeable,
    *
    * @param isConnectedExpected Value indicating whether we expect to be currently connected.
    * @param errorMessage        The error message.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private void validateConnectionState(boolean isConnectedExpected,
       String errorMessage) throws Exception {
@@ -549,7 +549,7 @@ public final class StreamingSubscriptionConnection implements Closeable,
   /**
    * Throws if disposed.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   private void throwIfDisposed() throws Exception {
     if (this.isDisposed) {

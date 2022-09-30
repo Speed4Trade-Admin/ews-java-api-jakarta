@@ -23,16 +23,15 @@
 
 package microsoft.exchange.webservices.data.exception;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+
+import org.junit.jupiter.api.Test;
 
 import microsoft.exchange.webservices.data.autodiscover.exception.MaximumRedirectionHopsExceededException;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
-@RunWith(JUnit4.class)
 public class MaximumRedirectionHopsExceededExceptionTest {
 
   private final String msg = "some message";

@@ -50,7 +50,7 @@ public class RemoveDelegateRequest extends
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public RemoveDelegateRequest(ExchangeService service)
       throws Exception {

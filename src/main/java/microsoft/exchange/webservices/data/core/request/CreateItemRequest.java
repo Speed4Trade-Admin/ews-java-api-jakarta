@@ -43,7 +43,7 @@ public final class CreateItemRequest extends
    *
    * @param service           The service.
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public CreateItemRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

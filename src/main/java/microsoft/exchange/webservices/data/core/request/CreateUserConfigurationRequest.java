@@ -132,11 +132,10 @@ public class CreateUserConfigurationRequest extends
   }
 
   /**
-   * Initializes a new instance of the <see
-   * cref="CreateUserConfigurationRequest"/> class.
+   * Initializes a new instance of the @see CreateUserConfigurationRequest class.
    *
    * @param service The service.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public CreateUserConfigurationRequest(ExchangeService service)
       throws Exception {

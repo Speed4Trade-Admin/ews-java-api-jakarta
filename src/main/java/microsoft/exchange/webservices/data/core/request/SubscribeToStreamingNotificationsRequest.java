@@ -42,7 +42,7 @@ public class SubscribeToStreamingNotificationsRequest extends
    * SubscribeToStreamingNotificationsRequest class.
    *
    * @param service The service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public SubscribeToStreamingNotificationsRequest(ExchangeService service)
       throws Exception {
@@ -52,7 +52,7 @@ public class SubscribeToStreamingNotificationsRequest extends
   /**
    * Validate request.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void validate() throws Exception {
@@ -90,7 +90,7 @@ public class SubscribeToStreamingNotificationsRequest extends
    * @param service       The service
    * @param responseIndex The responseIndex
    * @return SubscribeResponse
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected SubscribeResponse<StreamingSubscription> createServiceResponse(ExchangeService service,

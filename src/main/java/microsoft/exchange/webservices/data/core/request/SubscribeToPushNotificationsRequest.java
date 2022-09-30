@@ -58,7 +58,7 @@ public class SubscribeToPushNotificationsRequest extends
    * Instantiates a new subscribe to push notification request.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public SubscribeToPushNotificationsRequest(ExchangeService service)
       throws Exception {

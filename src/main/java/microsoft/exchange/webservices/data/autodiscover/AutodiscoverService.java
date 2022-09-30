@@ -1975,11 +1975,21 @@ public class AutodiscoverService extends ExchangeServiceBase
     this.url = value;
   }
 
-  public Boolean isExternal() {
+  /**
+ * isExternal
+ *
+ * @return boolean
+ */
+public Boolean isExternal() {
     return this.isExternal;
   }
 
-  protected void setIsExternal(Boolean value) {
+  /**
+ * setIsExternal
+ *
+ * @param value the value
+ */
+protected void setIsExternal(Boolean value) {
     this.isExternal = value;
   }
 

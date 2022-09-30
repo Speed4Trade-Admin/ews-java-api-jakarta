@@ -40,7 +40,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
-import javax.xml.bind.DatatypeConverter;
+import jakarta.xml.bind.DatatypeConverter;
 
 /**
  * Represents a change of time for a time zone.
@@ -82,7 +82,7 @@ public final class TimeChange extends ComplexProperty {
   }
 
   /**
-   * Initializes a new instance of the <see cref="TimeChange"/> class.
+   * Initializes a new instance of the @see TimeChange class.
    *
    * @param offset The offset since the beginning of the year when the change
    *               occurs.

@@ -133,6 +133,7 @@ public class AlternateId extends AlternateIdBase {
 
   /**
    * Gets the type (primary or archive) mailbox to which the Id belongs.
+   * @return boolean
    */
   public boolean getIsArchive() {
     return this.isArchive;
@@ -182,7 +183,7 @@ public class AlternateId extends AlternateIdBase {
    * Gets the name of the XML element.
    *
    * @param reader the reader
-   * @throws Exception// the exception
+   * @throws Exception the exception
    */
   @Override public void loadAttributesFromXml(EwsServiceXmlReader reader)
       throws Exception {

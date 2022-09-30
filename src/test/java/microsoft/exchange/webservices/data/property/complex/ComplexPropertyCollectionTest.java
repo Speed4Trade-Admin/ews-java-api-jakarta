@@ -23,15 +23,12 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-@RunWith(JUnit4.class)
+
 public class ComplexPropertyCollectionTest {
 
   @Test
@@ -42,15 +39,17 @@ public class ComplexPropertyCollectionTest {
     collection.complexPropertyChanged(property);
 
     final List<ComplexProperty> modifiedItems = collection.getModifiedItems();
-    Assert.assertTrue(collection.getAddedItems().isEmpty());
-    Assert.assertTrue(modifiedItems.contains(property));
-    Assert.assertEquals(1, modifiedItems.size());
+    Assertions.assertTrue(collection.getAddedItems().isEmpty());
+    Assertions.assertTrue(modifiedItems.contains(property));
+    Assertions.assertEquals(1, modifiedItems.size());
   }
 
-  @Test(expected = RuntimeException.class)
+  @Test
   public void testComplexPropertyChangedNegative() {
-    final ComplexPropertyCollection<ComplexProperty> collection = createFakeComplexPropertyCollection();
-    collection.complexPropertyChanged(null);
+      Assertions.assertThrows(RuntimeException.class, () -> {      
+          final ComplexPropertyCollection<ComplexProperty> collection = createFakeComplexPropertyCollection();
+          collection.complexPropertyChanged(null);
+      });
   }
 
 

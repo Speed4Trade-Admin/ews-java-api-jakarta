@@ -1276,7 +1276,7 @@ public abstract class SearchFilter extends ComplexProperty {
     /**
      * Validate instance.
      *
-     * @throws Exception
+     * @throws Exception the exception
      */
     @Override
     protected void internalValidate() throws Exception {

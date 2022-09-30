@@ -54,7 +54,7 @@ public class GetEventsRequest extends MultiResponseServiceRequest<GetEventsRespo
    * Initializes a new instance.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetEventsRequest(ExchangeService service)
       throws Exception {

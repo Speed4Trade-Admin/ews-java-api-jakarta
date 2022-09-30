@@ -47,7 +47,7 @@ public final class FindConversationRequest extends SimpleServiceRequestBase<Find
   private FolderIdWrapper folderId;
 
   /**
-   * @throws Exception
+   * @throws Exception the exception
    */
   public FindConversationRequest(ExchangeService service)
       throws Exception {
@@ -96,7 +96,7 @@ public final class FindConversationRequest extends SimpleServiceRequestBase<Find
   /**
    * Validate request.
    *
-   * @throws Exception
+   * @throws Exception the exception
    * @throws ServiceLocalException
    */
   @Override
@@ -123,7 +123,7 @@ public final class FindConversationRequest extends SimpleServiceRequestBase<Find
    * Writes XML attribute.
    *
    * @param writer The writer.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void writeElementsToXml(EwsServiceXmlWriter writer)
@@ -190,7 +190,7 @@ public final class FindConversationRequest extends SimpleServiceRequestBase<Find
    * Executes this request.
    *
    * @return Service response.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws ServiceLocalException
    */
   public FindConversationResponse execute()

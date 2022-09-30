@@ -263,7 +263,7 @@ public class Folder extends ServiceObject {
    *
    * @param deletemode       the delete mode
    * @param deleteSubFolders Indicates whether sub-folder should also be deleted.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void empty(DeleteMode deletemode, boolean deleteSubFolders)
       throws Exception {

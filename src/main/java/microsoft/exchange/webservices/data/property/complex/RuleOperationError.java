@@ -94,7 +94,7 @@ public final class RuleOperationError extends ComplexProperty implements Iterabl
    * Tries to read element from XML.
    *
    * @return true
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   public boolean tryReadElementFromXml(EwsServiceXmlReader reader)

@@ -152,7 +152,7 @@ public final class SearchFolderParameters extends ComplexProperty implements ICo
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void validate() throws Exception {
     // Search folder must have at least one root folder id.

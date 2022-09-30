@@ -39,7 +39,7 @@ public final class GetFolderRequestForLoad extends
    *
    * @param exchangeService the exchange service
    * @param throwonerror    the throwonerror
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetFolderRequestForLoad(ExchangeService exchangeService, ServiceErrorHandling throwonerror) throws Exception {
     super(exchangeService, throwonerror);

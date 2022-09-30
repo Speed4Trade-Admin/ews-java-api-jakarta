@@ -23,14 +23,15 @@
 
 package microsoft.exchange.webservices.base.util;
 
-import org.junit.Assert;
-import org.junit.Ignore;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;
 
-@Ignore
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+
+@Disabled
 public final class TestUtils {
 
   private TestUtils() {
@@ -48,11 +49,11 @@ public final class TestUtils {
   public static void checkUtilClassConstructor(final Class<?> utilClass) throws Throwable {
     // Check count of available constructors.
     final Constructor<?>[] constructors = utilClass.getDeclaredConstructors();
-    Assert.assertEquals(1, constructors.length);
+    Assertions.assertEquals(1, constructors.length);
 
     // Check accessibility.
     final Constructor<?> constructor = constructors[0];
-    Assert.assertTrue(Modifier.isPrivate(constructor.getModifiers()));
+    Assertions.assertTrue(Modifier.isPrivate(constructor.getModifiers()));
 
     // Try to create instance.
     constructor.setAccessible(true);
@@ -63,7 +64,7 @@ public final class TestUtils {
     }
 
     // We should never get this situation.
-    Assert.fail();
+    Assertions.fail();
   }
 
 }

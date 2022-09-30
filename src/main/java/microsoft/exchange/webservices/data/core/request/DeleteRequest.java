@@ -53,7 +53,7 @@ abstract class DeleteRequest<TResponse extends ServiceResponse> extends
    *
    * @param service           The Servcie
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected DeleteRequest(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)

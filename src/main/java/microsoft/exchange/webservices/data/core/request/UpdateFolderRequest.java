@@ -53,7 +53,7 @@ public final class UpdateFolderRequest extends
    *
    * @param service           The Servcie
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public UpdateFolderRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

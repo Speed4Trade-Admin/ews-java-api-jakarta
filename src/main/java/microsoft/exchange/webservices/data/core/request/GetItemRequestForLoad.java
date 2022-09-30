@@ -38,7 +38,7 @@ public final class GetItemRequestForLoad extends GetItemRequestBase<ServiceRespo
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetItemRequestForLoad(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

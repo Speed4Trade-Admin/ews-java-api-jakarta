@@ -61,7 +61,7 @@ public final class DeleteAttachmentRequest extends
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public DeleteAttachmentRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

@@ -239,7 +239,7 @@ public class Appointment extends Item implements ICalendarActionProvider {
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override public void validate() throws Exception {
     super.validate();
@@ -1235,7 +1235,7 @@ public class Appointment extends Item implements ICalendarActionProvider {
    * Sets the ICalendar Uid.
    *
    * @param value the i cal uid
-   * @throws Exception
+   * @throws Exception the exception
    *///this.PropertyBag[AppointmentSchema.ICalUid] = value;
   public void setICalUid(String value) throws Exception {
     this.getPropertyBag().setObjectFromPropertyDefinition(

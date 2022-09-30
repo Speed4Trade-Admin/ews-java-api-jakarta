@@ -46,7 +46,7 @@ public final class GetPhoneCallRequest extends SimpleServiceRequestBase<GetPhone
    * Initializes a new instance of the GetPhoneCallRequest class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetPhoneCallRequest(ExchangeService service)
       throws Exception {

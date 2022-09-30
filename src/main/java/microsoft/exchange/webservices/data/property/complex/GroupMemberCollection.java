@@ -459,7 +459,7 @@ public final class GroupMemberCollection extends ComplexPropertyCollection<Group
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void internalValidate() throws Exception {

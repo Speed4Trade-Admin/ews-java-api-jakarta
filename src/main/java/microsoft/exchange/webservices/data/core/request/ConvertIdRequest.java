@@ -62,7 +62,7 @@ public final class ConvertIdRequest extends
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ConvertIdRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

@@ -79,7 +79,7 @@ public class SyncFolderItemsRequest extends
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public SyncFolderItemsRequest(ExchangeService service)
       throws Exception {
@@ -211,7 +211,7 @@ public class SyncFolderItemsRequest extends
   }
 
   /**
-   * Gets or sets the property set. <value>The property set.</value>
+   * Gets or sets the property set. The property set.
    *
    * @return the property set
    */
@@ -229,7 +229,7 @@ public class SyncFolderItemsRequest extends
   }
 
   /**
-   * Gets the sync folder id. <value>The sync folder id.</value>
+   * Gets the sync folder id. The sync folder id.
    *
    * @return the sync folder id
    */
@@ -247,8 +247,8 @@ public class SyncFolderItemsRequest extends
   }
 
   /**
-   * Gets the scope of the sync. <value>The scope of the
-   * sync.</value>
+   * Gets the scope of the sync. The scope of the
+   * sync.
    *
    * @return the sync scope
    */
@@ -266,8 +266,8 @@ public class SyncFolderItemsRequest extends
   }
 
   /**
-   * Gets the state of the sync. <value>The state of the
-   * sync.</value>
+   * Gets the state of the sync. The state of the
+   * sync.
    *
    * @return the sync state
    */
@@ -285,7 +285,7 @@ public class SyncFolderItemsRequest extends
   }
 
   /**
-   * Gets the list of ignored item ids. <value>The ignored item ids.</value>
+   * Gets the list of ignored item ids. The ignored item ids.
    *
    * @return the ignored item ids
    */

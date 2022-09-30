@@ -83,7 +83,7 @@ final class LegacyAvailabilityTimeZoneTime extends ComplexProperty {
    * @param reader
    *            the reader
    * @return true, if successful
-   * @throws Exception
+   * @throws Exception the exception
    *             the exception
    */
         /*

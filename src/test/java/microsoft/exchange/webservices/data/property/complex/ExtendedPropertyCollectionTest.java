@@ -25,27 +25,25 @@ package microsoft.exchange.webservices.data.property.complex;
 
 import java.util.ArrayList;
 
-import microsoft.exchange.webservices.data.core.enumeration.property.MapiPropertyType;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
+import microsoft.exchange.webservices.data.core.enumeration.property.MapiPropertyType;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.misc.OutParam;
 import microsoft.exchange.webservices.data.property.definition.ExtendedPropertyDefinition;
 
-@RunWith(JUnit4.class)
 public class ExtendedPropertyCollectionTest {
   
   /**
    * Calling tryGetValue with invalid input
    * expecting exception.
    * 
-   * @throws Exception
+   * @throws Exception the exception
    */
-   @Test(expected=ArgumentException.class)
+   @Test
    public void tryGetValue() throws Exception{
+       Assertions.assertThrows(ArgumentException.class, () -> {
      ExtendedPropertyCollection epc = new ExtendedPropertyCollection();
      epc.setExtendedProperty(new ExtendedPropertyDefinition(), new ArrayList<Boolean>());
      Class<Long> cls = Long.class;
@@ -54,7 +52,8 @@ public class ExtendedPropertyCollectionTest {
      
      OutParam<Long> propertyValueOut = new OutParam<Long>();
      // It should fail here due to incompatibility between default String and passed Long
-     Assert.assertTrue(epc.tryGetValue(cls, propertyDefinition, propertyValueOut));
+     Assertions.assertTrue(epc.tryGetValue(cls, propertyDefinition, propertyValueOut));
+       });
    }
 
    /**
@@ -71,7 +70,7 @@ public class ExtendedPropertyCollectionTest {
       epc.setExtendedProperty(propertyDefinition, testValue);
       
       OutParam<Integer> propertyValueOut = new OutParam<Integer>();
-      Assert.assertTrue(epc.tryGetValue(cls, propertyDefinition, propertyValueOut));
-      Assert.assertTrue(propertyValueOut.getParam().equals(testValue));
+      Assertions.assertTrue(epc.tryGetValue(cls, propertyDefinition, propertyValueOut));
+      Assertions.assertTrue(propertyValueOut.getParam().equals(testValue));
     }
 }

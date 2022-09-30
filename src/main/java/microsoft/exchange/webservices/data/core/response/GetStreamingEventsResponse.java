@@ -74,7 +74,7 @@ public final class GetStreamingEventsResponse extends ServiceResponse {
   /**
    * Reads response elements from XML.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void readElementsFromXml(EwsServiceXmlReader reader)
@@ -99,7 +99,7 @@ public final class GetStreamingEventsResponse extends ServiceResponse {
   /**
    * Loads extra error details from XML
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected boolean loadExtraErrorDetailsFromXml(EwsServiceXmlReader reader,

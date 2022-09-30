@@ -24,17 +24,15 @@
 package microsoft.exchange.webservices.data.misc;
 
 import microsoft.exchange.webservices.base.BaseTest;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * The Class TimeSpanTest.
  */
-@RunWith(JUnit4.class)
 public class TimeSpanTest extends BaseTest {
 
   /**

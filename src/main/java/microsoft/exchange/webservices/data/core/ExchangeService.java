@@ -1816,7 +1816,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                   subscription.
    * @param eventTypes The event types to subscribe to.
    * @return An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public AsyncRequestResult beginSubscribeToPullNotifications(
       AsyncCallback callback, Object state, Iterable<FolderId> folderIds,
@@ -1862,7 +1862,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                   subscription.
    * @param eventTypes The event types to subscribe to.
    * @return An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginSubscribeToPullNotificationsOnAllFolders(AsyncCallback callback, Object state,
       int timeout,
@@ -1880,7 +1880,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param asyncResult An IAsyncResult that references the asynchronous request.
    * @return A PullSubscription representing the new subscription.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public PullSubscription endSubscribeToPullNotifications(
       IAsyncResult asyncResult) throws Exception {
@@ -1953,7 +1953,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param state          An object that contains state information for this request.
    * @param subscriptionId The Id of the pull subscription to unsubscribe from.
    * @return An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginUnsubscribe(AsyncCallback callback, Object state, String subscriptionId)
       throws Exception {
@@ -1964,7 +1964,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * Ends an asynchronous request to unsubscribe from a subscription.
    *
    * @param asyncResult An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void endUnsubscribe(IAsyncResult asyncResult) throws Exception {
     UnsubscribeRequest request = AsyncRequestResult.extractServiceRequest(this, asyncResult);
@@ -1977,7 +1977,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param subscriptionId The id of the subscription for which to get the events
    * @return A request to unsubscripbe from a subscription
-   * @throws Exception
+   * @throws Exception the exception
    */
   private UnsubscribeRequest buildUnsubscribeRequest(String subscriptionId)
       throws Exception {
@@ -2017,7 +2017,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param watermark      The watermark representing the point in time where to start
    *                       receiving events
    * @return An IAsynResult that references the asynchronous request
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginGetEvents(AsyncCallback callback, Object state, String subscriptionId,
       String watermark) throws Exception {
@@ -2032,7 +2032,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param asyncResult An IAsyncResult that references the asynchronous request.
    * @return A GetEventsResults containing a list of events associated with
    * the subscription.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetEventsResults endGetEvents(IAsyncResult asyncResult) throws Exception {
     GetEventsRequest request = AsyncRequestResult.extractServiceRequest(this, asyncResult);
@@ -2049,7 +2049,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                       receiving events
    * @return An request to retrieve the latest events associated with a pull
    * subscription
-   * @throws Exception
+   * @throws Exception the exception
    */
   private GetEventsRequest buildGetEventsRequest(String subscriptionId,
       String watermark) throws Exception {
@@ -2100,7 +2100,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                   subscription
    * @param eventTypes The event types to subscribe to.
    * @return An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginSubscribeToPushNotifications(
       AsyncCallback callback, Object state, Iterable<FolderId> folderIds,
@@ -2148,7 +2148,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                   subscription
    * @param eventTypes The event types to subscribe to.
    * @return An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginSubscribeToPushNotificationsOnAllFolders(
       AsyncCallback callback, Object state, URI url, int frequency,
@@ -2167,7 +2167,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param asyncResult An IAsyncResult that references the asynchronous request.
    * @return A PushSubscription representing the new subscription
-   * @throws Exception
+   * @throws Exception the exception
    */
   public PushSubscription endSubscribeToPushNotifications(
       IAsyncResult asyncResult) throws Exception {
@@ -2225,7 +2225,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param folderIds  The Ids of the folder to subscribe to.
    * @param eventTypes The event types to subscribe to.
    * @return A StreamingSubscription representing the new subscription
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StreamingSubscription subscribeToStreamingNotifications(
       Iterable<FolderId> folderIds, EventType... eventTypes)
@@ -2246,7 +2246,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param eventTypes The event types to subscribe to.
    * @return A StreamingSubscription representing the new subscription.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StreamingSubscription subscribeToStreamingNotificationsOnAllFolders(
       EventType... eventTypes) throws Exception {
@@ -2266,7 +2266,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param folderIds  The Ids of the folder to subscribe to.
    * @param eventTypes The event types to subscribe to.
    * @return An IAsyncResult that references the asynchronous request
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginSubscribeToStreamingNotifications(AsyncCallback callback, Object state,
       Iterable<FolderId> folderIds,
@@ -2289,7 +2289,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param callback The AsyncCallback delegate
    * @param state    An object that contains state information for this request.
    * @return An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginSubscribeToStreamingNotificationsOnAllFolders(AsyncCallback callback, Object state,
       EventType... eventTypes) throws Exception {
@@ -2307,7 +2307,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param asyncResult An IAsyncResult that references the asynchronous request.
    * @return A streamingSubscription representing the new subscription
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    */
   public StreamingSubscription endSubscribeToStreamingNotifications(IAsyncResult asyncResult)
@@ -2331,7 +2331,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param eventTypes The event types to subscribe to.
    * @return A request to subscribe to streaming notification in the
    * authenticated user's mailbox
-   * @throws Exception
+   * @throws Exception the exception
    */
   private SubscribeToStreamingNotificationsRequest buildSubscribeToStreamingNotificationsRequest(
       Iterable<FolderId> folderIds, EventType[] eventTypes) throws Exception {
@@ -2393,7 +2393,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param syncState          The optional sync state representing the point in time when to
    *                           start the synchronization
    * @return An IAsyncResult that references the asynchronous request.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginSyncFolderItems(AsyncCallback callback, Object state, FolderId syncFolderId,
       PropertySet propertySet,
@@ -2411,7 +2411,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param asyncResult An IAsyncResult that references the asynchronous request.
    * @return A ChangeCollection containing a list of changes that occurred in
    * the specified folder.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ChangeCollection<ItemChange> endSyncFolderItems(IAsyncResult asyncResult) throws Exception {
     SyncFolderItemsRequest request = AsyncRequestResult.extractServiceRequest(this, asyncResult);
@@ -2431,7 +2431,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param syncState          The optional sync state representing the point in time when to
    *                           start the synchronization.
    * @return A request to synchronize the item of a specific folder.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private SyncFolderItemsRequest buildSyncFolderItemsRequest(
       FolderId syncFolderId, PropertySet propertySet,
@@ -2484,7 +2484,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param syncState    The optional sync state representing the point in time when to
    *                     start the synchronization.
    * @return An IAsyncResult that references the asynchronous request
-   * @throws Exception
+   * @throws Exception the exception
    */
   public IAsyncResult beginSyncFolderHierarchy(AsyncCallback callback, Object state, FolderId syncFolderId,
       PropertySet propertySet,
@@ -2502,7 +2502,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                    start the synchronization.
    * @return A ChangeCollection containing a list of changes that occurred in
    * the specified folder.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ChangeCollection<FolderChange> syncFolderHierarchy(
       PropertySet propertySet, String syncState)
@@ -2538,7 +2538,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param asyncResult An IAsyncResult that references the asynchronous request.
    * @return A ChangeCollection containing a list of changes that occurred in
    * the specified folder.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ChangeCollection<FolderChange> endSyncFolderHierarchy(IAsyncResult asyncResult) throws Exception {
     SyncFolderHierarchyRequest request = AsyncRequestResult.extractServiceRequest(this, asyncResult);
@@ -2557,7 +2557,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                     start the synchronization.
    * @return A request to synchronize the specified folder hierarchy of the
    * mailbox this Service is connected to
-   * @throws Exception
+   * @throws Exception the exception
    */
   private SyncFolderHierarchyRequest buildSyncFolderHierarchyRequest(
       FolderId syncFolderId, PropertySet propertySet, String syncState)
@@ -2708,7 +2708,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param filter   The search filter. Only search filter class supported
    *                 SearchFilter.IsEqualTo
    * @param folderId The Id of the folder in which to search for conversations.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private Collection<Conversation> findConversation(
       ConversationIndexedItemView view, SearchFilter.IsEqualTo filter,
@@ -2732,7 +2732,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param view     The view controlling the number of conversations returned.
    * @param folderId The Id of the folder in which to search for conversations.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public Collection<Conversation> findConversation(
       ConversationIndexedItemView view, FolderId folderId)
@@ -2757,7 +2757,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                            specified folder. Can be null if tis is then it stops the
    *                            always move action
    * @param errorHandlingMode   The error handling mode.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private ServiceResponseCollection<ServiceResponse> applyConversationAction(
       ConversationActionType actionType,
@@ -2805,7 +2805,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param deleteType          Type of the delete.
    * @param isRead              The is read.
    * @param errorHandlingMode   The error handling mode.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private ServiceResponseCollection<ServiceResponse> applyConversationOneTimeAction(
       ConversationActionType actionType,
@@ -2861,7 +2861,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                             this rule and stamping existing item in the conversation is
    *                             completely done. If processSynchronously is false, the method
    *                             returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> enableAlwaysCategorizeItemsInConversations(
       Iterable<ConversationId> conversationId,
@@ -2884,7 +2884,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                             this rule and stamping existing item in the conversation is
    *                             completely done. If processSynchronously is false, the method
    *                             returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> disableAlwaysCategorizeItemsInConversations(
       Iterable<ConversationId> conversationId,
@@ -2905,7 +2905,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                             this rule and stamping existing item in the conversation is
    *                             completely done. If processSynchronously is false, the method
    *                             returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> enableAlwaysDeleteItemsInConversations(
       Iterable<ConversationId> conversationId,
@@ -2926,7 +2926,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                             this rule and stamping existing item in the conversation is
    *                             completely done. If processSynchronously is false, the method
    *                             returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> disableAlwaysDeleteItemsInConversations(
       Iterable<ConversationId> conversationId,
@@ -2949,7 +2949,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                             this rule and stamping existing item in the conversation is
    *                             completely done. If processSynchronously is false, the method
    *                             returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> enableAlwaysMoveItemsInConversations(
       Iterable<ConversationId> conversationId,
@@ -2970,7 +2970,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param processSynchronously Indicates whether the method should return only once disabling
    *                             this rule is completely done. If processSynchronously is
    *                             false, the method returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> disableAlwaysMoveItemsInConversations(
       Iterable<ConversationId> conversationIds,
@@ -2989,7 +2989,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                            after that dateTime will not be moved).
    * @param contextFolderId     The Id of the folder that contains the conversation.
    * @param destinationFolderId The Id of the destination folder.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> moveItemsInConversations(
       Iterable<HashMap<ConversationId, Date>> idLastSyncTimePairs,
@@ -3010,7 +3010,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                            after that dateTime will not be copied).
    * @param contextFolderId     The context folder id.
    * @param destinationFolderId The destination folder id.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> copyItemsInConversations(
       Iterable<HashMap<ConversationId, Date>> idLastSyncTimePairs,
@@ -3033,7 +3033,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                            be copied).
    * @param contextFolderId     The Id of the folder that contains the conversation.
    * @param deleteMode          The deletion mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> deleteItemsInConversations(
       Iterable<HashMap<ConversationId, Date>> idLastSyncTimePairs,
@@ -3055,9 +3055,9 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                            deleted). conversation was last synced (Items received after
    *                            that dateTime will not be copied).
    * @param contextFolderId     The Id of the folder that contains the conversation.
-   * @param isRead              if set to <c>true</c>, conversation item are marked as read;
+   * @param isRead              if set to true, conversation item are marked as read;
    *                            otherwise they are marked as unread.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ServiceResponseCollection<ServiceResponse> setReadStateForItemsInConversations(
       Iterable<HashMap<ConversationId, Date>> idLastSyncTimePairs,
@@ -3434,7 +3434,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @return A RuleCollection object containing the authenticated users inbox
    * rules.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public RuleCollection getInboxRules() throws Exception {
     GetInboxRulesRequest request = new GetInboxRulesRequest(this);
@@ -3448,7 +3448,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *                           retrieved
    * @return A RuleCollection object containing the inbox rules of the
    * specified user.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public RuleCollection getInboxRules(String mailboxSmtpAddress)
       throws Exception {
@@ -3466,7 +3466,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param operations            The operations that should be applied to the user's inbox
    *                              rules.
    * @param removeOutlookRuleBlob Indicate whether or not to remove Outlook Rule Blob.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void updateInboxRules(Iterable<RuleOperation> operations,
       boolean removeOutlookRuleBlob) throws Exception {
@@ -3485,7 +3485,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    * @param removeOutlookRuleBlob Indicate whether or not to remove Outlook Rule Blob.
    * @param mailboxSmtpAddress    The SMTP address of the user whose inbox rules should be
    *                              retrieved
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void updateInboxRules(Iterable<RuleOperation> operations,
       boolean removeOutlookRuleBlob, String mailboxSmtpAddress)
@@ -3583,7 +3583,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param uri the uri
    * @return Adjusted URL.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private URI adjustServiceUriFromCredentials(URI uri)
       throws Exception {
@@ -3680,7 +3680,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param verb      The verb.
    * @param parameter The parameter.
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected Document executeDiagnosticMethod(String verb, Node parameter)
       throws Exception {
@@ -3711,7 +3711,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
   // region Constructors
 
   /**
-   * Initializes a new instance of the <see cref="ExchangeService"/> class,
+   * Initializes a new instance of the @see ExchangeService class,
    * targeting the specified version of EWS and scoped to the to the system's
    * current time zone.
    */
@@ -3720,7 +3720,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
   }
 
   /**
-   * Initializes a new instance of the <see cref="ExchangeService"/> class,
+   * Initializes a new instance of the @see ExchangeService class,
    * targeting the specified version of EWS and scoped to the system's current
    * time zone.
    *
@@ -3773,7 +3773,7 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
    *
    * @param httpWebResponse The HTTP web response.
    * @param webException    The web exception
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override public void processHttpErrorResponse(HttpWebRequest httpWebResponse, Exception webException) throws Exception {
     this.internalProcessHttpErrorResponse(httpWebResponse, webException,
@@ -3922,11 +3922,9 @@ public class ExchangeService extends ExchangeServiceBase implements IAutodiscove
   /**
    * Set the flag indicating if the Exchange2007 compatibility mode is enabled.
    *
-   * <remarks>
    * In order to support E12 servers, the <code>exchange2007CompatibilityMode</code> property,
    * set to true, can be used to indicate that we should use "Exchange2007" as the server version String
    * rather than Exchange2007_SP1.
-   * </remarks>
    *
    * @param value true if the Exchange2007 compatibility mode is enabled.
    */

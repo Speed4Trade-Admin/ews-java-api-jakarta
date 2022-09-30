@@ -70,7 +70,7 @@ public final class GetAttachmentRequest extends
    *
    * @param service           The service.
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetAttachmentRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

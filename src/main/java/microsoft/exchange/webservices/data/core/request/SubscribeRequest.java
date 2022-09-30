@@ -197,7 +197,7 @@ abstract class SubscribeRequest<TSubscription extends SubscriptionBase> extends
    * Instantiates a new subscribe request.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected SubscribeRequest(ExchangeService service)
       throws Exception {

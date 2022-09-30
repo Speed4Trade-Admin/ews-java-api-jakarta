@@ -31,14 +31,35 @@ import java.util.concurrent.RunnableFuture;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * <b>Title:</b> AsyncExecutor <br>
+ * <b>Description:</b> <br>
+ * <b>Copyright:</b> Copyright (c) 2022 <br>
+ * <b>Company:</b> <br>
+ *
+ * @author TH
+ * @version 1.0.0
+ */
 public class AsyncExecutor extends ThreadPoolExecutor implements ExecutorService {
   final static ArrayBlockingQueue<Runnable> queue = new ArrayBlockingQueue<Runnable>(1);
 
-  public AsyncExecutor() {
+  /**
+ * AsyncExecutor
+ *
+ */
+public AsyncExecutor() {
     super(1, 5, 10, TimeUnit.SECONDS, queue);
   }
 
-  public <T> Future<T> submit(Callable<T> task, AsyncCallback callback) {
+  /**
+ * submit
+ *
+ * @param <T>
+ * @param task the task
+ * @param callback the callback
+ * @return the future task
+ */
+public <T> Future<T> submit(Callable<T> task, AsyncCallback callback) {
     if (task == null) {
       throw new NullPointerException();
     }

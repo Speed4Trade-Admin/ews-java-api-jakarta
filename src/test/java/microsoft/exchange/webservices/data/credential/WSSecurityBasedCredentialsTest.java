@@ -27,17 +27,14 @@ import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.core.StringContains.containsString;
 import static org.hamcrest.text.IsEmptyString.isEmptyOrNullString;
-import static org.junit.Assert.assertThat;
 
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.hamcrest.MatcherAssert.assertThat;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
@@ -46,7 +43,8 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 
-@RunWith(JUnit4.class) public class WSSecurityBasedCredentialsTest {
+
+public class WSSecurityBasedCredentialsTest {
 
   private static final Log LOG = LogFactory.getLog(WSSecurityBasedCredentialsTest.class);
 
@@ -54,7 +52,7 @@ import java.io.Writer;
   private XMLStreamWriter xmlStreamWriter = null;
   private Writer stringWriter = null;
 
-  @Before public void initTest() throws XMLStreamException {
+  @BeforeEach public void initTest() throws XMLStreamException {
     // testObject
     wsSecurityBasedCredentials = new WSSecurityBasedCredentials() {
 
@@ -65,7 +63,7 @@ import java.io.Writer;
     xmlStreamWriter = XMLOutputFactory.newInstance().createXMLStreamWriter(stringWriter);
   }
 
-  @After public void tearDown() {
+  @AfterEach public void tearDown() {
     if (stringWriter != null) {
       try {
         stringWriter.close();

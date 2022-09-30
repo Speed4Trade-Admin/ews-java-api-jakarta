@@ -29,13 +29,14 @@ import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-import org.junit.Assert;
-import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.util.Date;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TimeWindowTest extends BaseTest {
 
@@ -72,10 +73,10 @@ public class TimeWindowTest extends BaseTest {
       checkTw.loadFromXml(reader);
 
       // Test that the dates have not shifted.
-      Assert.assertEquals(midnight, checkTw.getStartTime());
-      Assert.assertEquals(midnight, checkTw.getEndTime());
+      Assertions.assertEquals(midnight, checkTw.getStartTime());
+      Assertions.assertEquals(midnight, checkTw.getEndTime());
     } catch (Exception e) {
-      Assert.fail(e.getMessage());
+      Assertions.fail(e.getMessage());
     }
   }
 }

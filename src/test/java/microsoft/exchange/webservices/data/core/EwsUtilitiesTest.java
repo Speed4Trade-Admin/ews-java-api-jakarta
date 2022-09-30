@@ -23,8 +23,6 @@
 
 package microsoft.exchange.webservices.data.core;
 
-import static org.junit.Assert.assertEquals;
-
 import microsoft.exchange.webservices.data.core.service.folder.CalendarFolder;
 import microsoft.exchange.webservices.data.core.service.folder.ContactsFolder;
 import microsoft.exchange.webservices.data.core.service.folder.Folder;
@@ -42,9 +40,8 @@ import microsoft.exchange.webservices.data.core.service.item.MeetingRequest;
 import microsoft.exchange.webservices.data.core.service.item.MeetingResponse;
 import microsoft.exchange.webservices.data.core.service.item.PostItem;
 import microsoft.exchange.webservices.data.core.service.item.Task;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -52,12 +49,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@RunWith(JUnit4.class)
+import org.junit.jupiter.api.Test;
+
+
 public class EwsUtilitiesTest {
 
   @Test
   public void testGetBuildVersion() {
-    assertEquals("Build version must be 0s", "0.0.0.0", EwsUtilities.getBuildVersion());
+    assertEquals("0.0.0.0", EwsUtilities.getBuildVersion(), "Build version must be 0s");
   }
 
   @Test

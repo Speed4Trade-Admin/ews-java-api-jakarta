@@ -53,7 +53,7 @@ abstract class GetItemRequestBase<TResponse extends ServiceResponse> extends Get
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected GetItemRequestBase(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)

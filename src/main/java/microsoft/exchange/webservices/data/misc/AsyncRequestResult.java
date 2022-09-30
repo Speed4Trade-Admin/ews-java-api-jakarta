@@ -37,6 +37,15 @@ import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * <b>Title:</b> AsyncRequestResult <br>
+ * <b>Description:</b> <br>
+ * <b>Copyright:</b> Copyright (c) 2022 <br>
+ * <b>Company:</b> <br>
+ *
+ * @author TH
+ * @version 1.0.0
+ */
 public class AsyncRequestResult implements IAsyncResult {
 
   ServiceRequestBase serviceRequest;
@@ -51,7 +60,16 @@ public class AsyncRequestResult implements IAsyncResult {
   }
 
 
-  public AsyncRequestResult(ServiceRequestBase serviceRequest,
+  /**
+ * AsyncRequestResult
+ *
+ * @param serviceRequest the service
+ * @param webRequest the request
+ * @param task the task
+ * @param asyncState the state
+ * @throws Exception if error occurs
+ */
+public AsyncRequestResult(ServiceRequestBase serviceRequest,
       HttpWebRequest webRequest, Future<?> task,
       Object asyncState) throws Exception {
     EwsUtilities.validateParam(serviceRequest, "serviceRequest");
@@ -64,27 +82,61 @@ public class AsyncRequestResult implements IAsyncResult {
 
   }
 
-  public void setServiceRequestBase(ServiceRequestBase serviceRequest) {
+  /**
+ * setServiceRequestBase
+ *
+ * @param serviceRequest the request
+ */
+public void setServiceRequestBase(ServiceRequestBase serviceRequest) {
     this.serviceRequest = serviceRequest;
   }
 
-  private ServiceRequestBase getServiceRequest() {
+  /**
+ * getServiceRequest
+ *
+ * @return the request base
+ */
+private ServiceRequestBase getServiceRequest() {
     return this.serviceRequest;
   }
 
-  public void setHttpWebRequest(HttpWebRequest webRequest) {
+  /**
+ * setHttpWebRequest
+ *
+ * @param webRequest the request
+ */
+public void setHttpWebRequest(HttpWebRequest webRequest) {
     this.webRequest = webRequest;
   }
 
-  public HttpWebRequest getHttpWebRequest() {
+  /**
+ * getHttpWebRequest
+ *
+ * @return the request
+ */
+public HttpWebRequest getHttpWebRequest() {
     return this.webRequest;
   }
 
-  public FutureTask<?> getTask() {
+  /**
+ * getTask
+ *
+ * @return the future task
+ */
+public FutureTask<?> getTask() {
     return (FutureTask<?>) this.task;
   }
 
-  public static <T extends SimpleServiceRequestBase> T extractServiceRequest(
+  /**
+ * extractServiceRequest
+ *
+ * @param <T>
+ * @param exchangeService the service
+ * @param asyncResult the result
+ * @return the request base
+ * @throws Exception the exception
+ */
+public static <T extends SimpleServiceRequestBase> T extractServiceRequest(
       ExchangeService exchangeService, Future<?> asyncResult) throws Exception {
     EwsUtilities.validateParam(asyncResult, "asyncResult");
     AsyncRequestResult asyncRequestResult = (AsyncRequestResult) asyncResult;

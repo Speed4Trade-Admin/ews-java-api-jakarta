@@ -43,8 +43,10 @@ public abstract class SimpleServiceRequestBase<T> extends ServiceRequestBase<T> 
 
   /**
    * Initializes a new instance of the SimpleServiceRequestBase class.
+   * @param service exchange service
+   * @throws Exception the exception
    */
-  protected SimpleServiceRequestBase(ExchangeService service)
+protected SimpleServiceRequestBase(ExchangeService service)
       throws Exception {
     super(service);
   }

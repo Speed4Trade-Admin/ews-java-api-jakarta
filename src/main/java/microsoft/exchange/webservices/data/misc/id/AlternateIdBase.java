@@ -124,7 +124,7 @@ public abstract class AlternateIdBase implements ISelfValidate {
   /**
    * Validate this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected void internalValidate() throws Exception {
     // nothing to do.
@@ -133,7 +133,7 @@ public abstract class AlternateIdBase implements ISelfValidate {
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void validate() throws Exception {
     this.internalValidate();

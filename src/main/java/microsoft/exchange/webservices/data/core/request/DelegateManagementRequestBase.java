@@ -50,7 +50,7 @@ abstract class DelegateManagementRequestBase<TResponse extends DelegateManagemen
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected DelegateManagementRequestBase(ExchangeService service)
       throws Exception {
@@ -113,7 +113,7 @@ abstract class DelegateManagementRequestBase<TResponse extends DelegateManagemen
   }
 
   /**
-   * Gets  the mailbox. <value>The mailbox.</value>
+   * Gets  the mailbox. The mailbox.
    *
    * @return the mailbox
    */

@@ -50,7 +50,7 @@ public final class PhoneNumberEntry extends DictionaryEntryProperty<PhoneNumberK
   }
 
   /**
-   * Initializes a new instance of the <see cref="PhoneNumberEntry"/> class.
+   * Initializes a new instance of the @see PhoneNumberEntry class.
    *
    * @param key         The key.
    * @param phoneNumber The phone number.

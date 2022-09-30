@@ -50,7 +50,7 @@ public final class DeleteFolderRequest extends DeleteRequest<ServiceResponse> {
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public DeleteFolderRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

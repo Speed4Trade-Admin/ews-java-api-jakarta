@@ -64,12 +64,11 @@ abstract class MoveCopyFolderRequest<TResponse extends ServiceResponse> extends
   }
 
   /**
-   * Initializes a new instance of the <see
-   * cref="MoveCopyFolderRequest&lt;TResponse&gt;"/> class.
+   * Initializes a new instance of the @see MoveCopyFolderRequest &lt;TResponse&gt; class.
    *
    * @param service           The service.
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected MoveCopyFolderRequest(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)

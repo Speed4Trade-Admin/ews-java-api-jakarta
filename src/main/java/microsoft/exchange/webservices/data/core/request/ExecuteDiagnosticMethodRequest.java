@@ -47,7 +47,7 @@ public final class ExecuteDiagnosticMethodRequest extends
   /**
    * Initializes a new instance of the ExecuteDiagnosticMethodRequest class.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ExecuteDiagnosticMethodRequest(ExchangeService service)
       throws Exception {

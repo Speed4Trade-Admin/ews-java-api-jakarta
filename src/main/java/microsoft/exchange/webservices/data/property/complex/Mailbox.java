@@ -184,7 +184,7 @@ public class Mailbox extends ComplexProperty implements ISearchStringProvider {
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    * @throws ServiceValidationException
    */
   @Override

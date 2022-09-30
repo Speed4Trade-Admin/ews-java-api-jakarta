@@ -23,27 +23,28 @@
 
 package microsoft.exchange.webservices.data.dns;
 
-import org.junit.Assert;
-import org.junit.Test;
 
 import java.util.Hashtable;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class DnsClientTest {
   @Test public void getEnvShouldSetNaming() {
     Hashtable<String, String> env = DnsClient.getEnv("");
-    Assert.assertEquals(env.get("java.naming.factory.initial"),
+    Assertions.assertEquals(env.get("java.naming.factory.initial"),
                         "com.sun.jndi.dns.DnsContextFactory");
   }
 
   @Test public void getEnvShouldNotSetProviderUrl() throws Exception {
     Hashtable<String, String> env = DnsClient.getEnv("");
-    Assert.assertFalse(env.containsKey("java.naming.provider.url"));
+    Assertions.assertFalse(env.containsKey("java.naming.provider.url"));
     env = DnsClient.getEnv(null);
-    Assert.assertFalse(env.containsKey("java.naming.provider.url"));
+    Assertions.assertFalse(env.containsKey("java.naming.provider.url"));
   }
 
   @Test public void getEnvShoulSetProviderUrl() throws Exception {
     Hashtable<String, String> env = DnsClient.getEnv("1.1.1.1");
-    Assert.assertEquals(env.get("java.naming.provider.url"), "dns://1.1.1.1");
+    Assertions.assertEquals(env.get("java.naming.provider.url"), "dns://1.1.1.1");
   }
 }

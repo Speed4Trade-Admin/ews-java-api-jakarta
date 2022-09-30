@@ -51,7 +51,7 @@ public final class PlayOnPhoneRequest extends SimpleServiceRequestBase<PlayOnPho
    * Initializes a new instance of the PlayOnPhoneRequest class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public PlayOnPhoneRequest(ExchangeService service)
       throws Exception {

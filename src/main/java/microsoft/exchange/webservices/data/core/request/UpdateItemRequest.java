@@ -81,7 +81,7 @@ public final class UpdateItemRequest extends
    *
    * @param service           the service
    * @param errorHandlingMode the error handling mode
-   * @throws Exception
+   * @throws Exception the exception
    */
   public UpdateItemRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

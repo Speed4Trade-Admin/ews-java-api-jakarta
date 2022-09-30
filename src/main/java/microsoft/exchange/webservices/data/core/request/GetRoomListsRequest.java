@@ -39,7 +39,7 @@ public final class GetRoomListsRequest extends SimpleServiceRequestBase<GetRoomL
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetRoomListsRequest(ExchangeService service)
       throws Exception {

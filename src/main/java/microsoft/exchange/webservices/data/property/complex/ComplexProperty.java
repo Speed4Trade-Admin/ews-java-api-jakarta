@@ -148,7 +148,8 @@ public abstract class ComplexProperty implements ISelfValidate, ComplexFunctionD
    * Tries to read element from XML to patch this property.
    *
    * @param reader The reader.
-   *               True if element was read.
+   * @return  True if element was read.
+   * @throws Exception the exception
    */
   public boolean tryReadElementFromXmlToPatch(EwsServiceXmlReader reader) throws Exception {
     return false;
@@ -216,7 +217,7 @@ public abstract class ComplexProperty implements ISelfValidate, ComplexFunctionD
    *
    * @param reader         The reader.
    * @param xmlElementName Name of the XML element.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public void updateFromXml(EwsServiceXmlReader reader, String xmlElementName) throws Exception {
     this.updateFromXml(reader, this.getNamespace(), xmlElementName);
@@ -228,6 +229,7 @@ public abstract class ComplexProperty implements ISelfValidate, ComplexFunctionD
    * @param reader         The reader.
    * @param xmlNamespace   The XML namespace.
    * @param xmlElementName Name of the XML element.
+   * @throws Exception the exception
    */
   public void updateFromXml(
       EwsServiceXmlReader reader,

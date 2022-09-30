@@ -45,7 +45,12 @@ public final class ApplyConversationActionRequest extends MultiResponseServiceRe
   private List<ConversationAction> conversationActions =
       new ArrayList<ConversationAction>();
 
-  public List<ConversationAction> getConversationActions() {
+  /**
+ * getConversationActions
+ *
+ * @return the list of conversation actions
+ */
+public List<ConversationAction> getConversationActions() {
     return this.conversationActions;
   }
 

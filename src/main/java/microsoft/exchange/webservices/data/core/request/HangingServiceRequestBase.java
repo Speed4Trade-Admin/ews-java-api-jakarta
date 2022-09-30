@@ -341,7 +341,7 @@ public abstract class HangingServiceRequestBase<T> extends ServiceRequestBase<T>
    * Reads any preamble data not part of the core response.
    *
    * @param ewsXmlReader The EwsServiceXmlReader.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void readPreamble(EwsServiceXmlReader ewsXmlReader)

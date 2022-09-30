@@ -212,7 +212,7 @@ public abstract class Recurrence extends ComplexProperty {
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   public void internalValidate() throws Exception {
@@ -565,7 +565,7 @@ public abstract class Recurrence extends ComplexProperty {
     /**
      * Validates this instance.
      *
-     * @throws Exception
+     * @throws Exception the exception
      */
     @Override
     public void internalValidate() throws Exception {
@@ -638,8 +638,8 @@ public abstract class Recurrence extends ComplexProperty {
     }
 
     /**
-     * Gets the name of the XML element. <value>The name of the XML
-     * element.</value>
+     * Gets the name of the XML element. The name of the XML
+     * element.
      *
      * @return the xml element name
      */
@@ -650,8 +650,8 @@ public abstract class Recurrence extends ComplexProperty {
 
     /**
      * Gets a value indicating whether this instance is regeneration
-     * pattern. <value> <c>true</c> if this instance is regeneration
-     * pattern; otherwise, <c>false</c>. </value>
+     * pattern.  true if this instance is regeneration
+     * pattern; otherwise, false. 
      *
      * @return true, if is regeneration pattern
      */
@@ -677,8 +677,8 @@ public abstract class Recurrence extends ComplexProperty {
      */
     private DayOfTheWeekIndex dayOfTheWeekIndex;
 
-    // / Initializes a new instance of the <see
-    // cref="RelativeMonthlyPattern"/> class.
+    // / Initializes a new instance of the @see
+    // RelativeMonthlyPattern class.
 
     /**
      * Instantiates a new relative monthly pattern.
@@ -769,7 +769,7 @@ public abstract class Recurrence extends ComplexProperty {
     /**
      * Validates this instance.
      *
-     * @throws Exception
+     * @throws Exception the exception
      */
     @Override
     public void internalValidate() throws Exception {
@@ -860,8 +860,8 @@ public abstract class Recurrence extends ComplexProperty {
     private Month month;
 
     /**
-     * Gets the name of the XML element. <value>The name of the XML
-     * element.</value>
+     * Gets the name of the XML element. The name of the XML
+     * element.
      *
      * @return the xml element name
      */
@@ -955,7 +955,7 @@ public abstract class Recurrence extends ComplexProperty {
     /**
      * Validates this instance.
      *
-     * @throws Exception
+     * @throws Exception the exception
      */
     @Override
     public void internalValidate() throws Exception {
@@ -1111,8 +1111,8 @@ public abstract class Recurrence extends ComplexProperty {
     }
 
     /**
-     * Gets the name of the XML element. <value>The name of the XML
-     * element.</value>
+     * Gets the name of the XML element. The name of the XML
+     * element.
      *
      * @return the xml element name
      */
@@ -1182,7 +1182,7 @@ public abstract class Recurrence extends ComplexProperty {
     /**
      * Validates this instance.
      *
-     * @throws Exception
+     * @throws Exception the exception
      */
     @Override
     public void internalValidate() throws Exception {
@@ -1262,8 +1262,8 @@ public abstract class Recurrence extends ComplexProperty {
     }
 
     /**
-     * Gets the name of the XML element. <value>The name of the XML
-     * element.</value>
+     * Gets the name of the XML element. The name of the XML
+     * element.
      *
      * @return the xml element name
      */
@@ -1274,8 +1274,8 @@ public abstract class Recurrence extends ComplexProperty {
 
     /**
      * Gets a value indicating whether this instance is regeneration
-     * pattern. <value> <c>true</c> if this instance is regeneration
-     * pattern; otherwise, <c>false</c>. </value>
+     * pattern.  true if this instance is regeneration
+     * pattern; otherwise, false. 
      *
      * @return true, if is regeneration pattern
      */
@@ -1324,8 +1324,8 @@ public abstract class Recurrence extends ComplexProperty {
     }
 
     /**
-     * Gets the name of the XML element. <value>The name of the XML
-     * element.</value>
+     * Gets the name of the XML element. The name of the XML
+     * element.
      *
      * @return the xml element name
      */
@@ -1383,7 +1383,7 @@ public abstract class Recurrence extends ComplexProperty {
     /**
      * Validates this instance.
      *
-     * @throws Exception
+     * @throws Exception the exception
      */
     @Override
     public void internalValidate() throws Exception {
@@ -1468,8 +1468,8 @@ public abstract class Recurrence extends ComplexProperty {
       IntervalPattern {
 
     /**
-     * Gets the name of the XML element. <value>The name of the XML
-     * element.</value>
+     * Gets the name of the XML element. The name of the XML
+     * element.
      *
      * @return the xml element name
      */

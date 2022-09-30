@@ -39,7 +39,7 @@ public final class FindFolderRequest extends FindRequest<FindFolderResponse> {
    *
    * @param exchangeService   The Service
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public FindFolderRequest(ExchangeService exchangeService, ServiceErrorHandling errorHandlingMode)
       throws Exception {

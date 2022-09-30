@@ -65,7 +65,7 @@ public class Conversation extends ServiceObject {
    *
    * @param service The service
    *                The ExchangeService object to which the item will be bound.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public Conversation(ExchangeService service) throws Exception {
     super(service);
@@ -196,7 +196,7 @@ public class Conversation extends ServiceObject {
    *                             return only once enabling this rule and stamping existing item
    *                             in the conversation is completely done.
    *                             If processSynchronously is false, the method returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -223,7 +223,7 @@ public class Conversation extends ServiceObject {
    *                             removing the categories from existing item
    *                             in the conversation is completely done. If processSynchronously
    *                             is false, the method returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -245,7 +245,7 @@ public class Conversation extends ServiceObject {
    *                             return only once enabling this rule and deleting existing item
    *                             in the conversation is completely done. If processSynchronously
    *                             is false, the method returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -267,7 +267,7 @@ public class Conversation extends ServiceObject {
    *                             only once disabling this rule and restoring the item
    *                             in the conversation is completely done. If processSynchronously
    *                             is false, the method returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -290,7 +290,7 @@ public class Conversation extends ServiceObject {
    *                             once enabling this rule
    *                             and moving existing item in the conversation is completely done.
    *                             If processSynchronously is false, the method returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -314,7 +314,7 @@ public class Conversation extends ServiceObject {
    *                             once disabling this
    *                             rule is completely done. If processSynchronously
    *                             is false, the method returns immediately.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -335,7 +335,7 @@ public class Conversation extends ServiceObject {
    *                        to in order to be deleted. If contextFolderId is
    *                        null, item across the entire mailbox are deleted.
    * @param deleteMode      The deletion mode.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -362,7 +362,7 @@ public class Conversation extends ServiceObject {
    *                            in order to be moved. If contextFolderId is null,
    *                            item across the entire mailbox are moved.
    * @param destinationFolderId The Id of the destination folder.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -389,7 +389,7 @@ public class Conversation extends ServiceObject {
    *                            order to be copied. If contextFolderId
    *                            is null, item across the entire mailbox are copied.
    * @param destinationFolderId The Id of the destination folder.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -416,9 +416,9 @@ public class Conversation extends ServiceObject {
    *                        belong to in order for their read state to
    *                        be set. If contextFolderId is null, the read states of
    *                        item across the entire mailbox are set.
-   * @param isRead          if set to <c>true</c>, conversation item are marked as read;
+   * @param isRead          if set to true, conversation item are marked as read;
    *                        otherwise they are marked as unread.
-   * @throws Exception
+   * @throws Exception the exception
    * @throws IndexOutOfBoundsException
    * @throws ServiceResponseException
    */
@@ -477,7 +477,7 @@ public class Conversation extends ServiceObject {
    * messages in this conversation in the current folder only.
    *
    * @return String
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StringList getUniqueRecipients() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -489,7 +489,7 @@ public class Conversation extends ServiceObject {
    * messages in this conversation across all folder in the mailbox.
    *
    * @return String
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StringList getGlobalUniqueRecipients() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -553,7 +553,7 @@ public class Conversation extends ServiceObject {
    * messages in this conversation in the current folder only.
    *
    * @return String
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StringList getUniqueSenders() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -565,7 +565,7 @@ public class Conversation extends ServiceObject {
    * in this conversation across all folder in the mailbox.
    *
    * @return String
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StringList getGlobalUniqueSenders() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -577,7 +577,7 @@ public class Conversation extends ServiceObject {
    * received in this conversation in the current folder only.
    *
    * @return Date
-   * @throws Exception
+   * @throws Exception the exception
    */
   public Date getLastDeliveryTime() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -589,7 +589,7 @@ public class Conversation extends ServiceObject {
    * received in this conversation across all folder in the mailbox.
    *
    * @return Date
-   * @throws Exception
+   * @throws Exception the exception
    */
   public Date getGlobalLastDeliveryTime() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -820,7 +820,7 @@ public class Conversation extends ServiceObject {
    * in this conversation, in the current folder only.
    *
    * @return string
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StringList getItemClasses() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -832,7 +832,7 @@ public class Conversation extends ServiceObject {
    * in this conversation, across all folder in the mailbox.
    *
    * @return string
-   * @throws Exception
+   * @throws Exception the exception
    */
   public StringList getGlobalItemClasses() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -844,7 +844,7 @@ public class Conversation extends ServiceObject {
    * aggregating individual messages importance in the current folder only.
    *
    * @return important
-   * @throws Exception
+   * @throws Exception the exception
    */
   public Importance getImportance() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -857,7 +857,7 @@ public class Conversation extends ServiceObject {
    * folder in the mailbox.
    *
    * @return important
-   * @throws Exception
+   * @throws Exception the exception
    */
   public Importance getGlobalImportance() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -869,7 +869,7 @@ public class Conversation extends ServiceObject {
    * in the current folder only.
    *
    * @return Id
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ItemIdCollection getItemIds() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(
@@ -881,7 +881,7 @@ public class Conversation extends ServiceObject {
    * across all folder in the mailbox.
    *
    * @return Id
-   * @throws Exception
+   * @throws Exception the exception
    */
   public ItemIdCollection getGlobalItemIds() throws Exception {
     return getPropertyBag().getObjectFromPropertyDefinition(

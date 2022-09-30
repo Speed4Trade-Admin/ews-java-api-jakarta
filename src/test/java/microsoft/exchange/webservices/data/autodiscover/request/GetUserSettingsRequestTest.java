@@ -33,14 +33,14 @@ import microsoft.exchange.webservices.data.core.exception.service.local.ServiceV
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 import org.hamcrest.core.IsNot;
 import org.hamcrest.core.IsNull;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 
 import javax.xml.stream.XMLStreamException;
-
+import static org.hamcrest.MatcherAssert.assertThat;
 import java.io.ByteArrayOutputStream;
 import java.net.URI;
 import java.util.ArrayList;
@@ -49,18 +49,17 @@ import java.util.List;
 /**
  * Testclass for methods of GetUserSettingsRequest
  */
-@RunWith(Parameterized.class)
 public class GetUserSettingsRequestTest extends BaseTest {
 
   /**
    * The ExchangeVersion which is under test
    */
-  private final ExchangeVersion exchangeVersion;
+  //private final ExchangeVersion exchangeVersion;
 
   /**
    * The AutodiscoverService which is under test
    */
-  private final AutodiscoverService autodiscoverService;
+  //private final AutodiscoverService autodiscoverService;
 
   /**
    * A mocked URI via HTTPS
@@ -78,7 +77,7 @@ public class GetUserSettingsRequestTest extends BaseTest {
    * @return the available Services
    * @throws ArgumentException
    */
-  @Parameterized.Parameters
+  //@Parameterized.Parameters
   public static List<Object[]> getAutodiscoverServices() throws ArgumentException {
     return new ArrayList<Object[]>() {
 
@@ -100,23 +99,25 @@ public class GetUserSettingsRequestTest extends BaseTest {
    *
    * @param exchangeVersion
    * @param autodiscoverService
-   */
+   *//*
   public GetUserSettingsRequestTest(final ExchangeVersion exchangeVersion,
       final AutodiscoverService autodiscoverService) {
     this.exchangeVersion = exchangeVersion;
     this.autodiscoverService = autodiscoverService;
-  }
+  }*/
 
   /**
    * setup
    */
-  @Before
+  /*
+  @ParameterizedTest
+  @MethodSource("getAutodiscoverServices")
   public void setup() {
-    Assert.assertThat(this.exchangeVersion, IsNull.notNullValue());
-    Assert.assertThat(this.autodiscoverService, IsNull.notNullValue());
-    Assert.assertThat(uriMockHttp, IsNull.notNullValue());
-    Assert.assertThat(uriMockHttps, IsNull.notNullValue());
-  }
+    assertThat(this.exchangeVersion, IsNull.notNullValue());
+    assertThat(this.autodiscoverService, IsNull.notNullValue());
+    assertThat(uriMockHttp, IsNull.notNullValue());
+    assertThat(uriMockHttps, IsNull.notNullValue());
+  }*/
 
   /**
    * Nothing should be written to the OutputStream if expectPartnerToken is not set.
@@ -125,8 +126,10 @@ public class GetUserSettingsRequestTest extends BaseTest {
    * @throws XMLStreamException the XML stream exception
    * @throws ServiceXmlSerializationException the service xml serialization exception
    */
-  @Test
-  public void testWriteExtraCustomSoapHeadersToXmlWithoutPartnertoken()
+  @ParameterizedTest
+  @MethodSource("getAutodiscoverServices")
+  public void testWriteExtraCustomSoapHeadersToXmlWithoutPartnertoken(final ExchangeVersion exchangeVersion,
+          final AutodiscoverService autodiscoverService)
       throws ServiceValidationException, XMLStreamException, ServiceXmlSerializationException {
     // HTTPS
     GetUserSettingsRequest getUserSettingsRequest =
@@ -138,7 +141,7 @@ public class GetUserSettingsRequestTest extends BaseTest {
         new EwsServiceXmlWriter(exchangeServiceBaseMock, byteArrayOutputStream));
 
     // nothing should be writyen to the outputstream
-    Assert.assertArrayEquals(byteArrayOutputStream.toByteArray(), new ByteArrayOutputStream().toByteArray());
+    Assertions.assertArrayEquals(byteArrayOutputStream.toByteArray(), new ByteArrayOutputStream().toByteArray());
 
     // HTTP
     getUserSettingsRequest = new GetUserSettingsRequest(autodiscoverService, uriMockHttp);
@@ -149,7 +152,7 @@ public class GetUserSettingsRequestTest extends BaseTest {
         new EwsServiceXmlWriter(exchangeServiceBaseMock, byteArrayOutputStream));
 
     // nothing should be written to the outputstream
-    Assert.assertArrayEquals(byteArrayOutputStream.toByteArray(), new ByteArrayOutputStream().toByteArray());
+    Assertions.assertArrayEquals(byteArrayOutputStream.toByteArray(), new ByteArrayOutputStream().toByteArray());
   }
 
   /**
@@ -159,8 +162,10 @@ public class GetUserSettingsRequestTest extends BaseTest {
    * @throws XMLStreamException the XML stream exception
    * @throws ServiceXmlSerializationException the service xml serialization exception
    */
-  @Test
-  public void testWriteExtraCustomSoapHeadersToXmlWithPartnertoken()
+  @ParameterizedTest
+  @MethodSource("getAutodiscoverServices")
+  public void testWriteExtraCustomSoapHeadersToXmlWithPartnertoken(final ExchangeVersion exchangeVersion,
+          final AutodiscoverService autodiscoverService)
       throws ServiceValidationException, XMLStreamException, ServiceXmlSerializationException {
     GetUserSettingsRequest getUserSettingsRequest =
         new GetUserSettingsRequest(autodiscoverService, uriMockHttps, Boolean.TRUE);
@@ -171,7 +176,7 @@ public class GetUserSettingsRequestTest extends BaseTest {
         new EwsServiceXmlWriter(exchangeServiceBaseMock, byteArrayOutputStream));
 
     // data should be added the same way as mentioned
-    Assert.assertThat(byteArrayOutputStream.toByteArray(),
+    assertThat(byteArrayOutputStream.toByteArray(),
         IsNot.not(new ByteArrayOutputStream().toByteArray()));
 
     //TODO Test if the output is really correct
@@ -184,10 +189,14 @@ public class GetUserSettingsRequestTest extends BaseTest {
    * @throws XMLStreamException the XML stream exception
    * @throws ServiceXmlSerializationException the service xml serialization exception
    */
-  @Test(expected = ServiceValidationException.class)
-  public void testWriteExtraCustomSoapHeadersToXmlWithPartnertoken2()
+  @ParameterizedTest
+  @MethodSource("getAutodiscoverServices")
+  public void testWriteExtraCustomSoapHeadersToXmlWithPartnertoken2(final ExchangeVersion exchangeVersion,
+          final AutodiscoverService autodiscoverService)
       throws ServiceValidationException, XMLStreamException, ServiceXmlSerializationException {
-    GetUserSettingsRequest getUserSettingsRequest =
-        new GetUserSettingsRequest(autodiscoverService, uriMockHttp, Boolean.TRUE);
-  }
+      Assertions.assertThrows(ServiceValidationException.class, () -> {
+          GetUserSettingsRequest getUserSettingsRequest =
+                  new GetUserSettingsRequest(autodiscoverService, uriMockHttp, Boolean.TRUE);
+      });
+      }
 }

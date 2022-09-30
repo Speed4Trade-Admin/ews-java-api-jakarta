@@ -75,7 +75,7 @@ abstract class FindRequest<TResponse extends ServiceResponse> extends
    *
    * @param service           The service.
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected FindRequest(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)

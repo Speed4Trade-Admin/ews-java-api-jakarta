@@ -123,7 +123,7 @@ public final class SetUserOofSettingsRequest extends SimpleServiceRequestBase<Se
    * Initializes a new instance of the class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public SetUserOofSettingsRequest(ExchangeService service)
       throws Exception {

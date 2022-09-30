@@ -104,7 +104,7 @@ public class SetRuleOperation extends RuleOperation {
   /**
    * Validates this instance.
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override
   protected void internalValidate() throws Exception {

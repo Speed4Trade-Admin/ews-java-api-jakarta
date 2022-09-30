@@ -123,8 +123,7 @@ public class FolderIdWrapperList implements Iterable<AbstractFolderIdWrapper> {
   }
 
   /**
-   * Gets the <see
-   * cref="Microsoft.Exchange.WebServices.Data.AbstractFolderIdWrapper"/> at
+   * Gets the @see "Microsoft.Exchange.WebServices.Data.AbstractFolderIdWrapper at
    * the specified index.
    *
    * @param i the i

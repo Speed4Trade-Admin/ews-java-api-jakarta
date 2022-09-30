@@ -23,21 +23,18 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-@RunWith(JUnit4.class)
 public class EmailAddressTest {
 
   @Test
   public void testEmailAddressToString() {
     EmailAddress address = new EmailAddress();
     address.setAddress("ews@ews.com");
-    Assert.assertEquals(address.toString(), "ews@ews.com");
+    Assertions.assertEquals(address.toString(), "ews@ews.com");
     address.setName("ews");
-    Assert.assertEquals(address.toString(), "ews <ews@ews.com>");
+    Assertions.assertEquals(address.toString(), "ews <ews@ews.com>");
   }
 
 }

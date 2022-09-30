@@ -23,17 +23,15 @@ package microsoft.exchange.webservices.data.property.complex;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-import javax.xml.bind.DatatypeConverter;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.misc.Time;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
-@RunWith(JUnit4.class)
+import jakarta.xml.bind.DatatypeConverter;
+
 public class TimeChangeTest {
 
   private static String time = "03:00:00";
@@ -48,7 +46,7 @@ public class TimeChangeTest {
 
   @Test
   public void testDateUTC() {
-    Assert.assertEquals("2001-10-27Z", testDate(dateUTC));
+    Assertions.assertEquals("2001-10-27Z", testDate(dateUTC));
   }
 
   private String testDate(String value) {
@@ -58,19 +56,25 @@ public class TimeChangeTest {
     return XSDate;
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testDateFail1() {
-    testDate(date_fail1);
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          testDate(date_fail1);
+      });
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testDateFail2() {
-    testDate(date_fail2);
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          testDate(date_fail2);
+      });
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testDateFail3() {
-    testDate(date_fail3);
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          testDate(date_fail3);
+      });
   }
 
   private String testTime(String value) {
@@ -79,24 +83,30 @@ public class TimeChangeTest {
     return time.toXSTime();
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testTimeFail1() {
-    testTime(time_fail1);
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          testTime(time_fail1);
+      });
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testTimeFail2() {
-    testTime(time_fail2);
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          testTime(time_fail2);
+      });
   }
 
-  @Test(expected = IllegalArgumentException.class)
+  @Test
   public void testTimeFail3() {
-    testTime(time_fail3);
+      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+          testTime(time_fail3);
+      });
   }
 
   @Test
   public void testTimeValues() {
-    Assert.assertEquals("{0:00}:{1:00}:{2:00},3,0,0", testTime(time));
+    Assertions.assertEquals("{0:00}:{1:00}:{2:00},3,0,0", testTime(time));
   }
 
 }

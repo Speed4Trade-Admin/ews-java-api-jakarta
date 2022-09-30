@@ -50,12 +50,14 @@ public class ComplexPropertyDefinition<TComplexProperty extends ComplexProperty>
   /**
    * Initializes a new instance.
    *
+  * @param cls class
    * @param xmlElementName           Name of the XML element.
    * @param flags                    The flags.
    * @param version                  The version.
    * @param propertyCreationDelegate Delegate used to create instances of ComplexProperty.
    */
-  public ComplexPropertyDefinition(
+
+public ComplexPropertyDefinition(
       Class<TComplexProperty> cls,
       String xmlElementName,
       EnumSet<PropertyDefinitionFlags> flags,
@@ -73,12 +75,13 @@ public class ComplexPropertyDefinition<TComplexProperty extends ComplexProperty>
   /**
    * Initializes a new instance.
    *
+   * @param cls the class
    * @param xmlElementName           Name of the XML element.
    * @param uri                      The URI.
    * @param version                  The version.
    * @param propertyCreationDelegate Delegate used to create instances of ComplexProperty.
    */
-  public ComplexPropertyDefinition(
+public ComplexPropertyDefinition(
       Class<TComplexProperty> cls,
       String xmlElementName,
       String uri,
@@ -90,7 +93,15 @@ public class ComplexPropertyDefinition<TComplexProperty extends ComplexProperty>
     this.propertyCreationDelegate = propertyCreationDelegate;
   }
 
-  public ComplexPropertyDefinition(String xmlElementName, String uri, ExchangeVersion version,
+  /**
+ * ComplexPropertyDefinition
+ *
+ * @param xmlElementName the element name
+ * @param uri the uri
+ * @param version the version
+ * @param propertyCreationDelegate the delegate
+ */
+public ComplexPropertyDefinition(String xmlElementName, String uri, ExchangeVersion version,
       ICreateComplexPropertyDelegate<TComplexProperty> propertyCreationDelegate) {
     super(xmlElementName, uri, version);
     this.propertyCreationDelegate = propertyCreationDelegate;
@@ -99,6 +110,7 @@ public class ComplexPropertyDefinition<TComplexProperty extends ComplexProperty>
   /**
    * Instantiates a new complex property definition.
    *
+   * @param cls the class
    * @param xmlElementName           the xml element name
    * @param uri                      the uri
    * @param flags                    the flags
@@ -152,6 +164,7 @@ public class ComplexPropertyDefinition<TComplexProperty extends ComplexProperty>
 
   /**
    * Gets the property type.
+   * @return the property
    */
   @Override
   public Class<TComplexProperty> getType() {

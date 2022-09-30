@@ -63,7 +63,7 @@ public final class GetServerTimeZonesRequest extends
    * Initializes a new instance of the "GetServerTimeZonesRequest" class.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetServerTimeZonesRequest(ExchangeService service)
       throws Exception {

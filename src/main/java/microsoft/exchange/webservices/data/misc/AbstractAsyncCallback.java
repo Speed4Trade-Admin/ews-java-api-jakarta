@@ -28,6 +28,15 @@ import org.apache.commons.logging.LogFactory;
 
 import java.util.concurrent.Future;
 
+/**
+ * <b>Title:</b> AbstractAsyncCallback <br>
+ * <b>Description:</b>  <br>
+ * <b>Copyright:</b> Copyright (c) 2022 <br>
+ * <b>Company:</b> <br>
+ *
+ * @author TH
+ * @version 1.0.0
+ */
 public abstract class AbstractAsyncCallback implements Runnable, Callback<Object> {
 
   private static final Log LOG = LogFactory.getLog(AbstractAsyncCallback.class);

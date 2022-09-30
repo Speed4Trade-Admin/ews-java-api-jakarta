@@ -275,7 +275,7 @@ public abstract class DictionaryProperty
    * @param writer         The writer
    * @param xmlNamespace   The XML namespace.
    * @param xmlElementName Name of the XML element.
-   * @throws Exception
+   * @throws Exception the exception
    */
   @Override public void writeToXml(EwsServiceXmlWriter writer, XmlNamespace xmlNamespace,
       String xmlElementName) throws Exception {

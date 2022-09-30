@@ -37,6 +37,7 @@ public class ByteArrayOSRequestEntity extends BasicHttpEntity {
 
   /**
    * Constructor for ByteArrayOSRequestEntity.
+   * @param os the stream
    */
   public ByteArrayOSRequestEntity(OutputStream os) {
     super();

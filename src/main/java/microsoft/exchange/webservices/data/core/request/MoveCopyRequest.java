@@ -65,7 +65,7 @@ abstract class MoveCopyRequest<TServiceObject extends ServiceObject,
    *
    * @param service           The Service
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   protected MoveCopyRequest(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)

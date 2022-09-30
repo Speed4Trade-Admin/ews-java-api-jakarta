@@ -23,17 +23,17 @@
 
 package microsoft.exchange.webservices.base;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.extension.ExtendWith;
+
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.ExchangeServiceBase;
 import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
-import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 /**
  * A base class with "Common-Services"
  */
-@RunWith(JUnit4.class)
+//@ExtendWith(JUnit5.class)
 public abstract class BaseTest {
 
   /**
@@ -49,9 +49,9 @@ public abstract class BaseTest {
   /**
    * Setup Mocks
    *
-   * @throws Exception
+   * @throws Exception the exception
    */
-  @BeforeClass
+  @BeforeAll
   public static final void setUpBaseClass() throws Exception {
     // Mock up ExchangeServiceBase
     exchangeServiceBaseMock = new ExchangeServiceBase() {

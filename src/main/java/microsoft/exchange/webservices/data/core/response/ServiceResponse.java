@@ -243,9 +243,11 @@ public class ServiceResponse {
    * @param reader         The reader.
    * @param xmlElementName The current element name of the extra error details.
    * @return True if the expected extra details is loaded;
+   * @throws Exception the exception
    * False if the element name does not match the expected element.
    */
-  protected boolean loadExtraErrorDetailsFromXml(EwsServiceXmlReader reader,
+
+protected boolean loadExtraErrorDetailsFromXml(EwsServiceXmlReader reader,
       String xmlElementName) throws Exception {
     if (reader.isStartElement(XmlNamespace.Messages, XmlElementNames.MessageXml) &&
         !reader.isEmptyElement()) {

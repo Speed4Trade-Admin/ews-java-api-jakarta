@@ -56,8 +56,6 @@ import java.security.GeneralSecurityException;
  *     HttpClient client = new HttpClient();
  *     client.executeMethod(hc, httpget);
  *     </pre>
- * </p>
- * <p>
  * Example of using custom protocol socket factory per default instead of the standard one:
  * <pre>
  *     Protocol easyhttps = new Protocol("https", new EasySSLProtocolSocketFactory(), 443);
@@ -67,7 +65,6 @@ import java.security.GeneralSecurityException;
  *     GetMethod httpget = new GetMethod("https://localhost/");
  *     client.executeMethod(httpget);
  *     </pre>
- * </p>
  *
  * <p>
  * DISCLAIMER: HttpClient developers DO NOT actively support this component.

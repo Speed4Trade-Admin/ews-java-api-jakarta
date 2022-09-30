@@ -24,19 +24,19 @@
 package microsoft.exchange.webservices.data.util;
 
 import microsoft.exchange.webservices.base.util.TestUtils;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 import java.util.TimeZone;
 
-@RunWith(JUnit4.class)
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class TimeZoneUtilsTest {
 
-  @Test(expected = UnsupportedOperationException.class)
+  @Test
   public void testTimeZoneUtilsConstructor() throws Throwable {
-    TestUtils.checkUtilClassConstructor(TimeZoneUtils.class);
+      Assertions.assertThrows(UnsupportedOperationException.class, () -> {
+          TestUtils.checkUtilClassConstructor(TimeZoneUtils.class);
+      });
   }
 
   @Test
@@ -48,7 +48,7 @@ public class TimeZoneUtilsTest {
   public void testGetMicrosoftTimeZoneNameBad() {
     // null-argument is not allowed.
     try {
-      Assert.fail(TimeZoneUtils.getMicrosoftTimeZoneName(null));
+      Assertions.fail(TimeZoneUtils.getMicrosoftTimeZoneName(null));
     } catch (final IllegalArgumentException ignored) {}
 
     // TODO: fix this later
@@ -60,7 +60,7 @@ public class TimeZoneUtilsTest {
   private void checkGetMicrosoftTimeZoneName(final String id, final String name) {
     final TimeZone timeZone = TimeZone.getTimeZone(id);
     final String zoneName = TimeZoneUtils.getMicrosoftTimeZoneName(timeZone);
-    Assert.assertEquals(name, zoneName);
+    Assertions.assertEquals(name, zoneName);
   }
 
 }

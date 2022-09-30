@@ -27,13 +27,10 @@ import microsoft.exchange.webservices.data.property.complex.time.AbsoluteDateTra
 import microsoft.exchange.webservices.data.property.complex.time.TimeZoneDefinition;
 import microsoft.exchange.webservices.data.property.complex.time.TimeZoneTransition;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-@RunWith(JUnit4.class)
 public class TimeZoneTransitionCompareTest {
 
   @Test
@@ -48,7 +45,7 @@ public class TimeZoneTransitionCompareTest {
     doReturn(date).when(first).getDateTime();
     doReturn(date).when(second).getDateTime();
 
-    Assert.assertEquals(0, timeZoneDefinition.compare(first, second));
+    Assertions.assertEquals(0, timeZoneDefinition.compare(first, second));
   }
 
   @Test
@@ -64,7 +61,7 @@ public class TimeZoneTransitionCompareTest {
     doReturn(date1).when(first).getDateTime();
     doReturn(date2).when(second).getDateTime();
 
-    Assert.assertEquals(-1, timeZoneDefinition.compare(first, second));
+    Assertions.assertEquals(-1, timeZoneDefinition.compare(first, second));
   }
 
   @Test
@@ -80,7 +77,7 @@ public class TimeZoneTransitionCompareTest {
     doReturn(date1).when(first).getDateTime();
     doReturn(date2).when(second).getDateTime();
 
-    Assert.assertEquals(1, timeZoneDefinition.compare(first, second));
+    Assertions.assertEquals(1, timeZoneDefinition.compare(first, second));
   }
 
   @Test
@@ -94,7 +91,7 @@ public class TimeZoneTransitionCompareTest {
 
     doReturn(date1).when(first).getDateTime();
 
-    Assert.assertEquals(1, timeZoneDefinition.compare(first, second));
+    Assertions.assertEquals(1, timeZoneDefinition.compare(first, second));
   }
 
   @Test
@@ -105,7 +102,7 @@ public class TimeZoneTransitionCompareTest {
     AbsoluteDateTransition first = Mockito.mock(AbsoluteDateTransition.class);  
     doReturn(date1).when(first).getDateTime();
 
-    Assert.assertEquals(1, timeZoneDefinition.compare(first, null));
+    Assertions.assertEquals(1, timeZoneDefinition.compare(first, null));
   }
 
   @Test
@@ -116,7 +113,7 @@ public class TimeZoneTransitionCompareTest {
     AbsoluteDateTransition second = Mockito.mock(AbsoluteDateTransition.class);    
     doReturn(date1).when(second).getDateTime();
 
-    Assert.assertEquals(-1, timeZoneDefinition.compare(null, second));
+    Assertions.assertEquals(-1, timeZoneDefinition.compare(null, second));
   }
 
   @Test
@@ -127,7 +124,7 @@ public class TimeZoneTransitionCompareTest {
     AbsoluteDateTransition first = Mockito.mock(AbsoluteDateTransition.class);
     doReturn(date1).when(first).getDateTime();
 
-    Assert.assertEquals(0, timeZoneDefinition.compare(first, first));
+    Assertions.assertEquals(0, timeZoneDefinition.compare(first, first));
   }
 
 }

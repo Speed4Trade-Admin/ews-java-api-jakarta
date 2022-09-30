@@ -42,7 +42,7 @@ public final class DeleteRuleOperation extends RuleOperation {
 
   /**
    * Initializes a new instance of the
-   * <see cref="DeleteRuleOperation"/> class.
+   * @see DeleteRuleOperation class.
    */
   public DeleteRuleOperation() {
     super();
@@ -50,7 +50,7 @@ public final class DeleteRuleOperation extends RuleOperation {
 
   /**
    * Initializes a new instance of the
-   * <see cref="DeleteRuleOperation"/> class.
+   * @see DeleteRuleOperation class.
    *
    * @param ruleId The Id of the inbox rule to delete.
    */

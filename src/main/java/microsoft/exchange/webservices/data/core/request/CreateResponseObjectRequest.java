@@ -40,7 +40,7 @@ public final class CreateResponseObjectRequest extends
    *
    * @param service           The Service
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the exception
    */
   public CreateResponseObjectRequest(ExchangeService service, ServiceErrorHandling errorHandlingMode)
       throws Exception {

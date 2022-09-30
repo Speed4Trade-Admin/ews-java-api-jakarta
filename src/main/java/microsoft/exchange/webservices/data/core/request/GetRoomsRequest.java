@@ -41,7 +41,7 @@ public final class GetRoomsRequest extends SimpleServiceRequestBase<GetRoomsResp
    * Represents a GetRooms request.
    *
    * @param service the service
-   * @throws Exception
+   * @throws Exception the exception
    */
   public GetRoomsRequest(ExchangeService service)
       throws Exception {

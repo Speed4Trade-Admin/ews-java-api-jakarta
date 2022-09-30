@@ -139,7 +139,7 @@ public abstract class MultiResponseServiceRequest<TResponse extends ServiceRespo
    *
    * @param service           The service.
    * @param errorHandlingMode Indicates how errors should be handled.
-   * @throws Exception
+   * @throws Exception the Exception
    */
   protected MultiResponseServiceRequest(ExchangeService service,
       ServiceErrorHandling errorHandlingMode)

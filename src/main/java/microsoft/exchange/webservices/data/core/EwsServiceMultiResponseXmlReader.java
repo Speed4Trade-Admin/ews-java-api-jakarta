@@ -51,7 +51,7 @@ public class EwsServiceMultiResponseXmlReader extends EwsServiceXmlReader {
    *
    * @param stream  The stream.
    * @param service The service.
-   * @throws Exception
+   * @throws Exception the exception
    */
   private EwsServiceMultiResponseXmlReader(InputStream stream,
       ExchangeService service) throws Exception {
