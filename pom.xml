@@ -79,7 +79,7 @@
             <properties>
                  <picUrl></picUrl>
             </properties>
-        </developer>		
+        </developer>        
     </developers>
 
     <properties>
@@ -102,7 +102,7 @@
         <versions-maven-plugin.version>2.12.0</versions-maven-plugin.version>
         <maven-jxr-plugin.version>3.3.0</maven-jxr-plugin.version>
         <maven-surefire-report-plugin.version>2.22.2</maven-surefire-report-plugin.version>
-		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <!--  Dependencies [COMPILE]:  -->
         <httpclient.version>4.5.13</httpclient.version>
@@ -126,7 +126,7 @@
             <!-- handle broken builds on jdk1.8 due to doclint function -->
             <id>default-jdk18-profile</id>
             <activation>
-                <jdk>[18,)</jdk>
+                <jdk>[1.8,)</jdk>
             </activation>
             <properties>
                 <javadoc.doclint.param>-Xdoclint:none</javadoc.doclint.param>
@@ -144,8 +144,8 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${maven-checkstyle-plugin.version}</version>
-                    <configuration>			
-					  <failsOnError>true</failsOnError>
+                    <configuration>         
+                      <failsOnError>true</failsOnError>
                       <configLocation>google_checks.xml</configLocation>
                     </configuration>
                     <executions>
@@ -196,6 +196,7 @@
         </license>
     </licenses>
 
+<!--
     <issueManagement>
         <url>https://github.com/OfficeDev/ews-java-api/issues</url>
         <system>GitHub Issues</system>
@@ -205,11 +206,12 @@
         <system>travis</system>
         <url>https://travis-ci.org/OfficeDev/ews-java-api</url>
     </ciManagement>
+-->
 
     <scm>
-        <url>https://github.com/OfficeDev/ews-java-api</url>
-        <connection>scm:git:ssh://git@github.com:OfficeDev/ews-java-api.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:OfficeDev/ews-java-api.git</developerConnection>
+        <url>https://github.com/Speed4Trade-Admin/ews-java-api-jakarta</url>
+        <connection>scm:git:ssh://git@github.com:Speed4Trade-Admin/ews-java-api-jakarta.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:Speed4Trade-Admin/ews-java-api-jakarta.git</developerConnection>
     </scm>
 
     <distributionManagement>
@@ -237,19 +239,19 @@
         </dependency>
         
         <!-- API, java.xml.bind module -->
-		<dependency>
-		    <groupId>jakarta.xml.bind</groupId>
-		    <artifactId>jakarta.xml.bind-api</artifactId>
-		    <version>${jakarta-xml-bind.version}</version>
-		</dependency>
-		
-		<!-- Runtime, com.sun.xml.bind module -->
-		
-		<dependency>
-    		<groupId>jakarta.xml.ws</groupId>
-    		<artifactId>jakarta.xml.ws-api</artifactId>
-    		<version>${jakarta-xml-ws-api.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>${jakarta-xml-bind.version}</version>
+        </dependency>
+        
+        <!-- Runtime, com.sun.xml.bind module -->
+        
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>${jakarta-xml-ws-api.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>commons-logging</groupId>
@@ -300,12 +302,12 @@
             <scope>test</scope>
         </dependency>
         
-		<dependency>
-		    <groupId>org.mockito</groupId>
-		    <artifactId>mockito-junit-jupiter</artifactId>
-		    <version>${mockito-junit-jupiter.version}</version>
-		    <scope>test</scope>
-		</dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>${mockito-junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -362,13 +364,13 @@
                 <configuration>
                     <linksource>true</linksource>
                     <additionalparam>${javadoc.doclint.param}</additionalparam>
-					<additionalJOptions>
-						<additionalJOption>-Xmaxerrs</additionalJOption>
-						<additionalJOption>2000</additionalJOption>
-						<additionalJOption>-Xmaxwarns</additionalJOption>
-						<additionalJOption>2000</additionalJOption>
-						<additionalJOption>-Xdoclint:-missing</additionalJOption>
-					</additionalJOptions>
+                    <additionalJOptions>
+                        <additionalJOption>-Xmaxerrs</additionalJOption>
+                        <additionalJOption>2000</additionalJOption>
+                        <additionalJOption>-Xmaxwarns</additionalJOption>
+                        <additionalJOption>2000</additionalJOption>
+                        <additionalJOption>-Xdoclint:-missing</additionalJOption>
+                    </additionalJOptions>
                 </configuration>
                 <executions>
                     <execution>
@@ -412,11 +414,11 @@
                     </execution>
                 </executions>
             </plugin>
-			
-			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>${maven-surefire-plugin.version}</version>
-			</plugin>
+            
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+            </plugin>
             <!-- Deployment / build plugins END -->
         </plugins>
         <!-- Used to bump all of the various core plugins up to Maven current.
