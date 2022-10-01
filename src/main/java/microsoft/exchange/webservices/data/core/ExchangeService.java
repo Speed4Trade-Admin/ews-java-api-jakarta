@@ -30,13 +30,16 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 import java.util.EnumSet;
-import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.TimeZone;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 
 import microsoft.exchange.webservices.data.autodiscover.AutodiscoverService;
 import microsoft.exchange.webservices.data.autodiscover.IAutodiscoverRedirectionUrl;
@@ -195,11 +198,6 @@ import microsoft.exchange.webservices.data.search.filter.SearchFilter;
 import microsoft.exchange.webservices.data.sync.ChangeCollection;
 import microsoft.exchange.webservices.data.sync.FolderChange;
 import microsoft.exchange.webservices.data.sync.ItemChange;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
 
 /**
  * Represents a binding to the Exchange Web Services.

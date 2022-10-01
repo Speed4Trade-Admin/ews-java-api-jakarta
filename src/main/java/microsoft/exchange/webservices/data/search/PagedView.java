@@ -23,17 +23,17 @@
 
 package microsoft.exchange.webservices.data.search;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
-import microsoft.exchange.webservices.data.core.request.ServiceRequestBase;
 import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
 import microsoft.exchange.webservices.data.core.enumeration.search.OffsetBasePoint;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
+import microsoft.exchange.webservices.data.core.request.ServiceRequestBase;
 
 /**
  * Represents a view settings that support paging in a search operation.

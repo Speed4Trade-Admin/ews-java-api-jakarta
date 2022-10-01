@@ -44,18 +44,6 @@ import java.util.TimeZone;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 
-import microsoft.exchange.webservices.data.EWSConstants;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
-import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.core.exception.service.remote.AccountIsLockedException;
-import microsoft.exchange.webservices.data.core.request.HttpClientWebRequest;
-import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
-import microsoft.exchange.webservices.data.credential.ExchangeCredentials;
-import microsoft.exchange.webservices.data.misc.EwsTraceListener;
-import microsoft.exchange.webservices.data.misc.ITraceListener;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.client.AuthenticationStrategy;
@@ -72,6 +60,18 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.BasicHttpClientConnectionManager;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
+
+import microsoft.exchange.webservices.data.EWSConstants;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
+import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.exception.service.remote.AccountIsLockedException;
+import microsoft.exchange.webservices.data.core.request.HttpClientWebRequest;
+import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
+import microsoft.exchange.webservices.data.credential.ExchangeCredentials;
+import microsoft.exchange.webservices.data.misc.EwsTraceListener;
+import microsoft.exchange.webservices.data.misc.ITraceListener;
 
 /**
  * Represents an abstract binding to an Exchange Service.

@@ -23,14 +23,15 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
+import java.util.Date;
+import java.util.UUID;
+
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Date;
-import java.util.UUID;
+import microsoft.exchange.webservices.data.core.EwsUtilities;
 
 public class IFunctionsTest {
 

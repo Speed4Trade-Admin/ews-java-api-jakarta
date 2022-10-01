@@ -25,7 +25,11 @@ package microsoft.exchange.webservices.data.core;
 
 import static org.mockito.Mockito.doReturn;
 
-import microsoft.exchange.webservices.data.security.XmlNodeType;
+import java.io.ByteArrayInputStream;
+
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.events.Characters;
+import javax.xml.stream.events.XMLEvent;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -35,11 +39,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.events.Characters;
-import javax.xml.stream.events.XMLEvent;
-
-import java.io.ByteArrayInputStream;
+import microsoft.exchange.webservices.data.security.XmlNodeType;
 
 
 public class EwsXmlReaderTest {

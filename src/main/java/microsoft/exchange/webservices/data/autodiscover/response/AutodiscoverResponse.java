@@ -23,11 +23,11 @@
 
 package microsoft.exchange.webservices.data.autodiscover.response;
 
+import java.net.URI;
+
 import microsoft.exchange.webservices.data.autodiscover.enumeration.AutodiscoverErrorCode;
 import microsoft.exchange.webservices.data.core.EwsXmlReader;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-
-import java.net.URI;
 
 /**
  * Represents the base class for all response returned by the Autodiscover

@@ -23,14 +23,14 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.autodiscover.response.AutodiscoverResponse;
 import microsoft.exchange.webservices.data.core.EwsXmlReader;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * Represents a collection of response to a call to the Autodiscover service.

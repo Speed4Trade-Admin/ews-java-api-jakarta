@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.PropertyBag;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.ResponseActions;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-
-import java.util.EnumSet;
+import microsoft.exchange.webservices.data.core.enumeration.service.ResponseActions;
 
 /**
  * Represents response object property defintion.

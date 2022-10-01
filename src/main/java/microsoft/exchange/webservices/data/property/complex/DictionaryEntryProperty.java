@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
 
 /**
  * Represents an entry of a DictionaryProperty object.

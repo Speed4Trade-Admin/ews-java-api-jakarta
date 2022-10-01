@@ -27,8 +27,8 @@ import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.response.GetRoomListsResponse;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.response.GetRoomListsResponse;
 
 /**
  * Represents a GetRoomList request.

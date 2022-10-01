@@ -23,19 +23,19 @@
 
 package microsoft.exchange.webservices.data.misc.availability;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.ISelfValidate;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
 
 /**
  * Represents a time period.

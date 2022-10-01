@@ -23,41 +23,6 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
-import microsoft.exchange.webservices.data.autodiscover.configuration.ConfigurationSettingsBase;
-import microsoft.exchange.webservices.data.autodiscover.configuration.outlook.OutlookConfigurationSettings;
-import microsoft.exchange.webservices.data.autodiscover.enumeration.AutodiscoverEndpoints;
-import microsoft.exchange.webservices.data.autodiscover.enumeration.AutodiscoverErrorCode;
-import microsoft.exchange.webservices.data.autodiscover.exception.AutodiscoverLocalException;
-import microsoft.exchange.webservices.data.autodiscover.exception.AutodiscoverRemoteException;
-import microsoft.exchange.webservices.data.autodiscover.request.AutodiscoverRequest;
-import microsoft.exchange.webservices.data.autodiscover.request.GetDomainSettingsRequest;
-import microsoft.exchange.webservices.data.autodiscover.request.GetUserSettingsRequest;
-import microsoft.exchange.webservices.data.autodiscover.response.GetDomainSettingsResponse;
-import microsoft.exchange.webservices.data.autodiscover.response.GetDomainSettingsResponseCollection;
-import microsoft.exchange.webservices.data.autodiscover.response.GetUserSettingsResponse;
-import microsoft.exchange.webservices.data.autodiscover.response.GetUserSettingsResponseCollection;
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.EwsXmlReader;
-import microsoft.exchange.webservices.data.core.ExchangeServiceBase;
-import microsoft.exchange.webservices.data.core.request.HttpClientWebRequest;
-import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
-import microsoft.exchange.webservices.data.credential.WSSecurityBasedCredentials;
-import microsoft.exchange.webservices.data.autodiscover.enumeration.DomainSettingName;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
-import microsoft.exchange.webservices.data.autodiscover.enumeration.UserSettingName;
-import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
-import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
-import microsoft.exchange.webservices.data.core.exception.misc.FormatException;
-import microsoft.exchange.webservices.data.autodiscover.exception.MaximumRedirectionHopsExceededException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
-import microsoft.exchange.webservices.data.misc.OutParam;
-import microsoft.exchange.webservices.data.security.XmlNodeType;
-
-import javax.xml.stream.XMLStreamException;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -72,6 +37,41 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.EnumSet;
 import java.util.List;
+
+import javax.xml.stream.XMLStreamException;
+
+import microsoft.exchange.webservices.data.autodiscover.configuration.ConfigurationSettingsBase;
+import microsoft.exchange.webservices.data.autodiscover.configuration.outlook.OutlookConfigurationSettings;
+import microsoft.exchange.webservices.data.autodiscover.enumeration.AutodiscoverEndpoints;
+import microsoft.exchange.webservices.data.autodiscover.enumeration.AutodiscoverErrorCode;
+import microsoft.exchange.webservices.data.autodiscover.enumeration.DomainSettingName;
+import microsoft.exchange.webservices.data.autodiscover.enumeration.UserSettingName;
+import microsoft.exchange.webservices.data.autodiscover.exception.AutodiscoverLocalException;
+import microsoft.exchange.webservices.data.autodiscover.exception.AutodiscoverRemoteException;
+import microsoft.exchange.webservices.data.autodiscover.exception.MaximumRedirectionHopsExceededException;
+import microsoft.exchange.webservices.data.autodiscover.request.AutodiscoverRequest;
+import microsoft.exchange.webservices.data.autodiscover.request.GetDomainSettingsRequest;
+import microsoft.exchange.webservices.data.autodiscover.request.GetUserSettingsRequest;
+import microsoft.exchange.webservices.data.autodiscover.response.GetDomainSettingsResponse;
+import microsoft.exchange.webservices.data.autodiscover.response.GetDomainSettingsResponseCollection;
+import microsoft.exchange.webservices.data.autodiscover.response.GetUserSettingsResponse;
+import microsoft.exchange.webservices.data.autodiscover.response.GetUserSettingsResponseCollection;
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.EwsXmlReader;
+import microsoft.exchange.webservices.data.core.ExchangeServiceBase;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
+import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
+import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
+import microsoft.exchange.webservices.data.core.exception.misc.FormatException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
+import microsoft.exchange.webservices.data.core.request.HttpClientWebRequest;
+import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
+import microsoft.exchange.webservices.data.credential.WSSecurityBasedCredentials;
+import microsoft.exchange.webservices.data.misc.OutParam;
+import microsoft.exchange.webservices.data.security.XmlNodeType;
 
 /**
  * Represents a binding to the Exchange Autodiscover Service.

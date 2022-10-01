@@ -23,17 +23,17 @@
 
 package microsoft.exchange.webservices.data.misc.availability;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.property.time.DayOfTheWeek;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.time.DayOfTheWeek;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 import microsoft.exchange.webservices.data.misc.TimeSpan;
 import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
-
-import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents a custom time zone time change.

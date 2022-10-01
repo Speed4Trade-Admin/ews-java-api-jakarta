@@ -23,11 +23,12 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
+import java.util.EnumSet;
+
 import org.apache.commons.codec.binary.Base64;
 
-import java.util.EnumSet;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 
 /**
  * Represents byte array property definition.

@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.Iterator;
+
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-
-import java.util.Iterator;
 
 /**
  * Represents a collection of e-mail addresses.

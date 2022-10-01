@@ -23,6 +23,21 @@
 
 package microsoft.exchange.webservices.data.autodiscover.request;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.zip.GZIPInputStream;
+import java.util.zip.InflaterInputStream;
+
+import javax.xml.stream.XMLStreamException;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.EWSConstants;
 import microsoft.exchange.webservices.data.autodiscover.AutodiscoverService;
 import microsoft.exchange.webservices.data.autodiscover.enumeration.AutodiscoverErrorCode;
@@ -33,32 +48,18 @@ import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.EwsXmlReader;
 import microsoft.exchange.webservices.data.core.ExchangeServerInfo;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
-import microsoft.exchange.webservices.data.core.response.ServiceResponse;
 import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceRemoteException;
 import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceRequestException;
 import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
+import microsoft.exchange.webservices.data.core.response.ServiceResponse;
 import microsoft.exchange.webservices.data.misc.SoapFaultDetails;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.zip.GZIPInputStream;
-import java.util.zip.InflaterInputStream;
 
 /**
  * Represents the base class for all requested made to the Autodiscover service.

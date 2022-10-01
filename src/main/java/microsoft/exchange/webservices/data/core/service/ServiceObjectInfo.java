@@ -23,6 +23,11 @@
 
 package microsoft.exchange.webservices.data.core.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.service.folder.CalendarFolder;
@@ -43,11 +48,6 @@ import microsoft.exchange.webservices.data.core.service.item.MeetingResponse;
 import microsoft.exchange.webservices.data.core.service.item.PostItem;
 import microsoft.exchange.webservices.data.core.service.item.Task;
 import microsoft.exchange.webservices.data.property.complex.ItemAttachment;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * ServiceObjectInfo contains metadata on how to map from an element name to a

@@ -23,26 +23,26 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.Iterator;
+import java.util.List;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ICustomXmlUpdateSerializer;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
-import microsoft.exchange.webservices.data.core.service.item.Contact;
-import microsoft.exchange.webservices.data.core.service.schema.ContactGroupSchema;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.enumeration.property.EmailAddressKey;
 import microsoft.exchange.webservices.data.core.enumeration.property.MailboxType;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
+import microsoft.exchange.webservices.data.core.service.item.Contact;
+import microsoft.exchange.webservices.data.core.service.schema.ContactGroupSchema;
 import microsoft.exchange.webservices.data.property.definition.GroupMemberPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * Represents a collection of members of GroupMember type.

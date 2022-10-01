@@ -23,31 +23,31 @@
 
 package microsoft.exchange.webservices.data.search.filter;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import javax.xml.stream.XMLStreamException;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.enumeration.search.ComparisonMode;
 import microsoft.exchange.webservices.data.core.enumeration.search.ContainmentMode;
-import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
 import microsoft.exchange.webservices.data.core.enumeration.search.LogicalOperator;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 import microsoft.exchange.webservices.data.misc.OutParam;
 import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
 import microsoft.exchange.webservices.data.property.complex.IComplexPropertyChangedDelegate;
-import microsoft.exchange.webservices.data.property.complex.ISearchStringProvider;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinitionBase;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * Represents the base search filter class. Use descendant search filter classes

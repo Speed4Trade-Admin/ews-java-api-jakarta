@@ -23,14 +23,16 @@
 
 package microsoft.exchange.webservices.data.core.service.schema;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.attribute.Schema;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.item.Appointment;
-import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AppointmentType;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.LegacyFreeBusyStatus;
 import microsoft.exchange.webservices.data.core.enumeration.property.MeetingResponseType;
 import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
+import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AppointmentType;
+import microsoft.exchange.webservices.data.core.service.item.Appointment;
 import microsoft.exchange.webservices.data.property.complex.AttendeeCollection;
 import microsoft.exchange.webservices.data.property.complex.DeletedOccurrenceInfoCollection;
 import microsoft.exchange.webservices.data.property.complex.EmailAddress;
@@ -51,8 +53,6 @@ import microsoft.exchange.webservices.data.property.definition.StartTimeZoneProp
 import microsoft.exchange.webservices.data.property.definition.StringPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.TimeSpanPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.TimeZonePropertyDefinition;
-
-import java.util.EnumSet;
 
 /**
  * Represents the schema for appointment and meeting request.

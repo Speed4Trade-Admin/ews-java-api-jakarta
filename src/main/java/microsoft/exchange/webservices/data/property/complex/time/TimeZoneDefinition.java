@@ -23,18 +23,6 @@
 
 package microsoft.exchange.webservices.data.property.complex.time;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
-import microsoft.exchange.webservices.data.core.XmlAttributeNames;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.core.enumeration.property.time.DayOfTheWeek;
-import microsoft.exchange.webservices.data.core.exception.service.local.InvalidOrUnsupportedTimeZoneDefinitionException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -43,6 +31,17 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
+import microsoft.exchange.webservices.data.core.XmlAttributeNames;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.exception.service.local.InvalidOrUnsupportedTimeZoneDefinitionException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
 
 /**
  * Represents a time zone as defined by the EWS schema.

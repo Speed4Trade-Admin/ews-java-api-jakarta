@@ -23,6 +23,18 @@
 
 package microsoft.exchange.webservices.data.core.service.schema;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ILazyMember;
@@ -38,17 +50,6 @@ import microsoft.exchange.webservices.data.property.definition.ComplexPropertyDe
 import microsoft.exchange.webservices.data.property.definition.IndexedPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinitionBase;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.EnumSet;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Represents the base class for all item and folder schema.

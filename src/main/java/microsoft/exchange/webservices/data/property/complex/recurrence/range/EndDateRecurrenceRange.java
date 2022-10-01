@@ -23,18 +23,18 @@
 
 package microsoft.exchange.webservices.data.property.complex.recurrence.range;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 import microsoft.exchange.webservices.data.property.complex.recurrence.pattern.Recurrence;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Represents recurrent range with an end date.

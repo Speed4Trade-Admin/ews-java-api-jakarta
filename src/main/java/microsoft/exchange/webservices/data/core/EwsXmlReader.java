@@ -23,13 +23,14 @@
 
 package microsoft.exchange.webservices.data.core;
 
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
-import microsoft.exchange.webservices.data.misc.OutParam;
-import microsoft.exchange.webservices.data.security.XmlNodeType;
-import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.Objects;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -42,14 +43,14 @@ import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-import java.util.Objects;
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
+import microsoft.exchange.webservices.data.misc.OutParam;
+import microsoft.exchange.webservices.data.security.XmlNodeType;
 
 /**
  * Defines the EwsXmlReader class.

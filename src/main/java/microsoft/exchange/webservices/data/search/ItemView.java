@@ -23,19 +23,19 @@
 
 package microsoft.exchange.webservices.data.search;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.request.ServiceRequestBase;
 import microsoft.exchange.webservices.data.core.enumeration.search.ItemTraversal;
 import microsoft.exchange.webservices.data.core.enumeration.search.OffsetBasePoint;
 import microsoft.exchange.webservices.data.core.enumeration.service.ServiceObjectType;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
+import microsoft.exchange.webservices.data.core.request.ServiceRequestBase;
 
 /**
  * Represents the view settings in a folder search operation.

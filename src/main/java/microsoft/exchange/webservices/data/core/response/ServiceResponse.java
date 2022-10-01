@@ -23,23 +23,23 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.XmlAttributeNames;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
-import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
-import microsoft.exchange.webservices.data.misc.SoapFaultDetails;
-import microsoft.exchange.webservices.data.property.definition.ExtendedPropertyDefinition;
-import microsoft.exchange.webservices.data.property.definition.IndexedPropertyDefinition;
-import microsoft.exchange.webservices.data.property.definition.PropertyDefinitionBase;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.XmlAttributeNames;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
+import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
+import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
+import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
+import microsoft.exchange.webservices.data.misc.SoapFaultDetails;
+import microsoft.exchange.webservices.data.property.definition.ExtendedPropertyDefinition;
+import microsoft.exchange.webservices.data.property.definition.IndexedPropertyDefinition;
+import microsoft.exchange.webservices.data.property.definition.PropertyDefinitionBase;
 
 /**
  * Represents the standard response to an Exchange Web Services operation.

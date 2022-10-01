@@ -23,6 +23,14 @@
 
 package microsoft.exchange.webservices.data.misc;
 
+import java.util.EnumSet;
+
+import javax.xml.stream.XMLStreamException;
+
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
@@ -31,8 +39,8 @@ import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.misc.UserConfigurationProperties;
-import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
 import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.PropertyException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
@@ -41,13 +49,6 @@ import microsoft.exchange.webservices.data.property.complex.FolderId;
 import microsoft.exchange.webservices.data.property.complex.ItemId;
 import microsoft.exchange.webservices.data.property.complex.UserConfigurationDictionary;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.util.EnumSet;
 
 /**
  * Represents an object that can be used to store user-defined configuration

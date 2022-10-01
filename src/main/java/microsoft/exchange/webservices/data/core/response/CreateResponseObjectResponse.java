@@ -23,13 +23,14 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
-import microsoft.exchange.webservices.data.core.service.item.Item;
 import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import microsoft.exchange.webservices.data.core.service.item.Item;
 
 /**
  * Represents response to generic Create request.

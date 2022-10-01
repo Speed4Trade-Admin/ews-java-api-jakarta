@@ -23,9 +23,8 @@
 
 package microsoft.exchange.webservices.data.core.service.items;
 
-import microsoft.exchange.webservices.base.BaseTest;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceObjectPropertyException;
-import microsoft.exchange.webservices.data.core.service.item.Task;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.hamcrest.core.IsEqual;
 import org.hamcrest.core.IsInstanceOf;
 import org.hamcrest.core.IsNot;
@@ -33,7 +32,10 @@ import org.hamcrest.core.IsNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.hamcrest.MatcherAssert.assertThat;
+
+import microsoft.exchange.webservices.base.BaseTest;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceObjectPropertyException;
+import microsoft.exchange.webservices.data.core.service.item.Task;
 
 /**
  * Testclass for methods of Task

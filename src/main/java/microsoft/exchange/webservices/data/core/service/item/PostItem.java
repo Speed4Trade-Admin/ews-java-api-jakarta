@@ -23,26 +23,26 @@
 
 package microsoft.exchange.webservices.data.core.service.item;
 
+import java.util.Arrays;
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.attribute.Attachable;
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.service.ResponseMessageType;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.service.response.PostReply;
 import microsoft.exchange.webservices.data.core.service.response.ResponseMessage;
 import microsoft.exchange.webservices.data.core.service.schema.EmailMessageSchema;
 import microsoft.exchange.webservices.data.core.service.schema.PostItemSchema;
 import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.ResponseMessageType;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.property.complex.EmailAddress;
 import microsoft.exchange.webservices.data.property.complex.ItemAttachment;
 import microsoft.exchange.webservices.data.property.complex.ItemId;
 import microsoft.exchange.webservices.data.property.complex.MessageBody;
-
-import java.util.Arrays;
-import java.util.Date;
 
 /**
  * Represents a post item. Properties available on post item are defined in the

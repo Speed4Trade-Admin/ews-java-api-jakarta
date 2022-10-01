@@ -23,21 +23,21 @@
 
 package microsoft.exchange.webservices.data.core.service.item;
 
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.schema.MeetingMessageSchema;
-import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
 import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.MeetingResponseType;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.service.schema.MeetingMessageSchema;
+import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
 import microsoft.exchange.webservices.data.property.complex.ItemAttachment;
 import microsoft.exchange.webservices.data.property.complex.ItemId;
-
-import java.util.Date;
 
 /**
  * Represents a meeting-related message. Properties available on meeting

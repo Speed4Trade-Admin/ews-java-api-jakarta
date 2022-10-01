@@ -23,15 +23,16 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import java.util.Date;
 
 import javax.xml.stream.XMLStreamException;
 
-import java.util.Date;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
 
 /**
  * Encapsulates information on the deleted occurrence of a recurring

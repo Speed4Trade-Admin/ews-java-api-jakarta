@@ -23,17 +23,18 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
+import java.util.List;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.folder.Folder;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import java.util.List;
 
 /**
  * Represents the base response class for individual folder move and copy

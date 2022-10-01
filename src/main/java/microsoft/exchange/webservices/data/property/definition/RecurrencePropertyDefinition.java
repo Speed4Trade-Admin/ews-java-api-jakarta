@@ -23,13 +23,15 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.PropertyBag;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
 import microsoft.exchange.webservices.data.property.complex.recurrence.pattern.Recurrence;
 import microsoft.exchange.webservices.data.property.complex.recurrence.range.EndDateRecurrenceRange;
@@ -37,8 +39,6 @@ import microsoft.exchange.webservices.data.property.complex.recurrence.range.NoE
 import microsoft.exchange.webservices.data.property.complex.recurrence.range.NumberedRecurrenceRange;
 import microsoft.exchange.webservices.data.property.complex.recurrence.range.RecurrenceRange;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-
-import java.util.EnumSet;
 
 /**
  * Represenrs recurrence property definition.

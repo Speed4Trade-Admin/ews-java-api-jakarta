@@ -23,13 +23,13 @@
 
 package microsoft.exchange.webservices.data.core;
 
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents an xml reader used by the ExchangeService to parse multi-response streams,

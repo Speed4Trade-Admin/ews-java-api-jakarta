@@ -23,17 +23,17 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
 import microsoft.exchange.webservices.data.misc.OutParam;
-
-import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents the base class for all property definitions.

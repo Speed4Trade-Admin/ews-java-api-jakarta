@@ -23,18 +23,18 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.permission.folder.DelegateFolderPermissionLevel;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.xml.stream.XMLStreamException;
 
-import java.util.HashMap;
-import java.util.Map;
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.permission.folder.DelegateFolderPermissionLevel;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 
 /**
  * Represents the permissions of a delegate user.

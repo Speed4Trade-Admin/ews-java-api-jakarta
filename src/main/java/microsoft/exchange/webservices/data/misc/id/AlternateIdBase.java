@@ -23,6 +23,8 @@
 
 package microsoft.exchange.webservices.data.misc.id;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.ISelfValidate;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
@@ -30,8 +32,6 @@ import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.IdFormat;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents the base class for Id expressed in a specific format.

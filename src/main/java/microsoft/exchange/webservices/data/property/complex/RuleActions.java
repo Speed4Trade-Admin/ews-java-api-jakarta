@@ -23,16 +23,16 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.property.Importance;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.Importance;
 import microsoft.exchange.webservices.data.misc.MobilePhone;
-
-import java.util.ArrayList;
-import java.util.Collection;
 
 /**
  * Represents the set of actions available for a rule.

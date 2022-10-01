@@ -23,23 +23,23 @@
 
 package microsoft.exchange.webservices.data.autodiscover.request;
 
+import java.net.URI;
+import java.util.List;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.autodiscover.AutodiscoverService;
 import microsoft.exchange.webservices.data.autodiscover.enumeration.AutodiscoverErrorCode;
+import microsoft.exchange.webservices.data.autodiscover.enumeration.DomainSettingName;
 import microsoft.exchange.webservices.data.autodiscover.response.AutodiscoverResponse;
 import microsoft.exchange.webservices.data.autodiscover.response.GetDomainSettingsResponseCollection;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.autodiscover.enumeration.DomainSettingName;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.net.URI;
-import java.util.List;
 
 /**
  * Represents a GetDomainSettings request.

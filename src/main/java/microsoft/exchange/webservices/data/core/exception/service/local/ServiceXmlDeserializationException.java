@@ -23,8 +23,6 @@
 
 package microsoft.exchange.webservices.data.core.exception.service.local;
 
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-
 /**
  * Represents an error that occurs when the XML for a response cannot be
  * deserialized.

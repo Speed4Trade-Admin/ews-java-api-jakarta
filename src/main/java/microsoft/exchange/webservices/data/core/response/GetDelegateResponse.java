@@ -25,9 +25,9 @@ package microsoft.exchange.webservices.data.core.response;
 
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestsDeliveryScope;
-import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
+import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestsDeliveryScope;
 
 /**
  * The Class GetDelegateResponse.

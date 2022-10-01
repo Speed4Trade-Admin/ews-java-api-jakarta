@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.misc;
 
+import java.util.concurrent.Future;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
-import java.util.concurrent.Future;
 
 /**
  * <b>Title:</b> AbstractAsyncCallback <br>

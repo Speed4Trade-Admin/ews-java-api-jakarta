@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.misc;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.property.complex.EmailAddress;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 
 /**
  * Represents the results of an ExpandGroup operation.

@@ -23,10 +23,6 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
-import microsoft.exchange.webservices.base.BaseTest;
-import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.util.Date;
@@ -36,6 +32,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import microsoft.exchange.webservices.base.BaseTest;
+import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 
 /**
  * Testclass for methods of UserConfigurationDictionary

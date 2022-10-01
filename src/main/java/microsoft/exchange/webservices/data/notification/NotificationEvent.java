@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.notification;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.enumeration.notification.EventType;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.property.complex.FolderId;
-
 import java.util.Date;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.notification.EventType;
+import microsoft.exchange.webservices.data.property.complex.FolderId;
 
 /**
  * Represents an event as exposed by push and pull notification.

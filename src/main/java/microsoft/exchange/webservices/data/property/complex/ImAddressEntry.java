@@ -23,6 +23,8 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
@@ -31,8 +33,6 @@ import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrow
 import microsoft.exchange.webservices.data.core.enumeration.property.ImAddressKey;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents an entry of an ImAddressDictionary.

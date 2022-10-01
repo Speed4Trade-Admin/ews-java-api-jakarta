@@ -23,28 +23,28 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
-import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.response.CreateAttachmentResponse;
-import microsoft.exchange.webservices.data.core.response.DeleteAttachmentResponse;
-import microsoft.exchange.webservices.data.core.response.ServiceResponseCollection;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
-import microsoft.exchange.webservices.data.core.service.item.Item;
-import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
-import microsoft.exchange.webservices.data.core.exception.service.remote.CreateAttachmentException;
-import microsoft.exchange.webservices.data.core.exception.service.remote.DeleteAttachmentException;
-import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
-
 import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Enumeration;
+
+import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
+import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
+import microsoft.exchange.webservices.data.core.exception.service.remote.CreateAttachmentException;
+import microsoft.exchange.webservices.data.core.exception.service.remote.DeleteAttachmentException;
+import microsoft.exchange.webservices.data.core.response.CreateAttachmentResponse;
+import microsoft.exchange.webservices.data.core.response.DeleteAttachmentResponse;
+import microsoft.exchange.webservices.data.core.response.ServiceResponseCollection;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
+import microsoft.exchange.webservices.data.core.service.item.Item;
 
 /**
  * Represents an item's attachment collection.

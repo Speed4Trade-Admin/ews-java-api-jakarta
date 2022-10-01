@@ -23,21 +23,25 @@
 
 package microsoft.exchange.webservices.data.core.service.item;
 
+import java.io.File;
+import java.io.InputStream;
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.attribute.Attachable;
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.schema.ContactSchema;
-import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.service.ContactSource;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.FileAsMapping;
 import microsoft.exchange.webservices.data.core.enumeration.property.PhysicalAddressIndex;
+import microsoft.exchange.webservices.data.core.enumeration.service.ContactSource;
+import microsoft.exchange.webservices.data.core.enumeration.service.FileAsMapping;
 import microsoft.exchange.webservices.data.core.exception.service.local.PropertyException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
+import microsoft.exchange.webservices.data.core.service.schema.ContactSchema;
+import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
 import microsoft.exchange.webservices.data.misc.OutParam;
 import microsoft.exchange.webservices.data.property.complex.Attachment;
 import microsoft.exchange.webservices.data.property.complex.ByteArrayArray;
@@ -52,10 +56,6 @@ import microsoft.exchange.webservices.data.property.complex.ItemId;
 import microsoft.exchange.webservices.data.property.complex.PhoneNumberDictionary;
 import microsoft.exchange.webservices.data.property.complex.PhysicalAddressDictionary;
 import microsoft.exchange.webservices.data.property.complex.StringList;
-
-import java.io.File;
-import java.io.InputStream;
-import java.util.Date;
 
 /**
  * Represents a contact. Properties available on contacts are defined in the

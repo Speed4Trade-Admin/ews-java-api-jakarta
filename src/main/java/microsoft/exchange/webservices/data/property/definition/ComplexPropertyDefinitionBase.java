@@ -23,6 +23,8 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.ExchangeService;
@@ -33,8 +35,6 @@ import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDef
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.misc.OutParam;
 import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
-
-import java.util.EnumSet;
 
 /**
  * Represents abstract complex property definition.

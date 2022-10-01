@@ -23,6 +23,11 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import javax.xml.stream.XMLStreamException;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
@@ -31,10 +36,6 @@ import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.property.BodyType;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents the body of a message.

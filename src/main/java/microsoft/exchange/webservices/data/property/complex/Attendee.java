@@ -23,13 +23,13 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.property.MeetingResponseType;
-
-import java.util.Date;
 
 /**
  * Represents an attendee to a meeting.

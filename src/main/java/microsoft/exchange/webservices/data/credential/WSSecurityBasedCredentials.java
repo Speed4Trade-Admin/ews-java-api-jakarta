@@ -23,14 +23,14 @@
 
 package microsoft.exchange.webservices.data.credential;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Calendar;
 
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Calendar;
+import microsoft.exchange.webservices.data.core.EwsUtilities;
 
 /**
  * WSSecurityBasedCredentials is the base class for all credential classes using

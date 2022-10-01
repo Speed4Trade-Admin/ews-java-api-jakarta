@@ -23,16 +23,23 @@
 
 package microsoft.exchange.webservices.data.core;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
 import microsoft.exchange.webservices.data.ISelfValidate;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
-import microsoft.exchange.webservices.data.core.service.item.Item;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.enumeration.property.BasePropertySet;
 import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceObjectPropertyException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
+import microsoft.exchange.webservices.data.core.service.item.Item;
 import microsoft.exchange.webservices.data.misc.OutParam;
 import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
 import microsoft.exchange.webservices.data.property.complex.IComplexPropertyChanged;
@@ -41,13 +48,6 @@ import microsoft.exchange.webservices.data.property.complex.IOwnedProperty;
 import microsoft.exchange.webservices.data.property.definition.ComplexPropertyDefinitionBase;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 
 /**
  * Represents a property bag keyed on PropertyDefinition objects.

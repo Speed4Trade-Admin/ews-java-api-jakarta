@@ -23,13 +23,13 @@ import static org.mockito.Mockito.doReturn;
 
 import java.util.Date;
 
-import microsoft.exchange.webservices.data.property.complex.time.AbsoluteDateTransition;
-import microsoft.exchange.webservices.data.property.complex.time.TimeZoneDefinition;
-import microsoft.exchange.webservices.data.property.complex.time.TimeZoneTransition;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+
+import microsoft.exchange.webservices.data.property.complex.time.AbsoluteDateTransition;
+import microsoft.exchange.webservices.data.property.complex.time.TimeZoneDefinition;
+import microsoft.exchange.webservices.data.property.complex.time.TimeZoneTransition;
 
 public class TimeZoneTransitionCompareTest {
 

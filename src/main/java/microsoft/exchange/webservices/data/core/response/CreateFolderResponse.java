@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.folder.Folder;
-import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
-
-import java.util.List;
 
 /**
  * Represents the response to an individual folder creation operation.

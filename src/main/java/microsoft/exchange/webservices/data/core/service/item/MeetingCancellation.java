@@ -23,18 +23,19 @@
 
 package microsoft.exchange.webservices.data.core.service.item;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.response.RemoveFromCalendar;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.service.response.RemoveFromCalendar;
 import microsoft.exchange.webservices.data.misc.CalendarActionResults;
 import microsoft.exchange.webservices.data.property.complex.ItemAttachment;
 import microsoft.exchange.webservices.data.property.complex.ItemId;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
  * Represents a meeting cancellation message. Properties available on meeting

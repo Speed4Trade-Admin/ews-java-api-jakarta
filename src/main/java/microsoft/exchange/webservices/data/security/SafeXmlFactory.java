@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.security;
 
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamReader;
-
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.Reader;
+
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamReader;
 
 public class SafeXmlFactory {
   public static XMLInputFactory factory = XMLInputFactory.newInstance();

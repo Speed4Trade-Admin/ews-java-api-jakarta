@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.search;
 
-import microsoft.exchange.webservices.data.core.service.folder.Folder;
-
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import microsoft.exchange.webservices.data.core.service.folder.Folder;
 
 /**
  * Represents the results of a folder search operation.

@@ -23,18 +23,18 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.response.DelegateManagementResponse;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestsDeliveryScope;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestsDeliveryScope;
+import microsoft.exchange.webservices.data.core.response.DelegateManagementResponse;
 import microsoft.exchange.webservices.data.property.complex.DelegateUser;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Represents an AddDelegate request.

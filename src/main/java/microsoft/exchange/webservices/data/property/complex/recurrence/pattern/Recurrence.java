@@ -23,18 +23,24 @@
 
 package microsoft.exchange.webservices.data.property.complex.recurrence.pattern;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.property.time.DayOfTheWeek;
-import microsoft.exchange.webservices.data.core.enumeration.property.time.DayOfTheWeekIndex;
 import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.time.Month;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.time.DayOfTheWeek;
+import microsoft.exchange.webservices.data.core.enumeration.property.time.DayOfTheWeekIndex;
+import microsoft.exchange.webservices.data.core.enumeration.property.time.Month;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentOutOfRangeException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
@@ -45,12 +51,6 @@ import microsoft.exchange.webservices.data.property.complex.recurrence.range.End
 import microsoft.exchange.webservices.data.property.complex.recurrence.range.NoEndRecurrenceRange;
 import microsoft.exchange.webservices.data.property.complex.recurrence.range.NumberedRecurrenceRange;
 import microsoft.exchange.webservices.data.property.complex.recurrence.range.RecurrenceRange;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Iterator;
 
 /**
  * Represents a recurrence pattern, as used by Appointment and Task item.

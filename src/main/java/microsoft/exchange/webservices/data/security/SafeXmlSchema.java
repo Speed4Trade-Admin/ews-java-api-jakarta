@@ -23,14 +23,14 @@
 
 package microsoft.exchange.webservices.data.security;
 
+import java.io.InputStream;
+
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.validation.Schema;
 import javax.xml.validation.Validator;
 import javax.xml.validation.ValidatorHandler;
-
-import java.io.InputStream;
 
 /**
  * XmlSchema with protection against DTD parsing in read overloads

@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Represents an array of byte arrays

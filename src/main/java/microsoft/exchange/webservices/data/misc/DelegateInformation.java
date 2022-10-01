@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.response.DelegateUserResponse;
-import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestsDeliveryScope;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestsDeliveryScope;
+import microsoft.exchange.webservices.data.core.response.DelegateUserResponse;
 
 /**
  * Represents the results of a GetDelegates operation.

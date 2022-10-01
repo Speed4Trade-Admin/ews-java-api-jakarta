@@ -28,14 +28,14 @@ import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
-import microsoft.exchange.webservices.data.core.response.SyncFolderItemsResponse;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.enumeration.service.ServiceObjectType;
 import microsoft.exchange.webservices.data.core.enumeration.service.SyncFolderItemsScope;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
+import microsoft.exchange.webservices.data.core.response.SyncFolderItemsResponse;
 import microsoft.exchange.webservices.data.misc.ItemIdWrapperList;
 import microsoft.exchange.webservices.data.property.complex.FolderId;
 

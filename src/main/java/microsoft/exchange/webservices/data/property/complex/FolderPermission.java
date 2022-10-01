@@ -23,27 +23,28 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ILazyMember;
 import microsoft.exchange.webservices.data.core.LazyMember;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.permission.PermissionScope;
 import microsoft.exchange.webservices.data.core.enumeration.permission.folder.FolderPermissionLevel;
 import microsoft.exchange.webservices.data.core.enumeration.permission.folder.FolderPermissionReadAccess;
-import microsoft.exchange.webservices.data.core.enumeration.permission.PermissionScope;
 import microsoft.exchange.webservices.data.core.enumeration.property.StandardUser;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 
 /**
  * Represents a permission on a folder.

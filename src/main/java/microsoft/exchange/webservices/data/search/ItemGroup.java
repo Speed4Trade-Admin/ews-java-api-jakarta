@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.search;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.service.item.Item;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.service.item.Item;
 
 /**
  * Represents a group of item as returned by grouped item search operations.

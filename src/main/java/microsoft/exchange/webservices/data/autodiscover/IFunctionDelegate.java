@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-
 import java.net.URI;
 import java.util.List;
+
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 
 /**
  * The Interface FuncDelegateInterface.

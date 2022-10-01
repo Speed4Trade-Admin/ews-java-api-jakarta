@@ -23,28 +23,29 @@
 
 package microsoft.exchange.webservices.data.notification;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.ExchangeService;
-import microsoft.exchange.webservices.data.core.exception.misc.ArgumentNullException;
-import microsoft.exchange.webservices.data.core.request.GetStreamingEventsRequest;
-import microsoft.exchange.webservices.data.core.request.HangingRequestDisconnectEventArgs;
-import microsoft.exchange.webservices.data.core.request.HangingServiceRequestBase;
-import microsoft.exchange.webservices.data.core.response.GetStreamingEventsResponse;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
-import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
-import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
-import microsoft.exchange.webservices.data.core.exception.misc.ArgumentOutOfRangeException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import java.io.Closeable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.ExchangeService;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
+import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
+import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
+import microsoft.exchange.webservices.data.core.exception.misc.ArgumentNullException;
+import microsoft.exchange.webservices.data.core.exception.misc.ArgumentOutOfRangeException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
+import microsoft.exchange.webservices.data.core.request.GetStreamingEventsRequest;
+import microsoft.exchange.webservices.data.core.request.HangingRequestDisconnectEventArgs;
+import microsoft.exchange.webservices.data.core.request.HangingServiceRequestBase;
+import microsoft.exchange.webservices.data.core.response.GetStreamingEventsResponse;
 
 /**
  * Represents a connection to an ongoing stream of events.

@@ -23,17 +23,18 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.ExchangeService;
-import microsoft.exchange.webservices.data.core.request.HangingServiceRequestBase;
-import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import javax.xml.stream.XMLStreamException;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import javax.xml.stream.XMLStreamException;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import microsoft.exchange.webservices.data.core.ExchangeService;
+import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
+import microsoft.exchange.webservices.data.core.request.HangingServiceRequestBase;
 
 /**
  * A stream that traces everything it returns from its Read() call.

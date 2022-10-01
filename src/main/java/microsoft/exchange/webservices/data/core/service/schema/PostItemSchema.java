@@ -23,14 +23,14 @@
 
 package microsoft.exchange.webservices.data.core.service.schema;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.attribute.Schema;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.property.definition.DateTimePropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
-
-import java.util.EnumSet;
 
 /**
  * Represents the schema for post item.

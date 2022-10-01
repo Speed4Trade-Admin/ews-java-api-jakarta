@@ -23,8 +23,15 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
-import microsoft.exchange.webservices.data.core.WebProxy;
-import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
+import java.io.BufferedInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.http.Header;
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;
@@ -39,14 +46,8 @@ import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.util.EntityUtils;
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import microsoft.exchange.webservices.data.core.WebProxy;
+import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
 
 
 /**

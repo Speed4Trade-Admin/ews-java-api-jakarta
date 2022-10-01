@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-
-import java.util.Date;
 
 /**
  * Encapsulates information on the occurrence of a recurring appointment.

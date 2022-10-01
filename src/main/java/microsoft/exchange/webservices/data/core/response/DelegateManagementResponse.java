@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.property.complex.DelegateUser;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.misc.error.ServiceError;
+import microsoft.exchange.webservices.data.property.complex.DelegateUser;
 
 /**
  * Represents the response to a delegate managent-related operation.

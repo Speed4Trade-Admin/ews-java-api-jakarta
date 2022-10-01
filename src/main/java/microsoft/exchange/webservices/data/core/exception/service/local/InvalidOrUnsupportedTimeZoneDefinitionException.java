@@ -23,8 +23,6 @@
 
 package microsoft.exchange.webservices.data.core.exception.service.local;
 
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-
 /**
  * The Class InvalidOrUnsupportedTimeZoneDefinitionException.
  *

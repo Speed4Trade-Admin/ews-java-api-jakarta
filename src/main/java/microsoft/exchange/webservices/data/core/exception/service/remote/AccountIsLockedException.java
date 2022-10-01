@@ -23,8 +23,6 @@
 
 package microsoft.exchange.webservices.data.core.exception.service.remote;
 
-import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceRemoteException;
-
 import java.net.URI;
 
 /**

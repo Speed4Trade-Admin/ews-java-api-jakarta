@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.base.BaseTest;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import org.junit.jupiter.api.Test;
+
+import microsoft.exchange.webservices.base.BaseTest;
 
 /**
  * The Class TimeSpanTest.

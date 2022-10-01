@@ -23,6 +23,14 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import jakarta.xml.bind.DatatypeConverter;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
@@ -32,15 +40,6 @@ import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 import microsoft.exchange.webservices.data.misc.Time;
 import microsoft.exchange.webservices.data.misc.TimeSpan;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
-
-import jakarta.xml.bind.DatatypeConverter;
 
 /**
  * Represents a change of time for a time zone.

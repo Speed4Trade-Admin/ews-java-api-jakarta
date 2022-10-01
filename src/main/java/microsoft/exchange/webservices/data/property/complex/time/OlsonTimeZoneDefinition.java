@@ -24,11 +24,11 @@
 package microsoft.exchange.webservices.data.property.complex.time;
 
 
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.util.TimeZoneUtils;
-
 import java.util.Date;
 import java.util.TimeZone;
+
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.util.TimeZoneUtils;
 
 /**
  * A TimeZoneDefinition class that allows mapping from a Java/Olson TimeZone to a MS TimeZone.

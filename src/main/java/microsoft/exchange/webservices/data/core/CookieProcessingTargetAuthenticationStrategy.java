@@ -23,6 +23,9 @@
 
 package microsoft.exchange.webservices.data.core;
 
+import java.io.IOException;
+import java.util.Map;
+
 import org.apache.http.Header;
 import org.apache.http.HttpException;
 import org.apache.http.HttpHost;
@@ -34,9 +37,6 @@ import org.apache.http.client.protocol.RequestAddCookies;
 import org.apache.http.client.protocol.ResponseProcessCookies;
 import org.apache.http.impl.client.TargetAuthenticationStrategy;
 import org.apache.http.protocol.HttpContext;
-
-import java.io.IOException;
-import java.util.Map;
 
 /**
  * TargetAuthenticationStrategy that also processes the cookies in HTTP 401 response. While not fully

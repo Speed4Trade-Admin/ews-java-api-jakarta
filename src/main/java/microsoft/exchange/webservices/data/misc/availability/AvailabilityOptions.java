@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.misc.availability;
 
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.request.GetUserAvailabilityRequest;
 import microsoft.exchange.webservices.data.core.enumeration.availability.FreeBusyViewType;
 import microsoft.exchange.webservices.data.core.enumeration.availability.SuggestionQuality;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-
-import java.util.Date;
+import microsoft.exchange.webservices.data.core.request.GetUserAvailabilityRequest;
 
 /**
  * Represents the options of a GetAvailability request.

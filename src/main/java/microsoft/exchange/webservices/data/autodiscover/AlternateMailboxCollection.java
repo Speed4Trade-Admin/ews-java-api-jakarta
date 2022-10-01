@@ -23,13 +23,13 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsXmlReader;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Represents a user setting that is a collection of alternate mailboxes.

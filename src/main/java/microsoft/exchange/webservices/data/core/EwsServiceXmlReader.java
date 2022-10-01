@@ -23,12 +23,6 @@
 
 package microsoft.exchange.webservices.data.core;
 
-import microsoft.exchange.webservices.data.core.response.IGetObjectInstanceDelegate;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.util.DateTimeUtils;
-
 import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -36,6 +30,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
+
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.response.IGetObjectInstanceDelegate;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
+import microsoft.exchange.webservices.data.util.DateTimeUtils;
 
 /**
  * XML reader.

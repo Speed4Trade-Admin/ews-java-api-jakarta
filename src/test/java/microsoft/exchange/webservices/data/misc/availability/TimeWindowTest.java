@@ -23,13 +23,6 @@
 
 package microsoft.exchange.webservices.data.misc.availability;
 
-import microsoft.exchange.webservices.base.BaseTest;
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.security.XmlNodeType;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -37,6 +30,13 @@ import java.util.Date;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import microsoft.exchange.webservices.base.BaseTest;
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.security.XmlNodeType;
 
 public class TimeWindowTest extends BaseTest {
 

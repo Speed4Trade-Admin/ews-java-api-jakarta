@@ -23,16 +23,16 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
-import microsoft.exchange.webservices.data.EWSConstants;
-import microsoft.exchange.webservices.data.core.WebProxy;
-import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
-
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.util.Map;
+
+import microsoft.exchange.webservices.data.EWSConstants;
+import microsoft.exchange.webservices.data.core.WebProxy;
+import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
 
 /**
  * The Class HttpWebRequest.

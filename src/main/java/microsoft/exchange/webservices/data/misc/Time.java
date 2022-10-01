@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
-
 import java.util.Calendar;
 import java.util.Date;
+
+import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 
 /**
  * Represents time.

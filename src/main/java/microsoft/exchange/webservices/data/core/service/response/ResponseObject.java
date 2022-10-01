@@ -23,6 +23,8 @@
 
 package microsoft.exchange.webservices.data.core.service.response;
 
+import java.util.List;
+
 /**
  * Represents the base class for all response that can be sent.
  *
@@ -30,21 +32,19 @@ package microsoft.exchange.webservices.data.core.service.response;
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.PropertySet;
+import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
+import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
+import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.MessageDisposition;
+import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.item.EmailMessage;
 import microsoft.exchange.webservices.data.core.service.item.Item;
 import microsoft.exchange.webservices.data.core.service.schema.ResponseObjectSchema;
 import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
-import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
-import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
-import microsoft.exchange.webservices.data.core.enumeration.service.MessageDisposition;
-import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
-import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
 import microsoft.exchange.webservices.data.property.complex.FolderId;
 import microsoft.exchange.webservices.data.property.complex.ItemId;
-
-import java.util.List;
 
 /**
  * The Class ResponseObject.

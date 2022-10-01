@@ -23,15 +23,16 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
-import microsoft.exchange.webservices.data.property.complex.time.OlsonTimeZoneDefinition;
-import microsoft.exchange.webservices.data.util.TimeZoneUtils;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import microsoft.exchange.webservices.data.property.complex.time.OlsonTimeZoneDefinition;
+import microsoft.exchange.webservices.data.util.TimeZoneUtils;
 
 public class OlsonTimeZoneTest {
 

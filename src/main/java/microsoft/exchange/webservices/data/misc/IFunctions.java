@@ -23,11 +23,12 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import org.apache.commons.codec.binary.Base64;
-
 import java.util.Date;
 import java.util.UUID;
+
+import org.apache.commons.codec.binary.Base64;
+
+import microsoft.exchange.webservices.data.core.EwsUtilities;
 
 /**
  * Class with re-usable function implementations.

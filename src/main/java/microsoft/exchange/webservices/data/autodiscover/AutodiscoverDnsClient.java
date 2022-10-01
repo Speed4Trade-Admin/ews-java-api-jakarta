@@ -23,18 +23,18 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
 import microsoft.exchange.webservices.data.core.exception.dns.DnsException;
 import microsoft.exchange.webservices.data.dns.DnsClient;
 import microsoft.exchange.webservices.data.dns.DnsSrvRecord;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 /**
  * Class that reads AutoDiscover configuration information from DNS.

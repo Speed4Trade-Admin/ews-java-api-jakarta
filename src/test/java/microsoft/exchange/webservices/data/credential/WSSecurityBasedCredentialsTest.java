@@ -25,23 +25,25 @@ package microsoft.exchange.webservices.data.credential;
 
 import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 import static org.hamcrest.text.IsEmptyString.isEmptyOrNullString;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
+
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamWriter;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.hamcrest.MatcherAssert.assertThat;
-import javax.xml.stream.XMLOutputFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
 
-import java.io.IOException;
-import java.io.StringWriter;
-import java.io.Writer;
+import microsoft.exchange.webservices.data.core.EwsUtilities;
 
 
 public class WSSecurityBasedCredentialsTest {

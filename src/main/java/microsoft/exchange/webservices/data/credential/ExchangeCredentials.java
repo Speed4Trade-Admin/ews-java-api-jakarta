@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.credential;
 
-import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
-import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
+import java.io.ByteArrayOutputStream;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 
-import java.io.ByteArrayOutputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
+import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
+import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
 
 /**
  * Base class of Exchange credential types.

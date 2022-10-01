@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.dns;
 
-import microsoft.exchange.webservices.data.core.exception.dns.DnsException;
-
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
+
+import microsoft.exchange.webservices.data.core.exception.dns.DnsException;
 
 /**
  * Represents a DNS SRV Record.

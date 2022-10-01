@@ -27,11 +27,11 @@ import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
+import microsoft.exchange.webservices.data.core.enumeration.service.ServiceObjectType;
 import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.response.ServiceResponse;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
-import microsoft.exchange.webservices.data.core.enumeration.service.ServiceObjectType;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 
 /**
  * Represents an abstract Get request.

@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.autodiscover;
 
+import java.util.ArrayList;
+
 import microsoft.exchange.webservices.data.core.EwsXmlReader;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
-
-import java.util.ArrayList;
 
 /**
  * Represents a user setting that is a collection of protocol connection.

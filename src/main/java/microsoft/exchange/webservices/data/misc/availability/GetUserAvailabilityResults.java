@@ -23,13 +23,13 @@
 
 package microsoft.exchange.webservices.data.misc.availability;
 
+import java.util.Collection;
+
+import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
 import microsoft.exchange.webservices.data.core.response.AttendeeAvailability;
 import microsoft.exchange.webservices.data.core.response.ServiceResponseCollection;
 import microsoft.exchange.webservices.data.core.response.SuggestionsResponse;
-import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
 import microsoft.exchange.webservices.data.property.complex.availability.Suggestion;
-
-import java.util.Collection;
 
 /**
  * Represents the results of a GetUserAvailability operation.

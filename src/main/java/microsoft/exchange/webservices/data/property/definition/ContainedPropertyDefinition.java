@@ -23,16 +23,16 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.PropertyBag;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
 import microsoft.exchange.webservices.data.property.complex.ICreateComplexPropertyDelegate;
-
-import java.util.EnumSet;
 
 /**
  * Represents contained property definition.

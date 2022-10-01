@@ -23,17 +23,18 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
+import javax.xml.stream.XMLStreamException;
+
+import org.w3c.dom.Node;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
-import microsoft.exchange.webservices.data.core.response.ExecuteDiagnosticMethodResponse;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-import org.w3c.dom.Node;
-
-import javax.xml.stream.XMLStreamException;
+import microsoft.exchange.webservices.data.core.response.ExecuteDiagnosticMethodResponse;
 
 /**
  * Defines the ExecuteDiagnosticMethodRequest class.

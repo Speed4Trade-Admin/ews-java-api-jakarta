@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
-
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Vector;
+
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.enumeration.service.ServiceResult;
 
 /**
  * Represents a strongly typed list of service response.

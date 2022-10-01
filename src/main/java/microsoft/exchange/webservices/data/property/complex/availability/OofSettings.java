@@ -23,21 +23,21 @@
 
 package microsoft.exchange.webservices.data.property.complex.availability;
 
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.ISelfValidate;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.enumeration.property.OofExternalAudience;
 import microsoft.exchange.webservices.data.core.enumeration.property.OofState;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
 import microsoft.exchange.webservices.data.misc.availability.OofReply;
 import microsoft.exchange.webservices.data.misc.availability.TimeWindow;
 import microsoft.exchange.webservices.data.property.complex.ComplexProperty;
-
-import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents a user's Out of Office (OOF) settings.

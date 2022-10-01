@@ -23,23 +23,23 @@
 
 package microsoft.exchange.webservices.data.search;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
-import microsoft.exchange.webservices.data.core.XmlAttributeNames;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.search.SortDirection;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-import microsoft.exchange.webservices.data.misc.OutParam;
-import microsoft.exchange.webservices.data.property.definition.PropertyDefinitionBase;
-
-import javax.xml.stream.XMLStreamException;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import javax.xml.stream.XMLStreamException;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
+import microsoft.exchange.webservices.data.core.XmlAttributeNames;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.search.SortDirection;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import microsoft.exchange.webservices.data.misc.OutParam;
+import microsoft.exchange.webservices.data.property.definition.PropertyDefinitionBase;
 
 /**
  * Represents an ordered collection of property definitions qualified with a

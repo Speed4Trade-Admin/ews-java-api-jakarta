@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.util;
 
-import microsoft.exchange.webservices.base.util.TestUtils;
-
 import java.util.TimeZone;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import microsoft.exchange.webservices.base.util.TestUtils;
 
 public class TimeZoneUtilsTest {
 

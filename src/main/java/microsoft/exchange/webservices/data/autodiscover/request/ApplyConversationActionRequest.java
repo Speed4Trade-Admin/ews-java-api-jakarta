@@ -23,19 +23,19 @@
 
 package microsoft.exchange.webservices.data.autodiscover.request;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
 import microsoft.exchange.webservices.data.core.request.MultiResponseServiceRequest;
 import microsoft.exchange.webservices.data.core.response.ServiceResponse;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.misc.ConversationAction;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Represents a request to a Apply Conversation Action operation

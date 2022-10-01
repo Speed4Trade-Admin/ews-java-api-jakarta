@@ -23,30 +23,33 @@
 
 package microsoft.exchange.webservices.data.core.service.item;
 
+import java.util.Arrays;
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.attribute.Attachable;
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.property.LegacyFreeBusyStatus;
+import microsoft.exchange.webservices.data.core.enumeration.property.MeetingResponseType;
+import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
+import microsoft.exchange.webservices.data.core.enumeration.service.ConflictResolutionMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.ResponseMessageType;
+import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.SendInvitationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.SendInvitationsOrCancellationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AppointmentType;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.service.response.AcceptMeetingInvitationMessage;
 import microsoft.exchange.webservices.data.core.service.response.CancelMeetingMessage;
 import microsoft.exchange.webservices.data.core.service.response.DeclineMeetingInvitationMessage;
 import microsoft.exchange.webservices.data.core.service.response.ResponseMessage;
 import microsoft.exchange.webservices.data.core.service.schema.AppointmentSchema;
 import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AppointmentType;
-import microsoft.exchange.webservices.data.core.enumeration.service.ConflictResolutionMode;
-import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.LegacyFreeBusyStatus;
-import microsoft.exchange.webservices.data.core.enumeration.property.MeetingResponseType;
-import microsoft.exchange.webservices.data.core.enumeration.service.ResponseMessageType;
-import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
-import microsoft.exchange.webservices.data.core.enumeration.service.SendInvitationsMode;
-import microsoft.exchange.webservices.data.core.enumeration.service.SendInvitationsOrCancellationsMode;
-import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.misc.CalendarActionResults;
 import microsoft.exchange.webservices.data.misc.TimeSpan;
 import microsoft.exchange.webservices.data.property.complex.AppointmentOccurrenceId;
@@ -63,9 +66,6 @@ import microsoft.exchange.webservices.data.property.complex.OccurrenceInfoCollec
 import microsoft.exchange.webservices.data.property.complex.RecurringAppointmentMasterId;
 import microsoft.exchange.webservices.data.property.complex.recurrence.pattern.Recurrence;
 import microsoft.exchange.webservices.data.property.complex.time.TimeZoneDefinition;
-
-import java.util.Arrays;
-import java.util.Date;
 
 /**
  * Represents an appointment or a meeting. Properties available on appointments

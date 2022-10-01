@@ -23,12 +23,12 @@
 
 package microsoft.exchange.webservices.data.attribute;
 
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 
 /**
  * The Interface RequiredServerVersion.

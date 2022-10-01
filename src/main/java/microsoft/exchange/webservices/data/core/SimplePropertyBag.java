@@ -23,14 +23,14 @@
 
 package microsoft.exchange.webservices.data.core;
 
-import microsoft.exchange.webservices.data.misc.OutParam;
-import microsoft.exchange.webservices.data.property.complex.IPropertyBagChangedDelegate;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import microsoft.exchange.webservices.data.misc.OutParam;
+import microsoft.exchange.webservices.data.property.complex.IPropertyBagChangedDelegate;
 
 /**
  * Represents a simple property bag.

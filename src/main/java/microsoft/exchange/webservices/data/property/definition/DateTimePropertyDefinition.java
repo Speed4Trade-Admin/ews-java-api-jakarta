@@ -23,17 +23,17 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import java.util.Date;
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.PropertyBag;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.util.DateTimeUtils;
-
-import java.util.Date;
-import java.util.EnumSet;
 
 /**
  * Represents DateTime property definition.

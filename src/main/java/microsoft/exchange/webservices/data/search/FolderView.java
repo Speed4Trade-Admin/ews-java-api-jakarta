@@ -23,6 +23,9 @@
 
 package microsoft.exchange.webservices.data.search;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
@@ -30,8 +33,6 @@ import microsoft.exchange.webservices.data.core.enumeration.search.FolderTravers
 import microsoft.exchange.webservices.data.core.enumeration.search.OffsetBasePoint;
 import microsoft.exchange.webservices.data.core.enumeration.service.ServiceObjectType;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
  * Represents the view settings in a folder search operation.

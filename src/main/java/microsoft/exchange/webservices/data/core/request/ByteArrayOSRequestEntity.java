@@ -23,13 +23,13 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
-import org.apache.http.Header;
-import org.apache.http.entity.BasicHttpEntity;
-import org.apache.http.message.BasicHeader;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+
+import org.apache.http.Header;
+import org.apache.http.entity.BasicHttpEntity;
+import org.apache.http.message.BasicHeader;
 
 public class ByteArrayOSRequestEntity extends BasicHttpEntity {
 

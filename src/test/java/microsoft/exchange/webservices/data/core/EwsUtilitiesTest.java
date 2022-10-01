@@ -23,6 +23,17 @@
 
 package microsoft.exchange.webservices.data.core;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.junit.jupiter.api.Test;
+
 import microsoft.exchange.webservices.data.core.service.folder.CalendarFolder;
 import microsoft.exchange.webservices.data.core.service.folder.ContactsFolder;
 import microsoft.exchange.webservices.data.core.service.folder.Folder;
@@ -41,17 +52,6 @@ import microsoft.exchange.webservices.data.core.service.item.MeetingResponse;
 import microsoft.exchange.webservices.data.core.service.item.PostItem;
 import microsoft.exchange.webservices.data.core.service.item.Task;
 import microsoft.exchange.webservices.data.misc.TimeSpan;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.junit.jupiter.api.Test;
 
 
 public class EwsUtilitiesTest {

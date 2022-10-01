@@ -23,24 +23,24 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
-import microsoft.exchange.webservices.data.core.response.SubscribeResponse;
-import microsoft.exchange.webservices.data.core.enumeration.notification.EventType;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.notification.EventType;
+import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import microsoft.exchange.webservices.data.core.response.SubscribeResponse;
 import microsoft.exchange.webservices.data.misc.FolderIdWrapperList;
 import microsoft.exchange.webservices.data.notification.SubscriptionBase;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * The Class SubscribeRequest.

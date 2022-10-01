@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
+import java.util.List;
+
 import microsoft.exchange.webservices.data.attribute.EditorBrowsable;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.item.Item;
-import microsoft.exchange.webservices.data.core.enumeration.attribute.EditorBrowsableState;
-
-import java.util.List;
 
 /**
  * Represents the base response class for item creation operations.

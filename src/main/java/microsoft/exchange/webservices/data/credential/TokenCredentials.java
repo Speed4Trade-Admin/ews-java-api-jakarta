@@ -23,11 +23,11 @@
 
 package microsoft.exchange.webservices.data.credential;
 
+import java.net.URISyntaxException;
+
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentNullException;
 import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
-
-import java.net.URISyntaxException;
 
 /**
  * TokenCredentials provides credential if you already have a token.

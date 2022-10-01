@@ -23,6 +23,23 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectStreamException;
+import java.net.SocketTimeoutException;
+import java.net.UnknownServiceException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+import javax.xml.stream.XMLStreamException;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.core.EwsServiceMultiResponseXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.ExchangeService;
@@ -37,22 +54,6 @@ import microsoft.exchange.webservices.data.core.exception.xml.XmlException;
 import microsoft.exchange.webservices.data.misc.HangingTraceStream;
 import microsoft.exchange.webservices.data.security.XmlNodeType;
 import microsoft.exchange.webservices.data.util.IOUtils;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import javax.xml.stream.XMLStreamException;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectStreamException;
-import java.net.SocketTimeoutException;
-import java.net.UnknownServiceException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 
 /**

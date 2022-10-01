@@ -23,15 +23,6 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.ILazyMember;
-import microsoft.exchange.webservices.data.core.LazyMember;
-import microsoft.exchange.webservices.data.core.enumeration.property.MapiPropertyType;
-import microsoft.exchange.webservices.data.core.exception.misc.FormatException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -41,6 +32,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.ILazyMember;
+import microsoft.exchange.webservices.data.core.LazyMember;
+import microsoft.exchange.webservices.data.core.enumeration.property.MapiPropertyType;
+import microsoft.exchange.webservices.data.core.exception.misc.FormatException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
 
 /**
  * Utility class to convert between MAPI Property type values and strings.

@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.property.complex.recurrence.range;
 
+import java.util.Date;
+
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.property.complex.recurrence.pattern.Recurrence;
-
-import java.util.Date;
 
 /**
  * Represents recurrence range with no end date.

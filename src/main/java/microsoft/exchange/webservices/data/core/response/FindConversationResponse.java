@@ -23,16 +23,16 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.item.Conversation;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-import microsoft.exchange.webservices.data.security.XmlNodeType;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.service.item.Conversation;
+import microsoft.exchange.webservices.data.security.XmlNodeType;
 
 /**
  * Represents the response to a Conversation search operation.

@@ -23,12 +23,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.doReturn;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.property.complex.recurrence.pattern.Recurrence.MonthlyPattern;
 import microsoft.exchange.webservices.data.property.complex.recurrence.pattern.Recurrence.YearlyPattern;
-import org.mockito.Mockito;
 
 public class RecurrenceReaderTest {
 

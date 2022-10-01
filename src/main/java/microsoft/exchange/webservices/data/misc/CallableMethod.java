@@ -23,15 +23,16 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.request.HttpClientWebRequest;
-import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
-import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
-import microsoft.exchange.webservices.data.core.exception.http.HttpErrorException;
+import java.io.IOException;
+import java.util.concurrent.Callable;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import java.io.IOException;
-import java.util.concurrent.Callable;
+import microsoft.exchange.webservices.data.core.exception.http.EWSHttpException;
+import microsoft.exchange.webservices.data.core.exception.http.HttpErrorException;
+import microsoft.exchange.webservices.data.core.request.HttpClientWebRequest;
+import microsoft.exchange.webservices.data.core.request.HttpWebRequest;
 
 /**
  * <b>Title:</b> CallableMethod <br>

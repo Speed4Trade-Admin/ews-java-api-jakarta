@@ -23,14 +23,14 @@
 
 package microsoft.exchange.webservices.data.notification;
 
-import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
-import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.notification.EventType;
-import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+
+import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
+import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.notification.EventType;
 
 /**
  * Represents a collection of notification events.

@@ -23,19 +23,19 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
+import java.util.Collection;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
-import microsoft.exchange.webservices.data.core.response.ServiceResponse;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.enumeration.service.MessageDisposition;
 import microsoft.exchange.webservices.data.core.enumeration.service.SendInvitationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import java.util.Collection;
+import microsoft.exchange.webservices.data.core.response.ServiceResponse;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
 
 /**
  * Represents an abstract CreateItem request.

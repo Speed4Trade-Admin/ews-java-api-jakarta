@@ -23,22 +23,27 @@
 
 package microsoft.exchange.webservices.data.core.service.item;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
-import microsoft.exchange.webservices.data.core.service.schema.ConversationSchema;
-import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
-import microsoft.exchange.webservices.data.core.enumeration.service.ConversationFlagStatus;
-import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.Importance;
+import microsoft.exchange.webservices.data.core.enumeration.service.ConversationFlagStatus;
+import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
 import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceResponseException;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
+import microsoft.exchange.webservices.data.core.service.schema.ConversationSchema;
+import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
 import microsoft.exchange.webservices.data.misc.OutParam;
 import microsoft.exchange.webservices.data.property.complex.ConversationId;
 import microsoft.exchange.webservices.data.property.complex.ExtendedPropertyCollection;
@@ -46,11 +51,6 @@ import microsoft.exchange.webservices.data.property.complex.FolderId;
 import microsoft.exchange.webservices.data.property.complex.ItemIdCollection;
 import microsoft.exchange.webservices.data.property.complex.StringList;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * Represents a collection of Conversation related property.

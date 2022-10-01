@@ -23,13 +23,14 @@
 
 package microsoft.exchange.webservices.data.core.service.items;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 
 import org.junit.jupiter.api.Test;
-import static org.hamcrest.MatcherAssert.assertThat;
+
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.service.item.Appointment;

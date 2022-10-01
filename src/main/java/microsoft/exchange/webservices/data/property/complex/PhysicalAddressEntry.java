@@ -23,6 +23,11 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.ILazyMember;
@@ -30,15 +35,10 @@ import microsoft.exchange.webservices.data.core.LazyMember;
 import microsoft.exchange.webservices.data.core.SimplePropertyBag;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.ServiceObject;
-import microsoft.exchange.webservices.data.core.enumeration.property.PhysicalAddressKey;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
+import microsoft.exchange.webservices.data.core.enumeration.property.PhysicalAddressKey;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.util.ArrayList;
-import java.util.List;
+import microsoft.exchange.webservices.data.core.service.ServiceObject;
 
 /**
  * Represents an entry of an PhysicalAddressDictionary.

@@ -23,26 +23,32 @@
 
 package microsoft.exchange.webservices.data.core.service.folder;
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
+import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.EffectiveRights;
+import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
+import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
+import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.response.FindItemResponse;
 import microsoft.exchange.webservices.data.core.response.ServiceResponseCollection;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.item.Item;
 import microsoft.exchange.webservices.data.core.service.schema.FolderSchema;
 import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
-import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
-import microsoft.exchange.webservices.data.core.enumeration.service.EffectiveRights;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
-import microsoft.exchange.webservices.data.core.enumeration.service.error.ServiceErrorHandling;
-import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
-import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.property.complex.ExtendedPropertyCollection;
 import microsoft.exchange.webservices.data.property.complex.FolderId;
 import microsoft.exchange.webservices.data.property.complex.FolderPermissionCollection;
@@ -57,11 +63,6 @@ import microsoft.exchange.webservices.data.search.Grouping;
 import microsoft.exchange.webservices.data.search.ItemView;
 import microsoft.exchange.webservices.data.search.ViewBase;
 import microsoft.exchange.webservices.data.search.filter.SearchFilter;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import java.util.ArrayList;
-import java.util.EnumSet;
 
 /**
  * Represents a generic folder.

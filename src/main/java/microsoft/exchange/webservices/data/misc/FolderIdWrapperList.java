@@ -23,17 +23,17 @@
 
 package microsoft.exchange.webservices.data.misc;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
-import microsoft.exchange.webservices.data.core.service.folder.Folder;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceVersionException;
+import microsoft.exchange.webservices.data.core.service.folder.Folder;
 import microsoft.exchange.webservices.data.property.complex.FolderId;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * Represents a list a abstracted folder Ids.

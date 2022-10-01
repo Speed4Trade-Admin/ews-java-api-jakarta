@@ -23,8 +23,9 @@
 
 package microsoft.exchange.webservices.data.dns;
 
-import microsoft.exchange.webservices.data.EWSConstants;
-import microsoft.exchange.webservices.data.core.exception.dns.DnsException;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
 
 import javax.naming.NamingEnumeration;
 import javax.naming.NamingException;
@@ -33,9 +34,8 @@ import javax.naming.directory.Attributes;
 import javax.naming.directory.DirContext;
 import javax.naming.directory.InitialDirContext;
 
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
+import microsoft.exchange.webservices.data.EWSConstants;
+import microsoft.exchange.webservices.data.core.exception.dns.DnsException;
 
 /**
  * Class that represents DNS Query client.

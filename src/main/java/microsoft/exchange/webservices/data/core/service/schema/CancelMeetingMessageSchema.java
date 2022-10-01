@@ -23,6 +23,8 @@
 
 package microsoft.exchange.webservices.data.core.service.schema;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
@@ -30,8 +32,6 @@ import microsoft.exchange.webservices.data.property.complex.ICreateComplexProper
 import microsoft.exchange.webservices.data.property.complex.MessageBody;
 import microsoft.exchange.webservices.data.property.definition.ComplexPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
-
-import java.util.EnumSet;
 
 /**
  * Represents a meeting cancellation message.

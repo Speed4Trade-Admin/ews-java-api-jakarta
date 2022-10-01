@@ -23,15 +23,15 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import java.util.EnumSet;
+import java.util.TimeZone;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.PropertyBag;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.property.complex.time.TimeZoneDefinition;
-
-import java.util.EnumSet;
-import java.util.TimeZone;
 
 /**
  * Represents a property definition for property of type TimeZoneInfo.

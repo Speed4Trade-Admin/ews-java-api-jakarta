@@ -23,6 +23,8 @@
 
 package microsoft.exchange.webservices.data.core.service.schema;
 
+import java.util.EnumSet;
+
 import microsoft.exchange.webservices.data.attribute.Schema;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
@@ -49,8 +51,6 @@ import microsoft.exchange.webservices.data.property.definition.IntPropertyDefini
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.ResponseObjectsPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.StringPropertyDefinition;
-
-import java.util.EnumSet;
 
 /**
  * Represents the schema for generic item.

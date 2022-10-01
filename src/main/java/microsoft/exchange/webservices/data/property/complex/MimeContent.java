@@ -23,14 +23,15 @@
 
 package microsoft.exchange.webservices.data.property.complex;
 
+import javax.xml.stream.XMLStreamException;
+
+import org.apache.commons.codec.binary.Base64;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlDeserializationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-import org.apache.commons.codec.binary.Base64;
-
-import javax.xml.stream.XMLStreamException;
 
 /**
  * Represents the MIME content of an item.

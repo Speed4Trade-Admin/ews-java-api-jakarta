@@ -23,13 +23,13 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
-
 import java.io.Serializable;
 import java.text.ParseException;
 import java.util.EnumSet;
+
+import microsoft.exchange.webservices.data.core.EwsUtilities;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 
 /**
  * Represents generic property definition.

@@ -23,6 +23,10 @@
 
 package microsoft.exchange.webservices.data.core.service;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
@@ -46,10 +50,6 @@ import microsoft.exchange.webservices.data.property.complex.ServiceId;
 import microsoft.exchange.webservices.data.property.definition.ExtendedPropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinition;
 import microsoft.exchange.webservices.data.property.definition.PropertyDefinitionBase;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 /**
  * Represents the base abstract class for all item and folder types.

@@ -23,6 +23,10 @@
 
 package microsoft.exchange.webservices.data.core.request;
 
+import java.io.IOException;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.enumeration.misc.TraceFlags;
 import microsoft.exchange.webservices.data.core.exception.service.remote.ServiceRequestException;
@@ -31,10 +35,6 @@ import microsoft.exchange.webservices.data.misc.AsyncExecutor;
 import microsoft.exchange.webservices.data.misc.AsyncRequestResult;
 import microsoft.exchange.webservices.data.misc.CallableMethod;
 import microsoft.exchange.webservices.data.misc.IAsyncResult;
-
-import java.io.IOException;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Future;
 
 /**
  * Defines the SimpleServiceRequestBase class.

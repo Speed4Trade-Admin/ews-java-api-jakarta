@@ -23,21 +23,21 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
+import java.util.EnumSet;
+import java.util.List;
+
+import javax.xml.stream.XMLStreamException;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertyBag;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
-import microsoft.exchange.webservices.data.core.service.schema.AppointmentSchema;
 import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
 import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
+import microsoft.exchange.webservices.data.core.service.schema.AppointmentSchema;
 import microsoft.exchange.webservices.data.property.complex.MeetingTimeZone;
 import microsoft.exchange.webservices.data.property.complex.time.TimeZoneDefinition;
-
-import javax.xml.stream.XMLStreamException;
-
-import java.util.EnumSet;
-import java.util.List;
 
 /**
  * Represents a property definition for property of type TimeZoneInfo.

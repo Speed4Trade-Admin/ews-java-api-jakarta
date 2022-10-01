@@ -23,10 +23,19 @@
 
 package microsoft.exchange.webservices.data.core.service.response;
 
+import java.util.List;
+
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
+import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.MessageDisposition;
+import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
+import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
+import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.item.Item;
 import microsoft.exchange.webservices.data.core.service.item.PostItem;
@@ -35,18 +44,9 @@ import microsoft.exchange.webservices.data.core.service.schema.ItemSchema;
 import microsoft.exchange.webservices.data.core.service.schema.PostReplySchema;
 import microsoft.exchange.webservices.data.core.service.schema.ResponseObjectSchema;
 import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AffectedTaskOccurrence;
-import microsoft.exchange.webservices.data.core.enumeration.service.DeleteMode;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.service.MessageDisposition;
-import microsoft.exchange.webservices.data.core.enumeration.service.SendCancellationsMode;
-import microsoft.exchange.webservices.data.core.enumeration.property.WellKnownFolderName;
-import microsoft.exchange.webservices.data.core.exception.misc.InvalidOperationException;
 import microsoft.exchange.webservices.data.property.complex.FolderId;
 import microsoft.exchange.webservices.data.property.complex.ItemId;
 import microsoft.exchange.webservices.data.property.complex.MessageBody;
-
-import java.util.List;
 
 /**
  * Represents a reply to a post item.

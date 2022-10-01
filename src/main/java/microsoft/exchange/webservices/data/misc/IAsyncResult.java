@@ -23,9 +23,9 @@
 
 package microsoft.exchange.webservices.data.misc;
 
-import microsoft.exchange.webservices.data.core.request.WaitHandle;
-
 import java.util.concurrent.Future;
+
+import microsoft.exchange.webservices.data.core.request.WaitHandle;
 
 /**
  * Represents the stauts of Asynchronous operation.

@@ -23,6 +23,10 @@
 
 package microsoft.exchange.webservices.data.misc;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
@@ -30,10 +34,6 @@ import microsoft.exchange.webservices.data.core.XmlAttributeNames;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.enumeration.misc.XmlNamespace;
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentOutOfRangeException;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * Represents a list of suggested name resolutions.

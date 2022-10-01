@@ -23,6 +23,8 @@
 
 package microsoft.exchange.webservices.data.core.response;
 
+import java.util.List;
+
 import microsoft.exchange.webservices.data.core.EwsServiceXmlReader;
 import microsoft.exchange.webservices.data.core.EwsUtilities;
 import microsoft.exchange.webservices.data.core.ExchangeService;
@@ -30,8 +32,6 @@ import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
 import microsoft.exchange.webservices.data.core.service.ServiceObject;
 import microsoft.exchange.webservices.data.core.service.item.Item;
-
-import java.util.List;
 
 /**
  * Represents a response to an individual item retrieval operation.

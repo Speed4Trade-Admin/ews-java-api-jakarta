@@ -23,21 +23,26 @@
 
 package microsoft.exchange.webservices.data.core.service.item;
 
+import java.util.Date;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import microsoft.exchange.webservices.data.attribute.ServiceObjectDefinition;
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.PropertySet;
 import microsoft.exchange.webservices.data.core.XmlElementNames;
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.property.LegacyFreeBusyStatus;
+import microsoft.exchange.webservices.data.core.enumeration.property.MeetingResponseType;
+import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestType;
+import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AppointmentType;
+import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.core.service.response.AcceptMeetingInvitationMessage;
 import microsoft.exchange.webservices.data.core.service.response.DeclineMeetingInvitationMessage;
 import microsoft.exchange.webservices.data.core.service.schema.AppointmentSchema;
 import microsoft.exchange.webservices.data.core.service.schema.MeetingRequestSchema;
 import microsoft.exchange.webservices.data.core.service.schema.ServiceObjectSchema;
-import microsoft.exchange.webservices.data.core.enumeration.service.calendar.AppointmentType;
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.LegacyFreeBusyStatus;
-import microsoft.exchange.webservices.data.core.enumeration.service.MeetingRequestType;
-import microsoft.exchange.webservices.data.core.enumeration.property.MeetingResponseType;
-import microsoft.exchange.webservices.data.core.exception.service.local.ServiceLocalException;
 import microsoft.exchange.webservices.data.misc.CalendarActionResults;
 import microsoft.exchange.webservices.data.misc.TimeSpan;
 import microsoft.exchange.webservices.data.property.complex.AttendeeCollection;
@@ -50,10 +55,6 @@ import microsoft.exchange.webservices.data.property.complex.OccurrenceInfo;
 import microsoft.exchange.webservices.data.property.complex.OccurrenceInfoCollection;
 import microsoft.exchange.webservices.data.property.complex.recurrence.pattern.Recurrence;
 import microsoft.exchange.webservices.data.property.complex.time.TimeZoneDefinition;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import java.util.Date;
 
 /**
  * Represents a meeting request that an attendee can accept

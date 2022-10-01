@@ -23,11 +23,11 @@
 
 package microsoft.exchange.webservices.data.sync;
 
-import microsoft.exchange.webservices.data.core.EwsUtilities;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import microsoft.exchange.webservices.data.core.EwsUtilities;
 
 /**
  * Represents a collection of changes as returned by a synchronization

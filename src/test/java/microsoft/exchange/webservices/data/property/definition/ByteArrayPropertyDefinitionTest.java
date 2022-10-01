@@ -23,16 +23,17 @@
 
 package microsoft.exchange.webservices.data.property.definition;
 
-import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
-import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
-import org.apache.commons.codec.binary.Base64;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.EnumSet;
+
+import org.apache.commons.codec.binary.Base64;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion;
+import microsoft.exchange.webservices.data.core.enumeration.property.PropertyDefinitionFlags;
 
 public class ByteArrayPropertyDefinitionTest {
 

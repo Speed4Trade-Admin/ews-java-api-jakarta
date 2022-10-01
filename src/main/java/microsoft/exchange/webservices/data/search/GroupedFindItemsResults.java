@@ -23,10 +23,10 @@
 
 package microsoft.exchange.webservices.data.search;
 
-import microsoft.exchange.webservices.data.core.service.item.Item;
-
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import microsoft.exchange.webservices.data.core.service.item.Item;
 
 /**
  * Represents the results of an item search operation.
