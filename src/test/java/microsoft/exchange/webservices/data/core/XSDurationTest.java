@@ -19,6 +19,8 @@
 
 package microsoft.exchange.webservices.data.core;
 
+import java.time.format.DateTimeParseException;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -60,7 +62,7 @@ public class XSDurationTest {
 
   @Test
   public void testPeriodFail() {
-      Assertions.assertThrows(IllegalArgumentException.class, () -> {
+      Assertions.assertThrows(DateTimeParseException.class, () -> {
           TimeSpan timeSpan = EwsUtilities.getXSDurationToTimeSpan("P2H30M59.0S");
           Assertions.assertEquals("-P0DT2H30M59.0S", EwsUtilities.getTimeSpanToXSDuration(timeSpan));
       });

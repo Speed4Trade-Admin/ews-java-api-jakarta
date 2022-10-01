@@ -51,11 +51,6 @@ import microsoft.exchange.webservices.data.core.exception.service.local.ServiceV
 import microsoft.exchange.webservices.data.misc.TimeSpan;
 import microsoft.exchange.webservices.data.property.complex.ItemAttachment;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.joda.time.Period;
-import org.joda.time.format.ISOPeriodFormat;
-
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
@@ -70,6 +65,7 @@ import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -84,7 +80,7 @@ import java.util.regex.Pattern;
  */
 public final class EwsUtilities {
 
-  private static final Log LOG = LogFactory.getLog(EwsUtilities.class);
+  //private static final Log LOG = LogFactory.getLog(EwsUtilities.class);
 
   /**
    * The Constant XSFalse.
@@ -233,13 +229,13 @@ public final class EwsUtilities {
   private static final String XML_SCHEMA_DATE_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'";
 
   private static final Pattern PATTERN_TIME_SPAN = Pattern.compile("-P");
-  private static final Pattern PATTERN_YEAR = Pattern.compile("(\\d+)Y");
-  private static final Pattern PATTERN_MONTH = Pattern.compile("(\\d+)M");
-  private static final Pattern PATTERN_DAY = Pattern.compile("(\\d+)D");
-  private static final Pattern PATTERN_HOUR = Pattern.compile("(\\d+)H");
-  private static final Pattern PATTERN_MINUTES = Pattern.compile("(\\d+)M");
-  private static final Pattern PATTERN_SECONDS = Pattern.compile("(\\d+)\\."); // Need to escape dot, otherwise it matches any char
-  private static final Pattern PATTERN_MILLISECONDS = Pattern.compile("(\\d+)S");
+  //private static final Pattern PATTERN_YEAR = Pattern.compile("(\\d+)Y");
+  //private static final Pattern PATTERN_MONTH = Pattern.compile("(\\d+)M");
+  //private static final Pattern PATTERN_DAY = Pattern.compile("(\\d+)D");
+  //private static final Pattern PATTERN_HOUR = Pattern.compile("(\\d+)H");
+  //private static final Pattern PATTERN_MINUTES = Pattern.compile("(\\d+)M");
+  //private static final Pattern PATTERN_SECONDS = Pattern.compile("(\\d+)\\."); // Need to escape dot, otherwise it matches any char
+  //private static final Pattern PATTERN_MILLISECONDS = Pattern.compile("(\\d+)S");
 
 
   private EwsUtilities() {
@@ -433,7 +429,7 @@ public final class EwsUtilities {
       }
     }
 
-    return (TServiceObject) itemClass.newInstance();
+    return (TServiceObject) itemClass.getDeclaredConstructor().newInstance();
   }
 
   /**
@@ -883,9 +879,9 @@ public final class EwsUtilities {
       xsDuration = xsDuration.replace("-P", "P");
     }
 
-    Period period = Period.parse(xsDuration, ISOPeriodFormat.standard());
+    Duration period = Duration.parse(xsDuration);
       
-    long retval = period.toStandardDuration().getMillis();
+    long retval = period.toMillis();
     
     if (negative) {
       retval = -retval;

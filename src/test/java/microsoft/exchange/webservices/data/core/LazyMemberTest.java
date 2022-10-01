@@ -40,15 +40,15 @@ import java.util.concurrent.TimeUnit;
 
 public class LazyMemberTest {
 
-  LazyMember impl;
+  LazyMember<Object> impl;
 
   @Mock ILazyMember<Object> iLazyMember;
 
   @BeforeEach
   public void setUp() throws Exception {
 
-    MockitoAnnotations.initMocks(this);
-    impl = new LazyMember(iLazyMember);
+    MockitoAnnotations.openMocks(this);
+    impl = new LazyMember<Object>(iLazyMember);
 
     doReturn(new Object()).when(iLazyMember).createInstance();
 

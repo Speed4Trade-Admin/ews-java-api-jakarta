@@ -35,7 +35,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
@@ -47,15 +46,15 @@ import java.util.List;
   @Mock Change change1;
   @Mock Change change2;
 
-  ChangeCollection impl;
-  @InjectMocks ChangeCollection spiedImpl;
+  ChangeCollection<Change> impl;
+  @InjectMocks ChangeCollection<Change> spiedImpl;
 
   @Mock(name = "changes") List<Change> innerList;
 
 
   @BeforeEach public void setUp() throws Exception {
 
-    impl = new ChangeCollection();
+    impl = new ChangeCollection<Change>();
   }
 
   @Test public void testAdd() throws Exception {

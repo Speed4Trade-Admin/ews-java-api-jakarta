@@ -56,12 +56,12 @@ import microsoft.exchange.webservices.data.credential.ExchangeCredentials;
 import microsoft.exchange.webservices.data.misc.EwsTraceListener;
 import microsoft.exchange.webservices.data.misc.ITraceListener;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.client.AuthenticationStrategy;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.protocol.HttpClientContext;
+import org.apache.http.client.utils.HttpClientUtils;
 import org.apache.http.config.Registry;
 import org.apache.http.config.RegistryBuilder;
 import org.apache.http.conn.HttpClientConnectionManager;
@@ -265,8 +265,8 @@ public abstract class ExchangeServiceBase implements Closeable {
 
   @Override
   public void close() {
-    IOUtils.closeQuietly(httpClient);
-    IOUtils.closeQuietly(httpPoolingClient);
+      HttpClientUtils.closeQuietly(httpClient);
+      HttpClientUtils.closeQuietly(httpPoolingClient);
   }
 
   // Event handlers

@@ -65,7 +65,7 @@ public class ExtendedPropertyCollectionTest {
     public void tryGetValueWithProperInput() throws Exception{
       ExtendedPropertyCollection epc = new ExtendedPropertyCollection();
       Class<Integer> cls = Integer.class;
-      Integer testValue = new Integer(456);
+      Integer testValue = 456;
       ExtendedPropertyDefinition propertyDefinition = new ExtendedPropertyDefinition(123, MapiPropertyType.Integer);
       epc.setExtendedProperty(propertyDefinition, testValue);
       

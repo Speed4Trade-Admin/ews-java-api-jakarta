@@ -40,8 +40,10 @@ import microsoft.exchange.webservices.data.core.service.item.MeetingRequest;
 import microsoft.exchange.webservices.data.core.service.item.MeetingResponse;
 import microsoft.exchange.webservices.data.core.service.item.PostItem;
 import microsoft.exchange.webservices.data.core.service.item.Task;
+import microsoft.exchange.webservices.data.misc.TimeSpan;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -199,6 +201,19 @@ public class EwsUtilitiesTest {
   public void testParseNullValue() throws ParseException {
     final String input = null;
     assertEquals(input, EwsUtilities.parse(String.class, input));
+  }
+  
+  @Test
+  public void testXSDuration()
+  {
+      TimeSpan ts;
+      ts = EwsUtilities.getXSDurationToTimeSpan("P1DT1H30M5S"); //P2DT3H4M
+      assertEquals(ts.toString(), "1d.1h:30m:5s");
+      assertTrue(ts.isPositive());
+      
+      //ts = EwsUtilities.getXSDurationToTimeSpan("-PT1H30M5S");
+      //assertEquals(ts.toString(), "-1h:30m:5s");
+      //assertTrue(ts.isNegative());
   }
 
 }

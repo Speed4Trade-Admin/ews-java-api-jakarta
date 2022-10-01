@@ -24,7 +24,6 @@
 package microsoft.exchange.webservices.base;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import microsoft.exchange.webservices.data.core.ExchangeService;
 import microsoft.exchange.webservices.data.core.ExchangeServiceBase;

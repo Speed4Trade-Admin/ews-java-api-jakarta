@@ -51,11 +51,13 @@ public class TimeSpanTest extends BaseTest {
    * @return the string
    */
   public String timeSpanToXSDuration(Calendar timeSpan) {
-    String offsetStr = (timeSpan.SECOND < 0) ? "-" : "";
-    String obj = String.format("%s %s %s %s %s ", offsetStr, Math
-            .abs(timeSpan.DAY_OF_MONTH), Math.abs(timeSpan.HOUR_OF_DAY),
-        Math.abs(timeSpan.MINUTE), Math.abs(timeSpan.SECOND) + "." +
-            Math.abs(timeSpan.MILLISECOND));
+    String offsetStr = (timeSpan.get(Calendar.SECOND) < 0) ? "-" : "";
+    String obj = String.format("%s %s %s %s %s ", offsetStr, 
+            Math.abs(timeSpan.get(Calendar.DAY_OF_MONTH)), 
+            Math.abs(timeSpan.get(Calendar.HOUR_OF_DAY)), 
+            Math.abs(timeSpan.get(Calendar.MINUTE)), 
+            Math.abs(timeSpan.get(Calendar.SECOND)) + "." +
+            Math.abs(timeSpan.get(Calendar.MILLISECOND)));
 
     return obj;
   }

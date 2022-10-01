@@ -24,6 +24,20 @@
 package microsoft.exchange.webservices.data.autodiscover.request;
 
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
+import java.io.ByteArrayOutputStream;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.stream.XMLStreamException;
+
+import org.hamcrest.core.IsNot;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+
 import microsoft.exchange.webservices.base.BaseTest;
 import microsoft.exchange.webservices.data.autodiscover.AutodiscoverService;
 import microsoft.exchange.webservices.data.core.EwsServiceXmlWriter;
@@ -31,20 +45,6 @@ import microsoft.exchange.webservices.data.core.enumeration.misc.ExchangeVersion
 import microsoft.exchange.webservices.data.core.exception.misc.ArgumentException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceValidationException;
 import microsoft.exchange.webservices.data.core.exception.service.local.ServiceXmlSerializationException;
-import org.hamcrest.core.IsNot;
-import org.hamcrest.core.IsNull;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
-
-import javax.xml.stream.XMLStreamException;
-import static org.hamcrest.MatcherAssert.assertThat;
-import java.io.ByteArrayOutputStream;
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Testclass for methods of GetUserSettingsRequest
@@ -195,7 +195,8 @@ public class GetUserSettingsRequestTest extends BaseTest {
           final AutodiscoverService autodiscoverService)
       throws ServiceValidationException, XMLStreamException, ServiceXmlSerializationException {
       Assertions.assertThrows(ServiceValidationException.class, () -> {
-          GetUserSettingsRequest getUserSettingsRequest =
+          @SuppressWarnings("unused")
+        GetUserSettingsRequest getUserSettingsRequest =
                   new GetUserSettingsRequest(autodiscoverService, uriMockHttp, Boolean.TRUE);
       });
       }

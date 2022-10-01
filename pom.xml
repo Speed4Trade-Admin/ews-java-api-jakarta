@@ -96,8 +96,6 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <animal-sniffer-maven-plugin.version>1.22</animal-sniffer-maven-plugin.version>
-        <animal-sniffer-maven-plugin.signature.version>1.0</animal-sniffer-maven-plugin.signature.version>
         <!--  Dependencies [REPORT]:  -->
         <maven-site-plugin.version>3.12.1</maven-site-plugin.version>
         <maven-project-info-reports-plugin.version>3.4.1</maven-project-info-reports-plugin.version>
@@ -110,9 +108,6 @@
         <httpclient.version>4.5.13</httpclient.version>
         <httpcore.version>4.4.15</httpcore.version>
         <commons-logging.version>1.2</commons-logging.version>
-        <joda-time.version>2.11.2</joda-time.version>
-        <commons-lang3.version>3.12.0</commons-lang3.version>
-        <commons-io.version>2.11.0</commons-io.version>
         <jakarta-xml-bind.version>4.0.0</jakarta-xml-bind.version>
         <jakarta-xml-ws-api.version>4.0.0</jakarta-xml-ws-api.version>
         <!--  Dependencies [TEST]:  -->
@@ -257,28 +252,11 @@
 		</dependency>
 
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons-io.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
             <version>${commons-logging.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang3.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>${joda-time.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -410,27 +388,6 @@
                         <id>attach-sources</id>
                         <goals>
                             <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>animal-sniffer-maven-plugin</artifactId>
-                <version>${animal-sniffer-maven-plugin.version}</version>
-                <configuration>
-                    <signature>
-                        <groupId>org.codehaus.mojo.signature</groupId>
-                        <artifactId>java17</artifactId>
-                        <version>${animal-sniffer-maven-plugin.signature.version}</version>
-                    </signature>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>check-java17</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>

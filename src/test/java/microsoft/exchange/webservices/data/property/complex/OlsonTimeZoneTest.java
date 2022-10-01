@@ -25,7 +25,6 @@ package microsoft.exchange.webservices.data.property.complex;
 
 import microsoft.exchange.webservices.data.property.complex.time.OlsonTimeZoneDefinition;
 import microsoft.exchange.webservices.data.util.TimeZoneUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -55,7 +54,7 @@ public class OlsonTimeZoneTest {
         final OlsonTimeZoneDefinition olsonTimeZone = new OlsonTimeZoneDefinition(timeZone);
         final String olsonTimeZoneId = olsonTimeZone.getId();
 
-        Assertions.assertFalse(StringUtils.isBlank(olsonTimeZoneId), "olsonTimeZoneId for " + timeZoneId + " is blank");
+        Assertions.assertFalse(olsonTimeZoneId == null || olsonTimeZoneId.isEmpty(), "olsonTimeZoneId for " + timeZoneId + " is blank");
         Assertions.assertEquals(olsonTimeZoneToMsMap.get(timeZoneId), olsonTimeZoneId);
       }
     }
