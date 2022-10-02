@@ -13,7 +13,7 @@ The modifications are:
 * Migrated from junit4 to junit5
 * Dependencies are updated (httpclient 4.5.x, httpcore 4.4.x, commons-codec 1.11, commons-logging 1.2)
 * Removed animal-sniffer plugin as it only works up to java 1.8
-* Java 17 required
+* Java 11 required
 
 ## Support statement
 
